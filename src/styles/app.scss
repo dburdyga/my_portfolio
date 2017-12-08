@@ -1,7 +1,8 @@
-body{
+body {
     margin: 100px;
-    background: #ccc
+    background-image: url('src/images/background.png');
 }
+
 @import 'common/menu';
 @import 'common/technologies';
 @import 'common/slider';

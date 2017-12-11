@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d05b031e-a17a-412d-af83-06186c5c5dc8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/about.html" afterPath="$PROJECT_DIR$/build/about.html" />
-      <change beforePath="$PROJECT_DIR$/build/assets/styles/app.min.css" afterPath="$PROJECT_DIR$/build/assets/styles/app.min.css" />
-      <change beforePath="$PROJECT_DIR$/build/blog.html" afterPath="$PROJECT_DIR$/build/blog.html" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change beforePath="$PROJECT_DIR$/build/my-works.html" afterPath="$PROJECT_DIR$/build/my-works.html" />
-      <change beforePath="$PROJECT_DIR$/src/styles/app.scss" afterPath="$PROJECT_DIR$/src/styles/app.scss" />
-    </list>
+    <list default="true" id="d05b031e-a17a-412d-af83-06186c5c5dc8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -173,6 +165,12 @@
             <path>
               <item name="my_portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -218,12 +216,12 @@
       <workItem from="1512937738092" duration="1118000" />
       <workItem from="1512938988736" duration="1198000" />
       <workItem from="1512940225377" duration="1142000" />
-      <workItem from="1512981452213" duration="458000" />
+      <workItem from="1512981452213" duration="535000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3916000" />
+    <option name="totallyTimeSpent" value="3993000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />

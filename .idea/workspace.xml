@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d05b031e-a17a-412d-af83-06186c5c5dc8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/build/about.html" afterPath="$PROJECT_DIR$/build/about.html" />
-      <change beforePath="$PROJECT_DIR$/build/blog.html" afterPath="$PROJECT_DIR$/build/blog.html" />
-      <change beforePath="$PROJECT_DIR$/build/my-works.html" afterPath="$PROJECT_DIR$/build/my-works.html" />
       <change beforePath="$PROJECT_DIR$/src/styles/app.scss" afterPath="$PROJECT_DIR$/src/styles/app.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -42,8 +39,8 @@
       <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="60">
+              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -224,12 +221,12 @@
       <workItem from="1512981452213" duration="912000" />
       <workItem from="1512982386084" duration="594000" />
       <workItem from="1512982999409" duration="211000" />
-      <workItem from="1512983262293" duration="467000" />
+      <workItem from="1512983262293" duration="527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5642000" />
+    <option name="totallyTimeSpent" value="5702000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -652,8 +649,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="60">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding />
         </state>
       </provider>

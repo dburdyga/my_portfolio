@@ -2,7 +2,10 @@ body {
     margin: 100px;
     background: grey;
     background-image: url("/assets/images/background.png");
+    color:white;
 }
+
+
 
 @import 'common/menu';
 @import 'common/technologies';

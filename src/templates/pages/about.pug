@@ -12,15 +12,15 @@ block content
     section.section.hero
         .hero__socials
             ul.socials
-                    li
-                        a(href="" class=`socials__item socials__item_${item}`)
-                        img(src="assets/images/vk.svg", alt="")
-                    li
-                        a(href="" class=`socials__item socials__item_${item}`)
-                        img(src="assets/images/github.svg", alt="")
-                    li
-                        a(href="" class=`socials__item socials__item_${item}`)
-                        img(src="assets/images/in.svg", alt="")
+                li
+                    a(href="" class=`socials__item socials__item_${item}`)
+                    img(src="assets/images/vk.svg", alt="")
+                li
+                    a(href="" class=`socials__item socials__item_${item}`)
+                    img(src="assets/images/github.svg", alt="")
+                li
+                    a(href="" class=`socials__item socials__item_${item}`)
+                    img(src="assets/images/in.svg", alt="")
         .hero__title
             .section-title
                 img(src="assets/images/photo_circle.png", alt="").section-title__pic
@@ -90,9 +90,15 @@ block content
                         nav.menu
                     .footer__col.footer__col-right
                         ul.socials.socials_rounded
-                            each item in ['vk', 'fb', 'in']
-                                li.socials__item
-                                    a(href="" class=`socials__item socials__item_${item}`)
+                            li
+                                a(href="" class=`socials__item socials__item_${item}`)
+                                img(src="assets/images/vk-round.svg", alt="")
+                            li
+                                a(href="" class=`socials__item socials__item_${item}`)
+                                img(src="assets/images/github-round.svg", alt="")
+                            li
+                                a(href="" class=`socials__item socials__item_${item}`)
+                                img(src="assets/images/in-round.svg", alt="")
             .footer__row
                 .container
                     .footer__col.footer__col-left

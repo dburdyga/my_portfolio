@@ -8,15 +8,14 @@ block content
         // each item in another.skills
             li
                 h1 #{item}
-
     //h2 #{skills.about}
-
     section.section.hero
         .hero__socials
             ul.socials
-                each item in ['vk', 'fb', 'in']
+                each item in ['vk', 'github', 'in']
                     li.socials__item
-                        a(href="" class=`socials__item socials__item_${item}` src="../assets/images/vk.svg")
+                        a(href="" class=`socials__item socials__item_${item}`)
+                        img(src="../assets/images/vk.svg", alt="")
         .hero__title
             .section-title
                 img(src="../assets/images/photo_circle.png", alt="").section-title__pic

@@ -2,20 +2,22 @@ body {
     margin: 100px;
     //background: grey;
     background-image: url("../images/background.png");
+    width: 1800px;
+    height: 900px;
     color:black;
-    font-family: 'FontAwesome';
+    font-family: Roboto, serif;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url("../fonts/roboto/Roboto-Bold.ttf") format ('ttf');
+    font-family: Roboto;
+    src: url("../fonts/roboto/Roboto-Bold.ttf") format('ttf');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.woff2") format ('woff2');
+  font-family: FontAwesome;
+  src: url("../fonts/fontawesome-webfont.woff2") format('woff2');
   font-weight: 300;
   font-style: normal;
 }

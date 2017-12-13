@@ -3,9 +3,22 @@ body {
     //background: grey;
     background-image: url("../images/background.png");
     color:black;
+    font-family: 'FontAwesome';
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/roboto/Roboto-Bold.ttf") format ('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.woff2") format ('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
 
 @import 'common/menu';
 @import 'common/technologies';

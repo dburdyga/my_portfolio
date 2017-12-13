@@ -9,15 +9,15 @@ body {
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url("../fonts/roboto/Roboto-Bold.ttf") format('ttf');
+    font-family: Roboto-Bold;
+    src: url("../fonts/roboto/") format('woff2');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
   font-family: FontAwesome;
-  src: url("../fonts/fontawesome-webfont.woff2") format('woff2');
+  src: url("../fonts/fontawesome-webfont-webfont.woff2") format('woff2');
   font-weight: 300;
   font-style: normal;
 }

@@ -5,22 +5,75 @@ body {
     width: 1800px;
     height: 900px;
     color:black;
-    font-family: Roboto, serif;
+    font-family: Roboto-Bold, serif;
 }
-
 @font-face {
-    font-family: Roboto-Bold;
-    src: url("../fonts/roboto/") format('woff2');
-    font-weight: 300;
-    font-style: normal;
+  font-family: Roboto-Bold;
+  src: url('../fonts/roboto/roboto-bold-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
-
+@font-face {
+  font-family: Roboto-BoldItalic;
+  src: url('../fonts/roboto/roboto-bolditalic-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto-Italic;
+  src: url('../fonts/roboto/roboto-italic-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto-Light;
+  src: url('../fonts/roboto/roboto-light-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto-LightItalic;
+  src: url('../fonts/roboto/roboto-lightitalic-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url('../fonts/roboto/roboto-medium-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto-MediumItalic;
+  src: url('../fonts/roboto/roboto-mediumitalic-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../fonts/roboto/roboto-regular-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face {
   font-family: FontAwesome;
   src: url("../fonts/fontawesome-webfont-webfont.woff2") format('woff2');
-  font-weight: 300;
+  font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: BernierRegular;
+  src: url("../fonts/bernier/bernierregular-regular-webfont.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: BernierShade;
+  src: url("../fonts/bernier/berniershade-regular-webfont.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 @import 'common/menu';
 @import 'common/technologies';

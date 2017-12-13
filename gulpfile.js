@@ -89,6 +89,11 @@ function images() {
         .pipe(gulp.dest(paths.images.dest));
 }
 
+function fonts() {
+    return gulp.src(paths.fonts.src)
+        .pipe(gulp.dest(paths.fonts.dest));
+}
+
 exports.templates = templates;
 exports.styles = styles;
 exports.clean = clean;

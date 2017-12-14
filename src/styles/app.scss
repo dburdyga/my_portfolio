@@ -1,20 +1,91 @@
+// resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+$phonesmall: 320px;
+
+@function rem($px) {
+  @return $px / 16px + 0rem;
+}
+
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+//html {
+//  font-size:rem(16px);
+//  @include tablets {
+//    font-size: rem(15px);
+//  }
+//
+//  @include phones {
+//    font-size: rem(13px);
+//  }
+//
+//  @include phonesmall {
+//    font-size: rem(13px);
+//  }
+//}
+
 body {
     margin: 100px;
-    //background: grey;
     background-image: url("../images/background.png");
     width: 1800px;
     height: 900px;
-    color:black;
+    color:white;
     font-family: Roboto-Regular;
+    font-weight: normal;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: Roboto-Regular;
+  font-weight: normal;
+}
+
+p {
+  font-family: Roboto-Regular;
+  font-weight: normal;
+}
+body, html {
+  height: 100%; }
+
 .section {
   font-family: Roboto-Regular;
+  font-weight: normal;
 }
+
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+a {
+  text-decoration: none;
+}
 
 @font-face {
   font-family: Roboto-Bold;

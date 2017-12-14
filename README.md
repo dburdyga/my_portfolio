@@ -1,24 +1,8 @@
-Сборка проекта
-
-Gulp + Webpack
-
-Имя: Burdyga Daria
-
-Для работы проекта требуется:
-
-npm 5
-gulp-cli
-Как установить проект
-
-clone this repo
-npm i
-gulp
-
 <p align="center">
-    <img width='200px' height='200px' src="https://loftschool.com/uploads/course_logos/htmlcss.svg?asd">
+
 </p>
 
-<h1 align="center">Личный сайт студента школы-разработки <b>Loftschool</b>Burdyga Daria</h1>
+<h1 align="center">Личный сайт студента школы-разработки <b>Loftschool </b> Burdyga Daria</h1>
 <p align="center">
   Данная страница разработана при поддержке преподавателей и наставника школы-разработки <b>Loftschool</b>
   и является сайтом-портфолио веб разработчика Burdyga Daria.

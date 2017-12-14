@@ -11,17 +11,64 @@
     <script src="assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Авторизоваться</h1>
-    <form>
-      <label for="email">email</label>
-      <input name="email" id="email">
-      <label for="password">password</label>
-      <input name="password" id="password">
-      <button>Войти</button>
-      <button>На главную</button>
-    </form>
-    <h1>Владимир Астахов</h1>
-    <p>Личный сайт веб разработчика</p>
+    <section class="section welcome">
+      <header class="welcome-authorization">
+        <div class="authorization__text">Авторизоваться</div>
+      </header>
+      <div class="center-block">
+        <div class="start-block">
+          <div class="info__block">
+            <div class="info__block-avatar"><img class="pic-avatar"></div>
+            <div class="info__block-name">
+              <h2>Daria Burdyga</h2>
+            </div>
+            <div class="info__block-text">Личный сайт веб разработчика</div>
+          </div>
+          <ul class="social__list">
+            <li class="social__item item__vk"><a class="social__link"></a></li>
+            <li class="social__item item__github"><a class="social__link"></a></li>
+            <li class="social__item item__in"><a class="social__link"></a></li>
+          </ul>
+          <ul class="pages__list">
+            <li class="pages__item item__my-works"><a class="my-works__text">Мои работы</a></li>
+            <li class="pages__item item__about"><a class="about__text">Обо мне</a></li>
+            <li class="pages__item item__blog"><a class="blog__text">Блог</a></li>
+          </ul>
+        </div>
+        <div class="authorization-block">
+          <form class="form">
+            <ul class="authorization__list">
+              <li class="authorization__title">Авторизуйтесь</li>
+              <li class="authorization__border-line"></li>
+              <li class="authorization__login">
+                <div class="logo__icon">
+                  <svg class="icon__svg"></svg>
+                </div>
+                <input class="login__field" type="text" name="login">
+              </li>
+              <li class="authorization__password">
+                <div class="logo__icon">
+                  <svg class="icon__svg"></svg>
+                </div>
+                <input class="password__field" type="text" name="password">
+              </li>
+              <li class="authorization__checkbox">
+                <input class="checkbox__field" type="checkbox" checked><span class="checkbox__text">Я человек</span>
+              </li>
+              <li class="authorization__radio">
+                <div class="radio__text">Вы точно не робот?</div>
+                <input type="radio" checked><span class="radio__text">Да</span>
+                <input type="radio"><span class="radio__text">Не уверен</span>
+              </li>
+              <li class="authorization__buttons"><a class="button__main">На главную</a><a class="button__enter">Войти</a></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <footer class="welcome-footer">
+        <p class="welcome-footer__text">© Daria Burdyga | создано с любовью в LoftSchool | 2016</p>
+      </footer>
+    </section>
     <h2>Меню</h2>
     <ul class="menu">
       <li><a href="/index.html">Главная</a></li>

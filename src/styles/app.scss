@@ -54,6 +54,11 @@ body {
     font-weight: normal;
 }
 
+html {
+  font-family: Roboto-Regular;
+  font-weight: normal;
+}
+
 h1,
 h2,
 h3,
@@ -69,8 +74,16 @@ p {
   font-family: Roboto-Regular;
   font-weight: normal;
 }
-body, html {
-  height: 100%; }
+
+html,
+body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
 
 .section {
   font-family: Roboto-Regular;
@@ -158,3 +171,16 @@ a {
 @import 'common/menu';
 @import 'common/technologies';
 @import 'common/slider';
+
+////  normalize
+//@import 'normalize';
+//
+////  layout
+//@import 'layout/base';
+//@import 'layout/fonts';
+//
+////  section
+//@import 'section/*.scss';
+//
+////  common
+//@import 'common/*.scss'

@@ -1,0 +1,30 @@
+//  fonts
+@mixin sansus-webissimo() {
+  font-family: 'sansus-webissimo';
+}
+
+@mixin font-awesome() {
+  font-family: 'font-awesome';
+}
+
+@mixin roboto($weight: normal, $style: normal) {
+  font-family: 'roboto', Helvetica, sans-serif;
+  font-style: $style;
+
+  @if ($weight == light) {
+    font-weight: 300;
+  }
+
+  @if ($weight == regular) {
+    font-weight: 400;
+  }
+
+  @if ($weight == medium) {
+    font-weight: 500;
+  }
+
+  @if ($weight == bold) {
+    font-weight: 700;
+  }
+
+}

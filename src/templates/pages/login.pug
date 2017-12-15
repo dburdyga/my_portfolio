@@ -9,32 +9,13 @@ html(lang='ru')
     body
         .wrapper
             section.welcome
-                header.head
-                    a.log-in(href='#') Авторизуйтесь
                 .user
-                    .foto
-                        img.foto__user(src='images/img/photo.jpg', alt='')
                     .name
-                        p.name__user Бурдыга Дарья
-                        p.name__description Личный сайт веб разработчика
-                    ul.social
-                        li.social__item
-                            a.social__link(href='#')
-                                svg.social__icon(viewbox='0 0 50 50', width='35', height='40')
-                                    use(xlink:href='images/icons/sprite.svg#vk')
-                        li.social__item
-                            a.social__link(href='#')
-                                svg.social__icon(viewbox='0 0 50 50', width='32', height='37')
-                                    use(xlink:href='images/icons/sprite.svg#github')
-                        li.social__item
-                            a.social__link(href='#')
-                                svg.social__icon(viewbox='0 0 50 50', width='30', height='30')
-                                    use(xlink:href='images/icons/sprite.svg#in')
+                        p.name__user Авторизуйтесь
+
                     ul.navigation
                         li.navigation__item
-                            a.navigation__link(href='my-works.html') Мои работы
+                            a.navigation__link(href='index.html') На главную
                         li.navigation__item
-                            a.navigation__link(href='about.html') Обо мне
-                        li.navigation__item
-                            a.navigation__link(href='blog.html') Блог
+                            a.navigation__link(href='#') Войти
                 p.dev © Бурдыга Дарья | создано с любовью в LoftSchool | 2017

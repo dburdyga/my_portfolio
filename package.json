@@ -1,34 +1,40 @@
 {
-  "name": "gulp-122017",
+  "name": "evg-koch",
   "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "description": "Демо автоматизации с gulp 4",
+  "author": "Evgeniy Kochetov",
   "license": "ISC",
+  "scripts": {
+    "start": "gulp"
+  },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.18.13",
-    "clean-webpack-plugin": "^0.1.17",
     "del": "^3.0.0",
     "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-cleancss": "^0.2.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-css-unit": "^1.2.2",
+    "gulp-fontgen": "^0.2.5",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
     "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
     "gulp-sourcemaps": "^2.6.1",
+    "gulp-svgo": "^1.2.5",
+    "gulp-uglify": "^3.0.0",
     "gulp-webpack": "^1.5.0",
-    "html-webpack-plugin": "^2.30.1",
-    "uglifyjs-webpack-plugin": "^1.1.2",
-    "webpack": "^3.10.0",
-    "webpack-stream": "^4.0.0"
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
+    "webpack": "^3.10.0"
   },
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "jquery": "^3.2.1",
-    "node-sass": "^4.7.2",
-    "pug": "^2.0.0-rc.4",
-    "sass": "^1.0.0-beta.4"
+    "jquery": "^3.2.1"
   }
 }

@@ -1,108 +1,84 @@
-extends ../template
-
-block variables
-    - var title = 'Блог'
-
-block content
-    ul.test-list
-        // each item in another.skills
-            li
-                h1 #{item}
-    //h2 #{skills.about}
-    section.section.hero
-        .hero__socials
-            ul.socials
-                li
-                    a(href="" class=`socials__item socials__item_${item}`)
-                    img(src="assets/images/vk.svg", alt="")
-                li
-                    a(href="" class=`socials__item socials__item_${item}`)
-                    img(src="assets/images/github.svg", alt="")
-                li
-                    a(href="" class=`socials__item socials__item_${item}`)
-                    img(src="assets/images/in.svg", alt="")
-        .hero__title
-            .section-title
-                img(src="assets/images/photo_circle.png", alt="").section-title__pic
-            .user.hero__user
-                .user__pic
-                    img.user__pic-img
-                .user__description
-                    .user__name Владимир Астахов
-                    .user__info Личный сайт разработчика
-        .hamburger.hero__menu
-        .arrow-down.hero__scroll-btn
-    section.section.about
-        .about__left
-            ul
-                li Самое важное в SASS
-                li Приёмы в вёрстке, без которых не обходится ни один сайт
-                li Самый необходимый набор Gulp плагинов
-                li Почему я выбрал Jade
-        .about__right
-            ul
-                li
-                    .about__right-content Самое важное в SASS
-                        .about__right-date 22 ноября 2016
-                        .about__right-text Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-                        .about__right-pic
-                li
-                    .about__right-content Приёмы в вёрстке, без которых не обходится ни один сайт
-                        .about__right-date 13 ноября 2016
-                        .about__right-text Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-                        .about__right-pic
-                            a(href="" class=`.about__right-paste`)
-                            img(src="assets/images/code.png", alt="")
-                li
-                    .about__right-content Самый необходимый набор Gulp плагинов
-                        .about__right-date 22 ноября 2016
-                        .about__right-text Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-                        .about__right-pic
-                li
-                    .about__right-content Почему я выбрал Jade
-                        .about__right-date 22 ноября 2016
-                        .about__right-text Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-                        .about__right-pic
-    section.section.map
-        .google-map
-        .map__contacts
-            .contacts
-                .contacts__title
-                    .block-subtitle Контакты
-                ul.contacts__list
-                    -
-                        var contacts = [
-                        ['skype', 'skype_kdn'],
-                        ['mail', 'astahov@gmail.com'],
-                        ['phone', '+79211 123 23 23'],
-                        ['mark', 'Новосибирск'],
-                        ]
-                    each contact in contacts
-                        li.contacts__item
-                            .contacts-row
-                                .contacts-row__icon #{contact[0]}
-                                .contacts-row__content #{contact[1]}
-        footer.map__footer.footer
-            .footer__row
-                .container
-                    .footer__col.footer__col-left
-                        nav.menu
-                    .footer__col.footer__col-right
-                        ul.socials.socials_rounded
-                            li
-                                a(href="" class=`socials__item socials__item_${item}`)
-                                img(src="assets/images/vk_round.svg", alt="")
-                            li
-                                a(href="" class=`socials__item socials__item_${item}`)
-                                img(src="assets/images/github_round.svg", alt="")
-                            li
-                                a(href="" class=`socials__item socials__item_${item}`)
-                                img(src="assets/images/in_round.svg", alt="")
-            .footer__row
-                .container
-                    .footer__col.footer__col-left
-                        .footer__text
-                            p Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
-                    .footer__col.footer__col-right
-                        .footer__text.footer__text_margin_top
-                            p © Daria Burdyga | создано с любовью в LoftSchool | 2016
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+        meta(content='ie=edge', http-equiv='x-ua-compatible')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        link(rel='shortcut icon', type='image/x-icon', href='images/favicon/favicon.ico')
+        link(rel='stylesheet', href='css/style.min.css')
+        script(src='js/bundle.js', defer='')
+        title Blog
+    body
+        .wrapper
+            .container
+                section.blog
+                    include ../common/header
+                    .user-blog
+                        .foto
+                            img.foto__user(src='images/img/photo.jpg', alt='i')
+                        .user-name
+                            h1.title блог
+                            p.user__text Статьи , которые я написал
+                    a.arrow-scroll(href='#')
+                        svg.icon__scroll(viewbox='0 0 50 50', width='50', height='50')
+                            use(xlink:href='images/icons/sprite.svg#arrow_down')
+                main.main-blog
+                    aside.saidbar
+                        ul.saidbar__list
+                            li.saidbar__item.saidbar__item-active
+                                a.saidbar__link(href='#')
+                                    | Самое важное в
+                                    | SASS
+                            li.saidbar__item
+                                a.saidbar__link(href='#')
+                                    | Приёмы в вёрстке, без которых не
+                                    | обходится ни один сайт
+                            li.saidbar__item
+                                a.saidbar__link(href='#')
+                                    | Самый необходимый набор Gulp
+                                    | плагинов
+                            li.saidbar__item
+                                a.saidbar__link(href='#') Почему я выбрал Jade
+                    .articles
+                        article.article
+                            h2.subtitle Самое важное в SASS
+                            p.article__data
+                                time.data__time 22 ноября 2016
+                            p.article__text
+                                | Таким образом начало повседневной работы п о формированию позиции позволяет
+                                | выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и
+                                | богатый опыт новая модель организационной деятельности играет важную роль в формировании новых
+                                | предложений. Товарищи! новая модель организационной деятельности играет важную роль в
+                                | формировании систем массового участия.
+                                br
+                                br
+                                |                         Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу
+                                |                         (специалистов) участие в формировании систем массового участия. Идейные соображения высшего
+                                |                         порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов)
+                                |                         участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи!
+                                |                         постоянный количественный рост и сфера нашей активности способствует подготовки и реализации
+                                |                         модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс
+                                |                         внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                            .code
+                                img.code__img(src='images/img/code.jpg', alt='code')
+                        article.article
+                            h2.subtitle Приёмы в вёрстке, без которых не обходится ни один сайт
+                            p.article__data
+                                time.data__time 13 ноября 2016
+                            p.article__text
+                                | Таким образом начало повседневной работы п о формированию позиции позволяет
+                                | выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и
+                                | богатый опыт новая модель организационной деятельности играет важную роль в формировании новых
+                                | предложений. Товарищи! новая модель организационной деятельности играет важную роль в
+                                | формировании систем массового участия.
+                                br
+                                br
+                                |                         Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу
+                                |                         (специалистов) участие в формировании систем массового участия. Идейные соображения высшего
+                                |                         порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов)
+                                |                         участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи!
+                                |                         постоянный количественный рост и сфера нашей активности способствует подготовки и реализации
+                                |                         модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс
+                                |                         внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+            include ../common/footer

@@ -1,75 +1,40 @@
-extends ../template
-
-
-block variables
-    - var title = 'Добро пожаловать'
-
-
-
-block content
-    section.section.welcome
-        header.welcome-authorization
-            button.authorization__text Авторизоваться
-        .center-block
-            .start-block
-                .info__block
-                    .info__block-avatar
-                        img.pic-avatar
-                    .info__block-name
-                        h2 Дарья Бурдыга
-                    .info__block-text Личный сайт веб разработчика
-                ul.social__list
-                    li.social__item.item__vk
-                        a.social__link(href='#')
-                            svg.social__icon(viewbox='0 0 50 50', width='30', height='30')
-                                use(xlink:href='assets/images/sprite.svg#vk')
-                    li.social__item.item__github
-                        a.social__link(href='#')
-                            svg.social__icon(viewbox='0 0 50 50', width='30', height='30')
-                                use(xlink:href='assets/images/sprite.svg#github')
-                    li.social__item.item__in
-                        a.social__link(href='#')
-                            svg.social__icon(viewbox='0 0 50 50', width='30', height='30')
-                                use(xlink:href='assets/images/sprite.svg#in')
-                ul.pages__list
-                    li.pages__item.item__my-works
-                        a.my-works__text Мои работы
-                    li.pages__item.item__about
-                        a.about__text Обо мне
-                    li.pages__item.item__blog
-                        a.blog__text Блог
-            .authorization-block
-                form.form
-                    ul.authorization__list
-                        li.authorization__title Авторизуйтесь
-                        li.authorization__border-line
-                        li.authorization__login
-                            .logo__icon
-                                svg.icon__svg
-                            -
-                                var inputAtr = {
-                                type: 'text',
-                                type_check: 'checkbox',
-                                type_rad: 'radio',
-                                name: 'login',
-                                pass: 'password'}
-                            input(type = inputAtr.type, name = inputAtr.name).login__field
-                        li.authorization__password
-                            .logo__icon
-                                svg.icon__svg
-                            input(type = inputAtr.type, name = inputAtr.pass).password__field
-                        li.authorization__checkbox
-                            input(type = inputAtr.type_check checked).checkbox__field
-                            span.checkbox__text Я человек
-                        li.authorization__radio
-                            .radio__text Вы точно не робот?
-                            input(type = inputAtr.type_rad checked)
-                            span.radio__text Да
-                            input(type = inputAtr.type_rad)
-                            span.radio__text Не уверен
-                        li.authorization__buttons
-                            a.button__main На главную
-                            a.button__enter Войти
-
-        footer.welcome-footer
-            p.welcome-footer__text © Дарья Бурдыга | создано с любовью в LoftSchool | 2017
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        title My portfolio
+        link(rel='shortcut icon', type='image/x-icon', href='images/favicon/favicon.ico')
+        link(rel='stylesheet', href='css/style.min.css')
+        script(src='js/bundle.js', defer='')
+    body
+        .wrapper
+            section.welcome
+                header.head
+                    a.log-in(href='#') Авторизоваться
+                .user
+                    .foto
+                        img.foto__user(src='images/img/photo.jpg', alt='')
+                    .name
+                        p.name__user Бурдыга Дарья
+                        p.name__description Личный сайт веб разработчика
+                    ul.social
+                        li.social__item
+                            a.social__link(href='#')
+                                svg.social__icon(viewbox='0 0 50 50', width='35', height='40')
+                                    use(xlink:href='images/icons/sprite.svg#vk')
+                        li.social__item
+                            a.social__link(href='#')
+                                svg.social__icon(viewbox='0 0 50 50', width='32', height='37')
+                                    use(xlink:href='images/icons/sprite.svg#github')
+                        li.social__item
+                            a.social__link(href='#')
+                                svg.social__icon(viewbox='0 0 50 50', width='30', height='30')
+                                    use(xlink:href='images/icons/sprite.svg#in')
+                    ul.navigation
+                        li.navigation__item
+                            a.navigation__link(href='my-works.html') Мои работы
+                        li.navigation__item
+                            a.navigation__link(href='about.html') Обо мне
+                        li.navigation__item
+                            a.navigation__link(href='blog.html') Блог
+                p.dev © Бурдыга Дарья | создано с любовью в LoftSchool | 2017

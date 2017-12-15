@@ -1,107 +1,160 @@
+'use strict';
+
 const gulp = require('gulp');
-const pug = require('gulp-pug');
-
-const sass = require('gulp-sass');
-const rename = require('gulp-rename');
-const sourcemaps = require('gulp-sourcemaps');
-
-const del = require('del');
-
-const browserSync = require('browser-sync').create();
 
 const gulpWebpack = require('gulp-webpack');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
+const imagemin = require('gulp-imagemin');
+const pug  = require('gulp-pug');
+const sass = require('gulp-sass');
+const sassGlob = require('gulp-sass-glob');
+const groupMediaQueries = require('gulp-group-css-media-queries');//ищет одинаковые медиа условия и группирует их
+const cleanCSS = require('gulp-cleancss');
+const autoprefixer = require('gulp-autoprefixer');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
+const cssunit = require('gulp-css-unit');
+const rename = require('gulp-rename');
+const sourcemaps = require('gulp-sourcemaps');
+const replace = require('gulp-replace');
+const del = require('del');
+const plumber = require('gulp-plumber');
+const browserSync = require('browser-sync').create();
 
-const paths = {
-    root: './build',
-    templates: {
-        pages: 'src/templates/pages/*.pug',
-        src: 'src/templates/**/*.pug'
+const paths =  {
+  src: './src/',              // paths.src
+  build: './build/',          // paths.build
+    templates:{
+      pages:'src/templates/pages/*.pug',
+      src:'src/templates/**/*.pug',
+      dest:'./build'
     },
-    styles: {
-        src: 'src/styles/**/*.scss',
-        dest: 'build/assets/styles/'
-    },    
-    images: {
-        src: 'src/images/**/*.*',
-        dest: 'build/assets/images/'
+    images:{
+        src:'src/images/**/*.*',
+        dest:'./build/images/'
     },
-    scripts: {
-        src: 'src/scripts/**/*.js',
-        dest: 'build/assets/scripts/'
+    fonts:{
+      src:'src/fonts/**/*.*',
+        dest:'./build/fonts/'
     },
-    fonts: {
-        src: 'src/fonts/**/*.*',
-        dest: 'build/assets/fonts/'
+    scripts:{
+      src:'src/js/**/*.js',
+        dest:'./build/js/'
     }
-}
+};
 
-// pug
+//pug
 function templates() {
     return gulp.src(paths.templates.pages)
-        .pipe(pug({ pretty: true }))
-        .pipe(gulp.dest(paths.root));
+        .pipe(pug({pretty:true}))
+        .pipe(gulp.dest(paths.build));
 }
 
-// scss
+//scss
 function styles() {
-    return gulp.src('./src/styles/app.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(sourcemaps.write())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(paths.styles.dest))
+  return gulp.src(paths.src + 'scss/style.scss')
+    .pipe(plumber())// что бы если будет ошибка компиляции то процесс слежения не остонавливался
+    .pipe(sourcemaps.init())// обращение к карте кода
+    .pipe(sassGlob())
+    .pipe(sass()) // { outputStyle: 'compressed' }
+    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+    .pipe(cssunit({type: 'px-to-rem',rootSize: 16}))
+    .pipe(groupMediaQueries())//ищет одинаковые медиа условия и группирует их
+    .pipe(cleanCSS())//минификация
+    .pipe(rename({ suffix: ".min" }))//переименнование файла
+    .pipe(sourcemaps.write('/'))// запись карты кода
+    .pipe(gulp.dest(paths.build + 'css/'))
 }
 
-// очистка
-function clean() {
-    return del(paths.root);
-}
-
-// webpack
-function scripts() {
-    return gulp.src('src/scripts/app.js')
-        .pipe(gulpWebpack(webpackConfig, webpack)) 
-        .pipe(gulp.dest(paths.scripts.dest));
-}
-
-// галповский вотчер
-function watch() {
-    gulp.watch(paths.styles.src, styles);
-    gulp.watch(paths.templates.src, templates);
-    gulp.watch(paths.images.src, images);
-    gulp.watch(paths.scripts.src, scripts);
-    gulp.watch(paths.fonts.src, fonts);
-}
-
-// локальный сервер + livereload (встроенный)
-function server() {
-    browserSync.init({
-        server: paths.root
-    });
-    browserSync.watch(paths.root + '/**/*.*', browserSync.reload);
-}
-
-// просто переносим картинки
+// сжимает перекладывает  images
 function images() {
     return gulp.src(paths.images.src)
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]))
         .pipe(gulp.dest(paths.images.dest));
-}
+};
 
+//fonts
 function fonts() {
     return gulp.src(paths.fonts.src)
         .pipe(gulp.dest(paths.fonts.dest));
 }
 
+// webpack
+function scripts() {
+    return gulp.src('src/js/main.js')
+        .pipe(gulpWebpack(webpackConfig, webpack))
+        .pipe(gulp.dest(paths.scripts.dest));
+}
+
+//html
+function htmls() {
+  return gulp.src(paths.src + '*.html')
+    .pipe(plumber())
+    .pipe(replace(/\n\s*<!--DEV[\s\S]+?-->/gm, ''))
+    .pipe(gulp.dest(paths.build));
+}
+
+
+//clean
+function clean() {
+  return del('build/*.html')
+}
+
+//watch
+function watch() {
+  gulp.watch(paths.src + 'scss/*.scss', styles);
+  gulp.watch(paths.src + 'js/*.js', scripts);
+  gulp.watch(paths.src + '*.html', htmls);
+  gulp.watch(paths.src + '**/*.pug', templates);
+  gulp.watch(paths.images.src,images);
+  gulp.watch(paths.fonts.src,fonts);
+}
+
+
+//browserSync
+function serve() {
+  browserSync.init({
+    server: {
+      baseDir: paths.build
+    }
+  });
+  browserSync.watch(paths.build + '**/*.*', browserSync.reload);
+}
+
+//
 exports.templates = templates;
 exports.styles = styles;
-exports.clean = clean;
 exports.images = images;
 exports.fonts = fonts;
+exports.scripts = scripts;
+exports.htmls = htmls;
+exports.clean = clean;
+exports.watch = watch;
 
+//параметры выполнения
+gulp.task('build', gulp.series(
+  clean,
+  // styles,
+  // scripts,
+  // htmls
+  gulp.parallel(styles, scripts, htmls,templates)
+));
+
+//Запуск
 gulp.task('default', gulp.series(
-    clean,
-    gulp.parallel(styles, templates, images, scripts, fonts),
-    gulp.parallel(watch, server)
+  clean,
+  gulp.parallel(styles, scripts, htmls,templates,images,fonts),
+  gulp.parallel(watch, serve)
 ));

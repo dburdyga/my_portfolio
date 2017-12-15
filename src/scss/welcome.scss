@@ -4,7 +4,6 @@
   background: url("../images/background/mount_bg.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
-
 }
 
 .head {
@@ -21,6 +20,7 @@
   border-radius: 5px;
   font-family: 'robotomedium';
   font-size: 16px;
+  font-weight: 500;
   &:hover {
     background: #ffffff;
     color: #20c6af;
@@ -138,6 +138,7 @@
   font: 1.75rem bernier_regularregular;
   color: #455a64;
   text-align: center;
+  font-size: rem(35px);
 }
 
 .logo__icon {
@@ -148,7 +149,8 @@
   text-align: center;
   font: 1rem robotoregular;
   color: #455a64;
-  font-size: rem(14px);
+  font-size: rem(16px);
+  font-weight: 400;
 }
 
 .password__field {
@@ -157,7 +159,8 @@
 
 .radio__text_bold {
   text-align: center;
-  font: 1rem robotomedium;
+  font: 1rem robotobold;
   color: #455a64;
-  font-size: rem(14px);
+  font-size: rem(16px);
+  font-weight: 700;
 }

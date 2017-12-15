@@ -20,14 +20,17 @@ block content
                     .info__block-text Личный сайт веб разработчика
                 ul.social__list
                     li.social__item.item__vk
-                        a(href="" class=`socials__item socials__item_${item}`)
-                        img(src="assets/images/vk-green.svg", alt="")
+                        a.social__link(href='#')
+                            svg.social__icon(viewbox='0 0 50 50', width='30', height='30')
+                                use(xlink:href='assets/images/icons/sprite.svg#vk')
                     li.social__item.item__github
-                        a(href="" class=`socials__item socials__item_${item}`)
-                        img(src="assets/images/github-green.svg", alt="")
+                        a.social__link(href='#')
+                            svg.social__icon(viewbox='0 0 50 50', width='30', height='30')
+                                use(xlink:href='assets/images/icons/sprite.svg#github')
                     li.social__item.item__in
-                        a(href="" class=`socials__item socials__item_${item}`)
-                        img(src="assets/images/in-green.svg", alt="")
+                        a.social__link(href='#')
+                            svg.social__icon(viewbox='0 0 50 50', width='30', height='30')
+                                use(xlink:href='assets/images/icons/sprite.svg#in')
                 ul.pages__list
                     li.pages__item.item__my-works
                         a.my-works__text Мои работы

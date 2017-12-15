@@ -11,8 +11,35 @@
     <div class="wrapper">
       <section class="welcome">
         <div class="user">
-          <div class="name">
-            <p class="name__user">Авторизуйтесь</p>
+          <div class="login">
+            <p class="login__user">Авторизуйтесь</p>
+            <div class="authorization-block">
+              <form class="form">
+                <ul class="authorization__list">
+                  <li class="authorization__border-line"></li>
+                  <li class="authorization__login">
+                    <div class="logo__icon">
+                      <svg class="icon__svg"></svg>
+                    </div>
+                    <input class="login__field" type="text" name="login">
+                  </li>
+                  <li class="authorization__password">
+                    <div class="logo__icon">
+                      <svg class="icon__svg"></svg>
+                    </div>
+                    <input class="password__field" type="text" name="password">
+                  </li>
+                  <li class="authorization__checkbox">
+                    <input class="checkbox__field" type="checkbox" checked><span class="checkbox__text">Я человек</span>
+                  </li>
+                  <li class="authorization__radio">
+                    <div class="radio__text">Вы точно не робот?</div>
+                    <input type="radio" checked><span class="radio__text">Да</span>
+                    <input type="radio"><span class="radio__text">Не уверен</span>
+                  </li>
+                </ul>
+              </form>
+            </div>
           </div>
           <ul class="navigation">
             <li class="navigation__item"><a class="navigation__link" href="index.html">На главную</a></li>

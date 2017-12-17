@@ -79,15 +79,15 @@
 }
 .article{
  border-bottom: 4px solid #f1f1f2;
-  padding-bottom: 65px;
-  margin-bottom: 65px;
+  padding-bottom: rem(65px);
+  margin-bottom: rem(65px);
 }
 .subtitle{
   @include subtitle;
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 }
 .article__data{
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 }
 .data__time{
   @include robotoreg;
@@ -95,11 +95,18 @@
 }
 .article__text{
   @include robotoreg;
-  margin-bottom:20px;
+  margin-bottom: rem(20px);
 }
 .code{
   width:100%;
   &__img{
     max-width: 100%;
   }
+}
+
+.article_item {
+  font-family: robotomedium;
+  font-size: rem(28px);
+  color: #455a64;
+  font-weight: 500;
 }

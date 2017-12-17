@@ -19,8 +19,11 @@ html
                     .articles
                         article.article
                             h2.subtitle Обо мне
+                            .foto_me
+                                img.foto__me_main(src='images/img/main_photo.png', alt='#')
+                            h2.subtitle Кто я
                             p.article__text
-                                | Я веб разработчик из Новосибирска. Мне 27 лет.
+                                | Я веб разработчик из Санкт-Петербурга. Мне 28 лет.
                                 | Я занимаюсь разработкой современных сайтов
                                 | и приложений. Мне нравится делать интересные
                                 | и современные проекты.
@@ -32,5 +35,9 @@ html
                             p.article__text
                                 | Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи
                                 | на Backend. Но давайте по порядку.
+                            ul.article_list
+                                li.article_item Frontend
+                                li.article_item Backend
+                                li.article_item WorkFlow
             include ../common/footer
 

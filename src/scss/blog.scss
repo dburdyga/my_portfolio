@@ -16,7 +16,7 @@
   &:after{
     content:'';
     position: absolute;
-     width: rem(290px);
+    width: rem(290px);
     height: rem(200px);
     background:url("../images/icons/blog_header.svg");
     opacity: 0.1;
@@ -143,4 +143,12 @@
 
 .about__right {
   flex:1;
+}
+.arrow-scroll {
+  display: block;
+  position: absolute;
+  right: 48%;
+  top: 70%;
+  opacity: 0.5;
+  fill:white;
 }

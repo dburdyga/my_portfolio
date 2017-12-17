@@ -1,8 +1,5 @@
 node_modules/
 prepros-6.config
-.idea/
-*.lnk
-*.cab
-*.msi
-*.msm
-*.msp
+.idea
+.DS_Store
+

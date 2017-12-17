@@ -23,6 +23,27 @@
     top: 50%;
   }
 }
+
+.user-about{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+  align-items:center;
+  position: relative;
+
+  &:after{
+    content:'';
+    position: absolute;
+    width: 73.125rem;
+    height: 18.5rem;
+    background:url("../images/icons/portfolio_header.svg");
+    opacity: 0.1;
+    top: -21%;
+  }
+}
+
+
 .user-name{
   margin-top: rem(50px);
 }

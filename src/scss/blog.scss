@@ -172,7 +172,6 @@
 
 .about__left {
   flex:1;
-  background: grey;
 }
 
 .about__right {
@@ -181,4 +180,31 @@
 
 .subtitle {
   text-align: center;
+}
+
+.contacts__list {
+  font-family: robotomedium;
+  font-size: rem(16px);
+  color: #455a64;
+  font-weight: 500;
+}
+
+.block-subtitle {
+  font-family: bernier_regularregular;
+  font-size: rem(35px);
+  color: #455a64;
+  font-weight: 500;
+}
+
+.contacts__content {
+  display: flex;
+  width: 70%;
+}
+
+.contacts__content_left {
+  flex:1;
+}
+
+.contacts__content_right{
+  flex:1;
 }

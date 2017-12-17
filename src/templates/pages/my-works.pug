@@ -15,6 +15,34 @@ html(lang='ru')
                     a.arrow-scroll(href='#')
                         svg.icon__scroll(viewbox='0 0 26 16', width='26', height='16')
                             use(xlink:href='images/icons/sprite.svg#arrow_down')
+                section.blog1
+                    h2.subtitle Мои работы
+                main.main-blog
+                    .articles
+                        article.article__left
+                            h4.subtitle Сайт школы онлайн образования
+                            p.article__text
+                                | HTML, CSS, JAVASCRIPT
+                            button Посмотреть сайт
+                        article.article__right
+                            img.works_img(src='images/img/works.png', alt='#')
+                            img.works_img(src='images/img/works_1.png', alt='#')
+                            img.works_img(src='images/img/works_2.png', alt='#')
+                section.section.comments
+                    .google-map
+                    .map__contacts
+                        .contacts
+                            .contacts__title
+                                h2.subtitle Что обо мне говорят
+                            .contacts__content
+                                .contacts__content_left
+                                    p.contacts__content_left_text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+
+                                .contacts__content_right
+                                    p.contacts__content_left_text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+
+                include ../common/footer
+
 
 
 

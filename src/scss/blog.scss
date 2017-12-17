@@ -16,15 +16,15 @@
   &:after{
     content:'';
     position: absolute;
-     width: 290px;
-    height: 200px;
+     width: rem(290px);
+    height: rem(200px);
     background:url("../images/icons/blog_header.svg");
     opacity: 0.1;
     top: 50%;
   }
 }
 .user-name{
-  margin-top:50px;
+  margin-top: rem(50px);
 }
 .title{
   @include title;
@@ -39,17 +39,17 @@
 }
 .saidbar{
   width: 35%;
-  min-height:63.75rem;
+  min-height: 63.75rem;
   &__list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 50px;
+    padding: 0 rem(50px);
     text-align: right;
   }
   &__item{
-    margin-bottom:35px;
+    margin-bottom: rem(35px);
     &-active{
       .saidbar__link{
         @include robotobold;
@@ -58,11 +58,11 @@
         &:after{
           content: '';
           position: absolute;
-          width: 2px;
-          height: 41px;
+          width: rem(2px);
+          height: rem(41px);
           background: #00bfa5;
-          right: -15px;
-          top: -9px;
+          right: rem(-15px);
+          top: rem(-9px);
         }
       }
 
@@ -78,7 +78,7 @@
   padding:3.125rem;
 }
 .article{
- border-bottom: 4px solid #f1f1f2;
+ border-bottom: rem(4px) solid #f1f1f2;
   padding-bottom: rem(65px);
   margin-bottom: rem(65px);
 }

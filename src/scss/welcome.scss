@@ -7,19 +7,19 @@
 }
 
 .head {
-  padding: 20px;
+  padding: rem(20px);
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .log-in {
-  padding: 15px 25px;
-  border: 1px solid #f5f6f5;
+  padding: rem(15px) rem(25px);
+  border: rem(1px) solid #f5f6f5;
   color: #f5f6f5;
-  border-radius: 5px;
+  border-radius: rem(5px);
   font-family: 'robotomedium';
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 500;
   &:hover {
     background: #ffffff;
@@ -33,23 +33,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 380px;
-  height: 395px;
-  border-radius: 5px;
+  width: rem(380px);
+  height: rem(395px);
+  border-radius: rem(5px);
   background-color: rgb(252, 252, 252);
   opacity: 0.851;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 35px;
+  padding-top: rem(35px);
   border-bottom: none;
 }
 
 .foto {
   overflow: hidden;
-  width: 135px;
-  height: 135px;
+  width: rem(135px);
+  height: rem(135px);
   border-radius: 50%;
   &__user {
     max-width: 100%;
@@ -59,11 +59,11 @@
 .name {
   text-align: center;
   &__user {
-    font: 28px 'robotomedium';
+    font: rem(28px) 'robotomedium';
     color: #455a64;
   }
   &__description {
-    font: 16px 'robotoregular';
+    font: rem(16px) 'robotoregular';
     color: #455a64;
   }
 }
@@ -71,7 +71,7 @@
 .social {
   display: flex;
   &__item {
-    margin-right: 20px;
+    margin-right: rem(20px);
     &:last-child {
       margin: 0;
     }
@@ -94,9 +94,9 @@
   text-align: center;
   &__item {
     flex: 1 1 auto;
-    padding: 12px 25px;
-    border-right: 1px solid #ffffff;
-    border-bottom: 2px solid $aquamarine;
+    padding: rem(12px) rem(25px);
+    border-right: rem(1px) solid #ffffff;
+    border-bottom: rem(2px) solid $aquamarine;
     background: $aquamarine;
     &:hover {
       cursor: pointer;
@@ -104,16 +104,16 @@
     }
     &:last-child {
       border-right: none;
-      border-bottom-right-radius: 5px;
+      border-bottom-right-radius: rem(5px);
     }
     &:first-child {
       border-right: none;
-      border-bottom-left-radius: 5px;
-      border-right: 1px solid #ffffff;
+      border-bottom-left-radius: rem(5px);
+      border-right: rem(1px) solid #ffffff;
     }
   }
   &__link {
-    font: 16px 'robotomedium';
+    font: rem(16px) 'robotomedium';
     color: #ffffff;
   }
 }
@@ -121,15 +121,15 @@
 .dev {
   position: absolute;
   transform: translate(-50%, -50%);
-  bottom: 35px;
+  bottom: rem(35px);
   left: 50%;
-  height: 20px;
-  padding: 0 5px;
-  border-right: 2px solid #ffffff;
+  height: rem(20px);
+  padding: 0 rem(5px);
+  border-right: rem(2px) solid #ffffff;
   &:last-child {
     border-right: none;
   }
-  font: 16px 'robotolight';
+  font: rem(16px) 'robotolight';
   color: #ffffff;
 
 }
@@ -154,7 +154,7 @@
 }
 
 .password__field {
-  margin-bottom: 37px;
+  margin-bottom: rem(37px);
 }
 
 .radio__text_bold {

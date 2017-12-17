@@ -39,7 +39,7 @@
     height: 18.5rem;
     background:url("../images/icons/portfolio_header.svg");
     opacity: 0.1;
-    top: -21%;
+    top: -13%;
   }
 }
 
@@ -130,4 +130,17 @@
   font-size: rem(28px);
   color: #455a64;
   font-weight: 500;
+}
+
+.about {
+  display: flex;
+}
+
+.about__left {
+  flex:1;
+  background: grey;
+}
+
+.about__right {
+  flex:1;
 }

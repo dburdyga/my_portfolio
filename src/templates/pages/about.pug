@@ -40,5 +40,45 @@ html(lang='ru')
                                 li.article_item Frontend
                                 li.article_item Backend
                                 li.article_item WorkFlow
+                section.section.about
+                    .about__left
+                        .triangle.tringle_fill_white.about__left-triangle
+                        .about__left-title
+                            .block-title Обо мне
+                            .foto_me
+                                img.foto__me_main(src='images/img/daria.jpg', alt='#')
+                        .about__left-content
+                            .user-description
+                                .user-description__image
+                                    img.user-description__avatar
+                                .user-description__title
+                                    .block-subtitle Кто я
+                                .user-description__text.text-content
+                                    p.article__text
+                                    | Я веб разработчик из Санкт-Петербурга. Мне 28 лет.
+                                    | Я занимаюсь разработкой современных сайтов
+                                    | и приложений. Мне нравится делать интересные
+                                    | и современные проекты.
+                                    | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,
+                                    | как тут всё классно и красиво!
+                                    br
+                    .about__right
+                        .triangle.tringle_fill_beige.about__right-triangle
+                        .about__right-title
+                            .block-subtitle Чем я могу быть вам полезен
+                        .about__right-text.text-content
+                            p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                        .about__right-content
+                            ul.skills-list
+                                each item in ['Frontend', 'Backend', 'Workflow']
+                                    li.skills-list__item
+                                        .skills-row
+                                            .skills-row__title #{item}
+                                            ul.skills-row__list
+                                                each skill in ['Html5', 'css3', 'JavaScript']
+                                                    li.skills-row__item
+                                                        .skill
+                                                            svg.skill__circle
+                                                            .skill__title #{skill}
             include ../common/footer
 

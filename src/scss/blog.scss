@@ -132,6 +132,27 @@
   font-weight: 500;
 }
 
+.arrow-scroll {
+  display: block;
+  position: absolute;
+  right: 48%;
+  top: 70%;
+  opacity: 0.5;
+  fill: white;
+}
+.articles {
+  display: flex;
+}
+
+.article__left {
+  flex:1;
+}
+
+.article__right {
+  flex:1;
+}
+
+
 .about {
   display: flex;
 }
@@ -143,12 +164,4 @@
 
 .about__right {
   flex:1;
-}
-.arrow-scroll {
-  display: block;
-  position: absolute;
-  right: 48%;
-  top: 70%;
-  opacity: 0.5;
-  fill:white;
 }

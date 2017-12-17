@@ -45,7 +45,7 @@
         </section>
         <main class="main-blog">
           <div class="articles">
-            <article class="article">
+            <article class="article__left">
               <h2 class="subtitle">Обо мне</h2>
               <div class="foto_me"><img class="foto__me_main" src="images/img/daria.jpg" alt="#"></div>
               <h2 class="subtitle">Кто я</h2>
@@ -58,130 +58,166 @@
                 как тут всё классно и красиво!<br>
               </p>
             </article>
-            <article class="article">
+            <article class="article__right">
               <h2 class="subtitle">Чем я могу быть вам полезен</h2>
               <p class="article__text">
                 Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи
                 на Backend. Но давайте по порядку.
               </p>
-              <ul class="article_list">
-                <li class="article_item">Frontend</li>
-                <li class="article_item">Backend</li>
-                <li class="article_item">WorkFlow</li>
-              </ul>
+              <div class="article___right-content">
+                <ul class="skills-list">
+                  <li class="skills-list__item">
+                    <div class="skills-row">
+                      <div class="skills-row__title">Frontend</div>
+                      <ul class="skills-row__list">
+                        <li class="skills-row__item">
+                          <div class="skill">
+                            <svg class="skill__circle"></svg>
+                            <div class="skill__title">Html5</div>
+                          </div>
+                        </li>
+                        <li class="skills-row__item">
+                          <div class="skill">
+                            <svg class="skill__circle"></svg>
+                            <div class="skill__title">css3</div>
+                          </div>
+                        </li>
+                        <li class="skills-row__item">
+                          <div class="skill">
+                            <svg class="skill__circle"></svg>
+                            <div class="skill__title">JavaScript</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="skills-list__item">
+                    <div class="skills-row">
+                      <div class="skills-row__title">Backend</div>
+                      <ul class="skills-row__list">
+                        <li class="skills-row__item">
+                          <div class="skill">
+                            <svg class="skill__circle"></svg>
+                            <div class="skill__title">Html5</div>
+                          </div>
+                        </li>
+                        <li class="skills-row__item">
+                          <div class="skill">
+                            <svg class="skill__circle"></svg>
+                            <div class="skill__title">css3</div>
+                          </div>
+                        </li>
+                        <li class="skills-row__item">
+                          <div class="skill">
+                            <svg class="skill__circle"></svg>
+                            <div class="skill__title">JavaScript</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="skills-list__item">
+                    <div class="skills-row">
+                      <div class="skills-row__title">Workflow</div>
+                      <ul class="skills-row__list">
+                        <li class="skills-row__item">
+                          <div class="skill">
+                            <svg class="skill__circle"></svg>
+                            <div class="skill__title">Html5</div>
+                          </div>
+                        </li>
+                        <li class="skills-row__item">
+                          <div class="skill">
+                            <svg class="skill__circle"></svg>
+                            <div class="skill__title">css3</div>
+                          </div>
+                        </li>
+                        <li class="skills-row__item">
+                          <div class="skill">
+                            <svg class="skill__circle"></svg>
+                            <div class="skill__title">JavaScript</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </article>
           </div>
         </main>
-        <section class="section about">
-          <div class="about__left">
-            <div class="triangle tringle_fill_white about__left-triangle"></div>
-            <div class="about__left-title">
-              <div class="block-title">Обо мне</div>
-              <div class="foto_me"><img class="foto__me_main" src="images/img/daria.jpg" alt="#"></div>
-            </div>
-            <div class="about__left-content">
-              <div class="user-description">
-                <div class="user-description__image"><img class="user-description__avatar"></div>
-                <div class="user-description__title">
-                  <div class="block-subtitle">Кто я</div>
-                </div>
-                <div class="user-description__text text-content">
-                  <p class="article__text"></p>Я веб разработчик из Санкт-Петербурга. Мне 28 лет.
-                  Я занимаюсь разработкой современных сайтов
-                  и приложений. Мне нравится делать интересные
-                  и современные проекты.
-                  Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,
-                  как тут всё классно и красиво!<br>
-                </div>
+        <!--section.section.about-->
+        <!--    .about__left-->
+        <!--        .triangle.tringle_fill_white.about__left-triangle-->
+        <!--        .about__left-title-->
+        <!--            .block-title Обо мне-->
+        <!--            .foto_me-->
+        <!--                img.foto__me_main(src='images/img/daria.jpg', alt='#')-->
+        <!--        .about__left-content-->
+        <!--            .user-description-->
+        <!--                .user-description__image-->
+        <!--                    img.user-description__avatar-->
+        <!--                .user-description__title-->
+        <!--                    .block-subtitle Кто я-->
+        <!--                .user-description__text.text-content-->
+        <!--                    p.article__text-->
+        <!--                    | Я веб разработчик из Санкт-Петербурга. Мне 28 лет.-->
+        <!--                    | Я занимаюсь разработкой современных сайтов-->
+        <!--                    | и приложений. Мне нравится делать интересные-->
+        <!--                    | и современные проекты.-->
+        <!--                    | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,-->
+        <!--                    | как тут всё классно и красиво!-->
+        <!--                    br-->
+        <!--    .about__right-->
+        <!--        .triangle.tringle_fill_beige.about__right-triangle-->
+        <!--        .about__right-title-->
+        <!--            .block-subtitle Чем я могу быть вам полезен-->
+        <!--        .about__right-text.text-content-->
+        <!--            p.article__text-->
+        <!--                | Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи-->
+        <!--                | на Backend. Но давайте по порядку.-->
+        <!--        .about__right-content-->
+        <!--            ul.skills-list-->
+        <!--                each item in ['Frontend', 'Backend', 'Workflow']-->
+        <!--                    li.skills-list__item-->
+        <!--                        .skills-row-->
+        <!--                            .skills-row__title #{item}-->
+        <!--                            ul.skills-row__list-->
+        <!--                                each skill in ['Html5', 'css3', 'JavaScript']-->
+        <!--                                    li.skills-row__item-->
+        <!--                                        .skill-->
+        <!--                                            svg.skill__circle-->
+        <!--                                            .skill__title #{skill}-->
+        <section class="section map">
+          <div class="google-map"></div>
+          <div class="map__contacts">
+            <div class="contacts">
+              <div class="contacts__title">
+                <div class="block-subtitle">Контакты</div>
               </div>
-            </div>
-          </div>
-          <div class="about__right">
-            <div class="triangle tringle_fill_beige about__right-triangle"></div>
-            <div class="about__right-title">
-              <div class="block-subtitle">Чем я могу быть вам полезен</div>
-            </div>
-            <div class="about__right-text text-content">
-              <p class="article__text">
-                Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи
-                на Backend. Но давайте по порядку.
-              </p>
-            </div>
-            <div class="about__right-content">
-              <ul class="skills-list">
-                <li class="skills-list__item">
-                  <div class="skills-row">
-                    <div class="skills-row__title">Frontend</div>
-                    <ul class="skills-row__list">
-                      <li class="skills-row__item">
-                        <div class="skill">
-                          <svg class="skill__circle"></svg>
-                          <div class="skill__title">Html5</div>
-                        </div>
-                      </li>
-                      <li class="skills-row__item">
-                        <div class="skill">
-                          <svg class="skill__circle"></svg>
-                          <div class="skill__title">css3</div>
-                        </div>
-                      </li>
-                      <li class="skills-row__item">
-                        <div class="skill">
-                          <svg class="skill__circle"></svg>
-                          <div class="skill__title">JavaScript</div>
-                        </div>
-                      </li>
-                    </ul>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <div class="contacts-row">
+                    <div class="contacts-row__icon">skype</div>
+                    <div class="contacts-row__content">skype_kdn</div>
                   </div>
                 </li>
-                <li class="skills-list__item">
-                  <div class="skills-row">
-                    <div class="skills-row__title">Backend</div>
-                    <ul class="skills-row__list">
-                      <li class="skills-row__item">
-                        <div class="skill">
-                          <svg class="skill__circle"></svg>
-                          <div class="skill__title">Html5</div>
-                        </div>
-                      </li>
-                      <li class="skills-row__item">
-                        <div class="skill">
-                          <svg class="skill__circle"></svg>
-                          <div class="skill__title">css3</div>
-                        </div>
-                      </li>
-                      <li class="skills-row__item">
-                        <div class="skill">
-                          <svg class="skill__circle"></svg>
-                          <div class="skill__title">JavaScript</div>
-                        </div>
-                      </li>
-                    </ul>
+                <li class="contacts__item">
+                  <div class="contacts-row">
+                    <div class="contacts-row__icon">mail</div>
+                    <div class="contacts-row__content">dariaburdyga@gmail.com</div>
                   </div>
                 </li>
-                <li class="skills-list__item">
-                  <div class="skills-row">
-                    <div class="skills-row__title">Workflow</div>
-                    <ul class="skills-row__list">
-                      <li class="skills-row__item">
-                        <div class="skill">
-                          <svg class="skill__circle"></svg>
-                          <div class="skill__title">Html5</div>
-                        </div>
-                      </li>
-                      <li class="skills-row__item">
-                        <div class="skill">
-                          <svg class="skill__circle"></svg>
-                          <div class="skill__title">css3</div>
-                        </div>
-                      </li>
-                      <li class="skills-row__item">
-                        <div class="skill">
-                          <svg class="skill__circle"></svg>
-                          <div class="skill__title">JavaScript</div>
-                        </div>
-                      </li>
-                    </ul>
+                <li class="contacts__item">
+                  <div class="contacts-row">
+                    <div class="contacts-row__icon">phone</div>
+                    <div class="contacts-row__content">+7981 709 71 00</div>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts-row">
+                    <div class="contacts-row__icon">mark</div>
+                    <div class="contacts-row__content">Санкт-Петербург</div>
                   </div>
                 </li>
               </ul>

@@ -152,6 +152,19 @@
   flex:1;
 }
 
+.skills-row__title {
+  font-family: robotomedium;
+  font-size: rem(28px);
+  color: #455a64;
+  font-weight: 500;
+}
+
+.skills-list__item {
+  font-family: robotomedium;
+  font-size: rem(14px);
+  color: #00bfa5;
+  font-weight: 500;
+}
 
 .about {
   display: flex;
@@ -164,4 +177,8 @@
 
 .about__right {
   flex:1;
+}
+
+.subtitle {
+  text-align: center;
 }

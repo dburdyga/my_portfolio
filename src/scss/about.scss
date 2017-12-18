@@ -3,7 +3,27 @@
   color: #455a64;
   font-size: rem(46px);
   font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+  align-items:center;
+  position: relative;
+  &:after{
+    content:'';
+    position: absolute;
+    width: 31.125rem;
+    height: 11.5rem;
+    background:url("../images/icons/about_header.svg");
+    opacity: 0.1;
+    top: -107%;
+    right: -112%;
+  }
 }
+
+
+
+
 
 .articles_blog{
   width: 100%;
@@ -63,3 +83,5 @@
 .foto__me_main {
   margin-bottom: rem(20px);
 }
+
+

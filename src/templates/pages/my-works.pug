@@ -28,18 +28,21 @@ html(lang='ru')
                             img.works_img(src='images/img/works.png', alt='#')
                             img.works_img(src='images/img/works_1.png', alt='#')
                             img.works_img(src='images/img/works_2.png', alt='#')
-                section.section.comments
-                    .google-map
-                    .map__contacts
-                        .contacts
-                            .contacts__title
+                section.comments
+                        .comments__content
+                            .comments__content_title
                                 h2.subtitle Что обо мне говорят
-                            .contacts__content
-                                .contacts__content_left
-                                    p.contacts__content_left_text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-
-                                .contacts__content_right
-                                    p.contacts__content_left_text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                            .comments__description
+                                .comments__description_left
+                                    p.comments__description_left_text Эта девушка проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                                    .comments__description_left_title Ковальчук Дмитрий
+                                    .comments__description_left_position основатель Loftschool
+                                    img.comments__description_left_img(src='images/img/kovalchuk.png', alt='#')
+                                .comments__description_right
+                                    p.comments__description_right_text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                                    .comments__description_right_title Ковальчук Дмитрий
+                                    .comments__description_right_position основатель Loftschool
+                                    img.comments__description_right_img(src='images/img/sabanzev.png', alt='#')
 
                 include ../common/footer
 

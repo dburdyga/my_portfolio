@@ -118,17 +118,22 @@ html(lang='ru')
                             .contacts__title
                                 .block-subtitle Контакты
                             ul.contacts__list
-                                -
-                                    var contacts = [
-                                    ['skype', 'skype_kdn'],
-                                    ['mail', 'dariaburdyga@gmail.com'],
-                                    ['phone', '+7981 709 71 00'],
-                                    ['mark', 'Санкт-Петербург'],
-                                    ]
-                                each contact in contacts
-                                    li.contacts__item
-                                        .contacts-row
-                                            .contacts-row__icon #{contact[0]}
-                                            .contacts-row__content #{contact[1]}
+                                li.contacts__list-item
+                                    svg.icon__scroll_block(viewbox='0 0 26 16', width='26', height='16')
+                                        use(xlink:href='images/icons/sprite.svg#skype')
+                                    a.contacts__list-text skype_kdn
+                                li.contacts__list-item
+                                    svg.icon__scroll_block(viewbox='0 0 26 16', width='26', height='16')
+                                        use(xlink:href='images/icons/sprite.svg#envelope')
+                                    a.contacts__list-text dariaburdyga@gmail.com
+                                li.contacts__list-item
+                                    svg.icon__scroll_block(viewbox='0 0 26 16', width='26', height='16')
+                                        use(xlink:href='images/icons/sprite.svg#phone')
+                                    a.contacts__list-text +7981 709 71 00
+                                li.contacts__list-item
+                                    svg.icon__scroll_block(viewbox='0 0 26 16', width='26', height='16')
+                                        use(xlink:href='images/icons/sprite.svg#map_marker')
+                                    a.contacts__list-text Санкт-Петербург
+
             include ../common/footer
 

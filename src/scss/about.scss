@@ -103,27 +103,27 @@
 //  left: 12.2rem;
 //}
 
-.subtitle_blog:after {
-  content: '';
-  position: absolute;
-  width: 1.25rem;
-  height: .3125rem;
-  background-color: #373e42;
-  top: 38%;
-  left: 23.2rem;
-  opacity: 0.2;
-}
-
-.subtitle_blog:before {
-  content: '';
-  position: absolute;
-  width: 1.25rem;
-  height: .3125rem;
-  background-color: #373e42;
-  top: 38%;
-  left: 23.2rem;
-  opacity: 0.2;
-}
+//.subtitle_blog:after {
+//  content: '';
+//  position: absolute;
+//  width: 1.25rem;
+//  height: .3125rem;
+//  background-color: #373e42;
+//  top: 38%;
+//  left: 23.2rem;
+//  opacity: 0.2;
+//}
+//
+//.subtitle_blog:before {
+//  content: '';
+//  position: absolute;
+//  width: 1.25rem;
+//  height: .3125rem;
+//  background-color: #373e42;
+//  top: 38%;
+//  left: 23.2rem;
+//  opacity: 0.2;
+//}
 
 .skills-list-item {
   font-size: rem(28px);
@@ -135,4 +135,13 @@
   font-size: rem(14px);
   font-family: robotomedium;
   color:#00bfa5;
+}
+
+.skills-row__list-item {
+  display: inline-block;
+  margin: rem(15px);
+}
+
+.icon__scroll_block {
+  fill:#00bfa5;
 }

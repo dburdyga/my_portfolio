@@ -1,14 +1,34 @@
-.subtitle {
+.subtitle_works {
+  font: 2.1875rem bernier_regularregular;
+  color: #455a64;
+  margin-bottom: 1.875rem;
+  text-align: center;
+  padding-top: rem(28px);
+  font-size:rem(63px);
+
 &:after{
   content:'';
   position: absolute;
   width: 31.125rem;
   height: 11.5rem;
-  background:url("../images/icons/about_header.svg");
+  background:url("../images/icons/works_header.svg");
   opacity: 0.1;
-  top: -107%;
-  right: -112%;
+  top: 26%;
+  right: 29%;
 }
+}
+
+.articles_works {
+  width: 100%;
+  padding:3.125rem;
+  display: flex;
+  background: #f0efe9;
+}
+
+.main-works{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .comments__description {

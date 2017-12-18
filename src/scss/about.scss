@@ -83,22 +83,50 @@
 }
 
 
-.article__left_title:before {
+//.article__left_title:before {
+//  content: '';
+//  position: absolute;
+//  width: 1.25rem;
+//  height: .3125rem;
+//  background-color: rgba(255,255,255,.5);
+//  top: 51%;
+//  left: 12.2rem;
+//}
+//
+//.article__left_title:after {
+//  content: '';
+//  position: absolute;
+//  width: 1.25rem;
+//  height: .3125rem;
+//  background-color: rgba(255,255,255,.5);
+//  top: 51%;
+//  left: 12.2rem;
+//}
+
+.subtitle_blog:after {
   content: '';
   position: absolute;
   width: 1.25rem;
   height: .3125rem;
-  background-color: rgba(255,255,255,.5);
-  top: 78%;
-  left: 41.2rem;
+  background-color: #373e42;
+  top: 38%;
+  left: 23.2rem;
+  opacity: 0.2;
 }
 
-.article__left_title:after {
+.subtitle_blog:before {
   content: '';
   position: absolute;
   width: 1.25rem;
   height: .3125rem;
-  background-color: rgba(255,255,255,.5);
-  top: 78%;
-  right: 41.2rem;
+  background-color: #373e42;
+  top: 38%;
+  left: 23.2rem;
+  opacity: 0.2;
+}
+
+.skills-list-item {
+  font-size: rem(28px);
+  font-family: robotomedium;
+  color:#455a64;
 }

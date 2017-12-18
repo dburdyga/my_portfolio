@@ -51,17 +51,23 @@ html(lang='ru')
                                 | Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи
                                 | на Backend. Но давайте по порядку.
                             .article___right-content
-                                ul.skills-list
-                                    each item in ['Frontend', 'Backend', 'Workflow']
-                                        li.skills-list__item
-                                            .skills-row
-                                                .skills-row__title #{item}
-                                                ul.skills-row__list
-                                                    each skill in ['Html5', 'css3', 'JavaScript']
-                                                        li.skills-row__item
-                                                            .skill
-                                                                svg.skill__circle
-                                                                .skill__title #{skill}
+                                .skills-list
+                                    .skills-list-item Frontend
+                                        ul.skills-row__list
+                                            li.skills-row__list-item Html5
+                                            li.skills-row__list-item css3
+                                            li.skills-row__list-item JavaScript
+                                    .skills-list-item Backend
+                                        ul.skills-row__list
+                                            li.skills-row__list-item Html5
+                                            li.skills-row__list-item css3
+                                            li.skills-row__list-item JavaScript
+                                    .skills-list-item Workflow
+                                        ul.skills-row__list
+                                            li.skills-row__list-item Html5
+                                            li.skills-row__list-item css3
+                                            li.skills-row__list-item JavaScript
+
                 //section.section.about
                 //    .about__left
                 //        .triangle.tringle_fill_white.about__left-triangle

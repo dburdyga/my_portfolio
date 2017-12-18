@@ -4,3 +4,33 @@
   font-size: rem(46px);
   font-weight: 500;
 }
+
+.articles_blog{
+  width: 65%;
+  padding:3.125rem;
+  display: flex;
+}
+
+.article{
+  border-bottom: rem(4px) solid #f1f1f2;
+  padding-bottom: rem(65px);
+  margin-bottom: rem(65px);
+}
+
+.article__data{
+  margin-bottom: rem(30px);
+}
+
+.article__text{
+  @include robotoreg;
+  margin-bottom: rem(20px);
+}
+
+
+.article__left {
+  flex:1;
+}
+
+.article__right {
+  flex:1;
+}

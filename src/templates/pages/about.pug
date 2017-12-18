@@ -1,5 +1,14 @@
 doctype html
 html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+        meta(content='ie=edge', http-equiv='x-ua-compatible')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        link(rel='shortcut icon', type='image/x-icon', href='images/favicon/favicon.ico')
+        link(rel='stylesheet', href='css/style.min.css')
+        script(src='js/bundle.js', defer='')
+        title About
     include ../common/head
 
     body
@@ -19,7 +28,7 @@ html(lang='ru')
                 main.main-blog
                     .articles
                         article.article__left
-                            h2.subtitle Обо мне
+                            h1.article__left_title Обо мне
                             .foto_me
                                 img.foto__me_main(src='images/img/daria.jpg', alt='#')
                             h2.subtitle Кто я

@@ -45,11 +45,9 @@
 
 
 .user-name{
-  margin-top: rem(50px);
+  margin-top: rem(30px);
 }
-.title{
-  @include title;
-}
+
 .user__text{
   @include roboto;
 }
@@ -125,12 +123,6 @@
   }
 }
 
-.article_item {
-  font-family: robotomedium;
-  font-size: rem(28px);
-  color: #455a64;
-  font-weight: 500;
-}
 
 .arrow-scroll {
   display: block;
@@ -140,17 +132,7 @@
   opacity: 0.5;
   fill: white;
 }
-.articles {
-  display: flex;
-}
 
-.article__left {
-  flex:1;
-}
-
-.article__right {
-  flex:1;
-}
 
 .skills-row__title {
   font-family: robotomedium;
@@ -178,9 +160,6 @@
   flex:1;
 }
 
-.subtitle {
-  text-align: center;
-}
 
 .contacts__list {
   font-family: robotomedium;
@@ -207,4 +186,19 @@
 
 .contacts__content_right{
   flex:1;
+}
+
+
+.title {
+  font-family: robotomedium;
+  color: #fff;
+  font-size: rem(35px);
+  font-weight: 500;
+}
+
+.blog_title {
+  font-family: bernier_regularregular;
+  color: #fff;
+  font-size: rem(46px);
+  font-weight: 500;
 }

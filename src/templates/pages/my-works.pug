@@ -25,9 +25,13 @@ html(lang='ru')
                                 | HTML, CSS, JAVASCRIPT
                             button.works Посмотреть сайт
                         article.article__right
+                            .article__right_main
                             img.works_img(src='images/img/works.png', alt='#')
-                            img.works_img(src='images/img/works_1.png', alt='#')
-                            img.works_img(src='images/img/works_2.png', alt='#')
+                            .article__right_slides
+                                .article__right_slides_left
+                                    img.works_img(src='images/img/works_1.png', alt='#')
+                                .article__right_slides_right
+                                    img.works_img(src='images/img/works_2.png', alt='#')
                 section.comments
                         .comments__content
                             .comments__content_title

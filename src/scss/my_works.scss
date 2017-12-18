@@ -116,3 +116,14 @@
   font-size: rem(16px);
   color: white;
 }
+
+.article__right_slides {
+  display: flex;
+}
+
+.article__right_slides_left {
+  flex:1;
+}
+.article__right_slides_right {
+  flex:1;
+}

@@ -6,9 +6,23 @@
 }
 
 .articles_blog{
-  width: 65%;
+  width: 100%;
   padding:3.125rem;
   display: flex;
+}
+
+.article__left-content {
+  display: flex;
+  width: 100%;
+}
+.article__left-content_title {
+  flex:1;
+  width: 30%;
+}
+
+.article__left-content_text {
+  flex:2;
+  width: 70%;
 }
 
 .article{
@@ -29,8 +43,23 @@
 
 .article__left {
   flex:1;
+  padding: rem(30px);
 }
 
 .article__right {
   flex:1;
+  padding: rem(30px);
+}
+
+
+.subtitle_blog {
+  text-align: center;
+  font-family: bernier_regularregular;
+  font-size: rem(35px);
+  color: #455a64;
+  margin-bottom: 1.875rem;
+}
+
+.foto__me_main {
+  margin-bottom: rem(20px);
 }

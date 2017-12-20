@@ -214,6 +214,8 @@
 }
 
 .form__button_send {
+  font-family: robotomedium;
+  font-size: rem(16px);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -226,13 +228,14 @@
 }
 
 .form__button_clear {
+  font-family: robotomedium;
+  font-size: rem(16px);
   position: absolute;
   bottom: 0;
   right: 0;
   width: 50%;
   height: 2.8125rem;
   background: #06b39e;
-  font-size: 1rem;
   color: #fff;
   border: .0625rem solid transparent;
 }
@@ -248,3 +251,7 @@
   fill: #b4d0d2;
 }
 
+.blur{
+  filter: blur(3px);
+
+}

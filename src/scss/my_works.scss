@@ -21,6 +21,7 @@
 
 
 .subtitle__comments {
+  margin-top: rem(32px);
   font: 2.1875rem bernier_regularregular;
   color: #455a64;
   text-align: center;
@@ -46,7 +47,7 @@
     height: 11.5rem;
     background:url("../images/icons/about_header.svg");
     opacity: 0.1;
-    top: 70%;
+    top: -51%;
     right: 29%;
   }
 
@@ -65,7 +66,7 @@
   height: 10.5rem;
   background:url("../images/icons/works_header.svg");
   opacity: 0.1;
-  top: 23%;
+  top: 21%;
   right: 29%;
 }
 }
@@ -88,20 +89,29 @@
   font-size: rem(16px);
   color: #373e42;
   display: flex;
-  width: 100%;
-  padding: 137px;
+  padding: 5.5625rem;
+  justify-content: center;
 }
 
-.comments__description_left {
-  flex: 1;
-  width:40%;
+.comments__description_left, .comments__description_right {
+  width:33%;
+  margin: rem(10px);
+}
+
+.comments__description_content {
+  display: flex;
+  margin-top: 1.25rem;
+  align-items: center;
+}
+
+.comments__description_img {
+  margin-right: .9375rem;
+}
+.comments__description_text {
+
 }
 
 
-.comments__description_right {
-  flex: 1;
-  width:40%;
-}
 
 .comments__description_title {
   font-family: robotobold;
@@ -146,7 +156,7 @@
 
 .block-form {
   margin: 0 auto 3.75rem;
-  background:url("../images/background/blur.png");
+  background:url("../images/background/blur.png") center top no-repeat;
   width: 23.75rem;
   padding: 1.875rem .9375rem 0;
   -webkit-border-top-left-radius: .3125rem;

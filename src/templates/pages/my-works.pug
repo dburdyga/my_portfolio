@@ -17,7 +17,7 @@ html(lang='ru')
                             use(xlink:href='images/icons/sprite.svg#arrow_down')
                 section.works_title
                     h2.subtitle_works Мои работы
-                main.main-works
+                section.main-works
                     .articles_works
                         article.article__left
                             h4.subtitle Сайт школы онлайн образования
@@ -33,20 +33,34 @@ html(lang='ru')
                                 .article__right_slides_right
                                     img.works_img(src='images/img/works_2.png', alt='#')
                 section.comments
-                        .comments__content
-                            .comments__content_title
-                                h2.subtitle__comments Что обо мне говорят
-                            .comments__description
-                                .comments__description_left
-                                    p.comments__description_left_text Эта девушка проходила обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                                    .comments__description_title Ковальчук Дмитрий
-                                    .comments__description_position основатель Loftschool
-                                    img.comments__description_img(src='images/img/kovalchuk.png', alt='#')
-                                .comments__description_right
-                                    p.comments__description_right_text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
-                                    .comments__description_title Сабанцев Владимир
-                                    .comments__description_position преподаватель
-                                    img.comments__description_img(src='images/img/sabanzev.png', alt='#')
+                    .comments__content
+                        .comments__content_title
+                            h2.subtitle__comments Что обо мне говорят
+                        .comments__description
+                            .comments__description_left
+                                img.loft-description__img(src="images/img/quotes.png" alt="quotes")
+                                p.comments__description_left_text Эта девушка проходила обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                                .comments__description_title Ковальчук Дмитрий
+                                .comments__description_position основатель Loftschool
+                                img.comments__description_img(src='images/img/kovalchuk.png', alt='#')
+                            .comments__description_right
+                                img.loft-description__img(src="images/img/quotes.png" alt="quotes")
+                                p.comments__description_right_text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                                .comments__description_title Сабанцев Владимир
+                                .comments__description_position преподаватель
+                                img.comments__description_img(src='images/img/sabanzev.png', alt='#')
+                        .block-form
+                            form.form
+                                h2.subtitle.subtitle-form Связаться со мной
+                                input(type=text placeholder=Имя).form__input.form__name
+                                input(type=email placeholder=Email).form__input.form__email
+                                textarea(placeholder=Ваше сообщение).form__message
+                                .form__button
+                                    button.form__button_send Отправить
+                                    button.form__button_clear Очистить
+                        a.arrow-scroll_up(href="#")
+                            svg.icon__scroll_up(viewbox="0 0 50 50" width="25" height="25")
+                                use(xlink:href="images/icons/sprite.svg#portf_arrow_up")
 
                 include ../common/footer
 

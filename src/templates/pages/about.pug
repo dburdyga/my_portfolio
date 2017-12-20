@@ -8,6 +8,7 @@ html(lang='ru')
         link(rel='shortcut icon', type='image/x-icon', href='images/favicon/favicon.ico')
         link(rel='stylesheet', href='css/style.min.css')
         script(src='js/bundle.js', defer='')
+        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQqo7U8AUECEzmP4BBuDooBysmapLAVPk&amp;callback=initMap", async defer)
         title About
     include ../common/head
 
@@ -116,12 +117,12 @@ html(lang='ru')
                     .map__contacts
                         .contacts
                             .contacts__title
-                                .block-subtitle Контакты
+                                .block-subtitle.contacts-subtitle Контакты
                             ul.contacts__list
                                 li.contacts__list-item
                                     svg.icon__scroll_block(viewbox='0 0 26 16', width='26', height='16')
                                         use(xlink:href='images/icons/sprite.svg#skype')
-                                    a.contacts__list-text skype_kdn
+                                    a.contacts__list-text daria burdyga
                                 li.contacts__list-item
                                     svg.icon__scroll_block(viewbox='0 0 26 16', width='26', height='16')
                                         use(xlink:href='images/icons/sprite.svg#envelope')

@@ -143,11 +143,66 @@
 .icon__scroll_block {
   fill:#00bfa5;
 }
+//
+//.contacts{
+//  width: rem(380px);
+//  height: rem(290px);
+//  background: grey;
+//  text-align: center;
+//  padding: rem(49px);
+//}
 
-.contacts{
-  width: rem(380px);
-  height: rem(290px);
-  background: grey;
+.map {
+  position: relative;
+}
+.google-map {
+  height: 100%;
+}
+
+.map__contacts {
+  width: 23.5625rem;
+  height: 18.3125rem;
+  background-color: rgba(252,252,252,.85);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
   text-align: center;
-  padding: rem(49px);
+  padding: 2.1875rem;
+  -webkit-border-radius: .3125rem;
+  border-radius: .3125rem;
+}
+
+.contacts__list-item {
+  margin: 1.5625rem 0;
+}
+
+.block-subtitle:before {
+  content: '';
+  position: absolute;
+  width: 1.25rem;
+  height: .25rem;
+  background-color: rgba(55,62,66,.2);
+  top: 20%;
+  left: 9.625rem;
+}
+
+.block-subtitle:after {
+  content: '';
+  position: absolute;
+  width: 1.25rem;
+  height: .25rem;
+  background-color: rgba(55,62,66,.2);
+  top: 20%;
+  right: 9.625rem;
+}
+
+.contacts-subtitle:after {
+  right: 5.625rem;
+}
+
+.contacts-subtitle:before {
+  left: 5.625rem;
 }

@@ -41,3 +41,13 @@
     transition: .5s;
   }
 }
+
+
+.footer-map {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  opacity: .7;
+}

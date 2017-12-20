@@ -206,3 +206,15 @@
 .contacts-subtitle:before {
   left: 5.625rem;
 }
+
+.main-blog {
+position: relative;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}

@@ -154,7 +154,9 @@
 
 .map {
   position: relative;
+  height: 100vh;
 }
+
 .google-map {
   height: 100%;
 }
@@ -208,13 +210,14 @@
 }
 
 .main-blog {
-position: relative;
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
-display: flex;
--webkit-box-pack: justify;
--webkit-justify-content: space-between;
--ms-flex-pack: justify;
-justify-content: space-between;
+  background: #efeee9;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }

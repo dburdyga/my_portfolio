@@ -111,8 +111,6 @@
 
 }
 
-
-
 .comments__description_title {
   font-family: robotobold;
   font-size: rem(16px);
@@ -154,19 +152,8 @@
   flex:1;
 }
 
-.block-form {
-  margin: 0 auto 3.75rem;
-  background:url("../images/background/blur.png") center top no-repeat;
-  width: 23.75rem;
-  padding: 1.875rem .9375rem 0;
-  -webkit-border-top-left-radius: .3125rem;
-  border-top-left-radius: .3125rem;
-  -webkit-border-top-right-radius: .3125rem;
-  border-top-right-radius: .3125rem;
-  position: relative;
-}
-
 .form {
+  z-index: 2000;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -202,6 +189,9 @@
 }
 
 .form__message {
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 2000;
   margin-bottom: 3.75rem;
   width: 95%;
   height: 9.0625rem;
@@ -252,6 +242,40 @@
 }
 
 .blur{
-  filter: blur(3px);
+  filter: blur(0.25rem);
+  position: absolute;
+  width: 100%;
+  height: 27.5rem;
+  top: 0;
+  z-index: 0;
+  background: #fff;
+  opacity: .6;
+  right: 0%;
+}
+
+.block-form {
+  margin: 0 auto 3.75rem;
+  background:url("../images/background/blur.png") center top no-repeat;
+  width: 23.75rem;
+  padding: 1.875rem .9375rem 0;
+  -webkit-border-top-left-radius: .3125rem;
+  border-top-left-radius: .3125rem;
+  -webkit-border-top-right-radius: .3125rem;
+  border-top-right-radius: .3125rem;
+  position: relative;
 
 }
+
+.subtitle-form {
+  z-index: 2000;
+}
+
+.form__name {
+  z-index: 2000;
+}
+
+.form__email {
+  z-index: 2000;
+}
+
+

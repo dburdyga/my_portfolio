@@ -78,7 +78,6 @@
 
 .articles_works {
   width: 100%;
-  padding:3.125rem;
   display: flex;
   background: #f0efe9;
 }
@@ -111,9 +110,6 @@
 
 .comments__description_img {
   margin-right: .9375rem;
-}
-.comments__description_text {
-
 }
 
 .comments__description_title {
@@ -157,7 +153,7 @@
   flex:1;
 }
 #article_color{
-  background: none;
+  height: 100%;
 }
 
 .form {
@@ -288,7 +284,12 @@
   margin: rem(148px);
   padding: 0;
 }
-
+.works_img_big {
+  width: 80%;
+  margin-left: rem(82px);
+  margin-top: rem(20px);
+  margin-bottom: rem(22px);
+}
 
 .article__left {
   flex:1;
@@ -302,4 +303,8 @@
   width: 50%;
   background: #eeebdf;
   padding: 0 .3125rem 0 2.1875rem;
+}
+
+#article_color {
+  padding: 0;
 }

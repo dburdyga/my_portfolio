@@ -51,8 +51,9 @@
     opacity: 0.1;
     top: -51%;
     right: 29%;
+    background-size: 83%;
+    background-repeat: no-repeat;
   }
-
 }
 .subtitle_works {
   font: 2.1875rem bernier_regularregular;
@@ -70,6 +71,8 @@
   opacity: 0.1;
   top: 21%;
   right: 29%;
+  background-size: 83%;
+  background-repeat: no-repeat;
 }
 }
 
@@ -144,7 +147,7 @@
 }
 
 .article__right_slides {
-  display: flex;
+  display: block;
 }
 
 .article__right_slides_left {
@@ -152,6 +155,9 @@
 }
 .article__right_slides_right {
   flex:1;
+}
+#article_color{
+  background: none;
 }
 
 .form {

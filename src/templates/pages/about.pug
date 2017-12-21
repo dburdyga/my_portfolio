@@ -135,6 +135,33 @@ html(lang='ru')
                                     svg.icon__scroll_block(viewbox='0 0 26 16', width='26', height='16')
                                         use(xlink:href='images/icons/sprite.svg#map_marker')
                                     a.contacts__list-text Санкт-Петербург
-
-            include ../common/footer
+            footer.footer.footer-map
+                .footer__up
+                    ul.footer-nav
+                        li.footer-nav__item
+                            a.footer-nav__link(href='my-works.html') Мои работы
+                        li.footer-nav__item
+                            a.footer-nav__link(href='about.html') Обо мне
+                        li.footer-nav__item
+                            a.footer-nav__link(href='blog.html') Блог
+                        li.footer-nav__item
+                            a.footer-nav__link(href='index.html') Авторизация
+                    ul.social
+                        li.social__item
+                            a.social__link(href='#')
+                                svg.social__icon_footer(viewbox='0 0 50 50', width='32', height='37')
+                                    use(xlink:href='images/icons/sprite.svg#vk_round')
+                        li.social__item
+                            a.social__link(href='#')
+                                svg.social__icon_footer(viewbox='0 0 50 50', width='32', height='37')
+                                    use(xlink:href='images/icons/sprite.svg#github_round')
+                        li.social__item
+                            a.social__link(href='#')
+                                svg.social__icon_footer(viewbox='0 0 50 50', width='32', height='37')
+                                    use(xlink:href='images/icons/sprite.svg#in_round')
+                .footer__down
+                    p.footer__description
+                        | Я веб-разработчик из Санкт-Петербурга, и этот сайт я сделала в рамках обучения в Школе онлайн образования
+                        | LoftSchool.
+                    p.footer__dev © Бурдыга Дарья | создано с любовью в LoftSchool | 2017
 

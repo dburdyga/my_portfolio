@@ -124,6 +124,7 @@
 //}
 
 
+
 .container {
   background: #efeee9;
 }
@@ -162,8 +163,19 @@
   height: 100vh;
 }
 
+#map {
+  position: relative;
+  overflow: hidden;
+}
+
+
 .google-map {
   height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(229, 227, 223);
 }
 
 .map__contacts {

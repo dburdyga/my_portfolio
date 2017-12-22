@@ -7,8 +7,6 @@ html(lang='ru')
         meta(http-equiv='X-UA-Compatible', content='ie=edge')
         link(rel='shortcut icon', type='image/x-icon', href='images/favicon/favicon.ico')
         link(rel='stylesheet', href='css/style.min.css')
-        script(src='js/bundle.js', defer='')
-        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQqo7U8AUECEzmP4BBuDooBysmapLAVPk&amp;callback=initMap", async defer)
         title About
     include ../common/head
 
@@ -26,6 +24,10 @@ html(lang='ru')
                     a.arrow-scroll(href='#')
                         svg.icon__scroll(viewbox='0 0 26 16', width='26', height='16')
                             use(xlink:href='images/icons/sprite.svg#arrow_down')
+                    .about__triangle
+                        svg.about__triangle_white(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1000 85", preserveAspectRatio="none")
+                            polygon.about__triangle_left(fill="#efeee9", points="0,0 0,86 500.8,86 500.8,75.5")
+                            polygon.about__triangle_right(fill="#eeebdf" points="1000,0 1000,86 500,86 500,75.5")
                 main.main-blog
                     .articles_blog
                         article.article__left
@@ -165,3 +167,6 @@ html(lang='ru')
                         | LoftSchool.
                     p.footer__dev © Бурдыга Дарья | создано с любовью в LoftSchool | 2017
 
+        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQqo7U8AUECEzmP4BBuDooBysmapLAVPk&amp;callback=initMap", async defer)
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(src='js/bundle.js', defer='')

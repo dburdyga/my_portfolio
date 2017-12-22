@@ -11,40 +11,65 @@
     <div class="wrapper">
       <section class="welcome">
         <div class="user">
-          <div class="login">
-            <p class="login__user">Авторизуйтесь</p>
-            <div class="authorization-block">
-              <form class="form">
-                <ul class="authorization__list">
-                  <li class="authorization__border-line"></li>
-                  <li class="authorization__login">
-                    <div class="logo__icon">
-                      <svg class="icon__svg"></svg>
-                    </div>
-                    <input class="login__field" type="text" name="login" placeholder="Логин">
-                  </li>
-                  <li class="authorization__password">
-                    <div class="logo__icon">
-                      <svg class="icon__svg"></svg>
-                    </div>
-                    <input class="password__field" type="text" name="password" placeholder="Пароль">
-                  </li>
-                  <li class="authorization__checkbox">
-                    <input class="checkbox__field" type="checkbox" checked><span class="checkbox__text">Я человек</span>
-                  </li>
-                  <li class="authorization__radio">
-                    <div class="radio__text_bold">Вы точно не робот?</div>
-                    <input type="radio" checked><span class="radio__text">Да</span>
-                    <input type="radio"><span class="radio__text">Не уверен</span>
-                  </li>
-                </ul>
-              </form>
+          <form class="user-login" style="transform: translate(-50%, -50%);">
+            <h2 class="subtitle">Авторизуйтесь</h2>
+            <div class="login">
+              <div class="login__svg"></div>
+              <input class="login__user" type="text" placeholder="Логин">
             </div>
-          </div>
-          <ul class="navigation">
-            <li class="navigation__item"><a class="navigation__link" href="index.html">На главную</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Войти</a></li>
-          </ul>
+            <div class="login">
+              <div class="password__svg"></div>
+              <input class="login__user" type="password" placeholder="Пароль">
+            </div>
+            <div class="test">
+              <label class="test__label">
+                <input class="test__checkbox" type="checkbox"><span class="checkbox-custom"></span><span class="label-custom">Я человек</span>
+              </label>
+              <h3 class="test__question">Вы точно не робот?</h3>
+              <div class="test__radio-button">
+                <label class="test__label">
+                  <input class="test__radio" type="radio"><span class="radio-custom"></span><span class="label-custom">Да</span>
+                </label>
+                <label class="test__label">
+                  <input class="test__radio" type="radio"><span class="radio-custom"></span><span class="label-custom">Не уверен</span>
+                </label>
+              </div>
+            </div>
+            <ul class="navigation">
+              <li class="navigation__item"><a class="navigation__link" href="index.html">На главную</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Войти</a></li>
+            </ul>
+          </form>
+          <!--.login-->
+          <!--    p.login__user Авторизуйтесь-->
+          <!--    .authorization-block-->
+          <!--        form.form-->
+          <!--            ul.authorization__list-->
+          <!--                li.authorization__border-line-->
+          <!--                li.authorization__login-->
+          <!--                    .logo__icon-->
+          <!--                        svg.icon__svg-->
+          <!--                    --->
+          <!--                        var inputAtr = {-->
+          <!--                        type: 'text',-->
+          <!--                        type_check: 'checkbox',-->
+          <!--                        type_rad: 'radio',-->
+          <!--                        name: 'login',-->
+          <!--                        pass: 'password'}-->
+          <!--                    input(type = inputAtr.type, name = inputAtr.name placeholder="Логин").login__field-->
+          <!--                li.authorization__password-->
+          <!--                    .logo__icon-->
+          <!--                        svg.icon__svg-->
+          <!--                    input(type = inputAtr.type, name = inputAtr.pass placeholder="Пароль").password__field-->
+          <!--                li.authorization__checkbox-->
+          <!--                    input(type = inputAtr.type_check checked).checkbox__field-->
+          <!--                    span.checkbox__text Я человек-->
+          <!--                li.authorization__radio-->
+          <!--                    .radio__text_bold Вы точно не робот?-->
+          <!--                    input(type = inputAtr.type_rad checked)-->
+          <!--                    span.radio__text Да-->
+          <!--                    input(type = inputAtr.type_rad)-->
+          <!--                    span.radio__text Не уверен-->
         </div>
         <p class="dev">© Бурдыга Дарья | создано с любовью в LoftSchool | 2017</p>
       </section>

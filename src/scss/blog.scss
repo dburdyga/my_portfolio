@@ -2,7 +2,6 @@
   @extend .welcome;
   background:url("../images/background/blog_bg.jpg")center bottom no-repeat;
   background-size:cover;
-  clip-path: polygon(0px 0%, 200% 0px, 50% 100%, 0px 67%, 0px 100px);
 }
 
 .user-blog{

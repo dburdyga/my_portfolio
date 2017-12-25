@@ -9,33 +9,32 @@ html(lang='ru')
     body
         .wrapper
             section.welcome
-                .user
-                    form.user-login(style='transform: translate(-50%, -50%)')
-                        h2.subtitle Авторизуйтесь
-                        .login
-                            .login__svg
-                            input(type="text", placeholder="Логин").login__user
-                        .login
-                            .password__svg
-                            input(type="password", placeholder="Пароль").login__user
-                        .test
+                form.user-login(style='transform: translate(-50%, -50%)')
+                    h2.subtitle Авторизуйтесь
+                    .login
+                        .login__svg
+                        input(type="text", placeholder="Логин").login__user
+                    .login
+                        .password__svg
+                        input(type="password", placeholder="Пароль").login__user
+                    .test
+                        label.test__label
+                            input(type="checkbox").test__checkbox
+                            span.checkbox-custom
+                            span.label-custom Я человек
+                        h3.test__question Вы точно не робот?
+                        .test__radio-button
                             label.test__label
-                                input(type="checkbox").test__checkbox
-                                span.checkbox-custom
-                                span.label-custom Я человек
-                            h3.test__question Вы точно не робот?
-                            .test__radio-button
-                                label.test__label
-                                    input(type="radio").test__radio
-                                    span.radio-custom
-                                    span.label-custom Да
-                                label.test__label
-                                    input(type="radio").test__radio
-                                    span.radio-custom
-                                    span.label-custom Не уверен
-                        ul.navigation
-                            li.navigation__item
-                                a.navigation__link(href='index.html') На главную
-                            li.navigation__item
-                                a.navigation__link(href='#') Войти
+                                input(type="radio").test__radio
+                                span.radio-custom
+                                span.label-custom Да
+                            label.test__label
+                                input(type="radio").test__radio
+                                span.radio-custom
+                                span.label-custom Не уверен
+                    ul.navigation
+                        li.navigation__item
+                            a.navigation__link(href='index.html') На главную
+                        li.navigation__item
+                            a.navigation__link(href='#') Войти
                 p.dev © Бурдыга Дарья | создано с любовью в LoftSchool | 2017

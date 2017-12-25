@@ -246,7 +246,7 @@
 }
 
 .blur{
-  background: url("../images/background/blur.png") center top no-repeat;
+  background: url("../images/background/bg_blur.png") center top no-repeat;
   filter: blur(0.25rem);
   position: absolute;
   width: 100%;
@@ -261,28 +261,43 @@
 
 .blur__img {
   display: block;
-  max-widt:100%
+  max-width:100%;
+}
+
+.blur__background {
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  min-width: 900px;
 }
 
 .blur__form-wrapper {
-  position: absolute;
+  //position: absolute;
   top: 50%;
   left: 50%;
   width: 300px;
   height: 400px;
+  margin-left: -130px;
+  margin-top: -200px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
 }
 
 .blur__form {
   width: 100%;
   height: 100%;
+  background-size: 900px;
+  background-position: -260px -158px;
   filter: blur(20px);
-  background: url("../images/background/blur.png") center top no-repeat;
+  background: url("../images/background/bg.png") center top no-repeat;
 }
 
 
   .block-form {
     margin: 0 auto 3.75rem;
-    background:url("../images/background/blur.png") center top no-repeat;
+    background: url("../images/background/bg.png") center top no-repeat;
     width: 23.75rem;
     padding: 1.875rem .9375rem 0;
     -webkit-border-top-left-radius: .3125rem;
@@ -332,4 +347,3 @@
   #article_color {
     padding: 0;
   }
-}

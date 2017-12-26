@@ -65,6 +65,9 @@
   align-items: center;
   padding-top: rem(35px);
   border-bottom: none;
+  @--visible {
+    overflow: hidden;
+  }
 }
 
 .foto {
@@ -217,11 +220,10 @@
   border-bottom: none;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transform: rotateY(180deg) translate(50%,-50%);
-  transform: rotateY(180deg) translate(50%,-50%);
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
+  transform: rotateY(180deg) translate(50%,-50%);
 }
 
 .subtitle {

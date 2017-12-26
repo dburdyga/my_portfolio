@@ -36,3 +36,12 @@ window.onscroll = function () {
 
     parallax.init(wScroll);
 }
+
+
+$(document).ready(function(){
+    $(".log-in").click(function(){
+        $(".user").toggleClass("user-login");
+        $(".user").removeClass("user--visible");
+
+    });
+});

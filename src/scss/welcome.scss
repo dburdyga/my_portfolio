@@ -4,6 +4,14 @@
   background: url("../images/background/mount_bg.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
+
+  //height: rem(1270px);
+  //background: url(../images/background/mount_bg.jpg) center center/cover no-repeat;
+  //-webkit-background-size: cover;
+  //position: absolute;
+  //top: 0;
+  //right: 0;
+  //left: 0;
 }
 
 .blog {
@@ -11,13 +19,11 @@
 }
 
 .welcome_welcome {
-  height: rem(1270px);
-  background: url(../images/background/mount_bg.jpg) center center/cover no-repeat;
-  -webkit-background-size: cover;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+  height: 100vh;
+  min-height: 40.625rem;
+  background: url("../images/background/mount_bg.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 

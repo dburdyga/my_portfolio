@@ -219,7 +219,10 @@
   color: #fff;
   border: .0625rem solid transparent;
   border-right: .0625rem solid #fff;
+  -webkit-border-bottom-left-radius: .3125rem;
+  border-bottom-left-radius: .3125rem;
 }
+
 
 .form__button_clear {
   font-family: robotomedium;
@@ -232,6 +235,8 @@
   background: #06b39e;
   color: #fff;
   border: .0625rem solid transparent;
+  -webkit-border-bottom-right-radius: .3125rem;
+  border-bottom-right-radius: .3125rem;
 }
 
 .arrow-scroll_up {

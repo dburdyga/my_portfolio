@@ -6,6 +6,21 @@
   position: relative;
 }
 
+.blog {
+  min-height: 40.625rem;
+}
+
+.welcome_welcome {
+  height: rem(1270px);
+  background: url(../images/background/mount_bg.jpg) center center/cover no-repeat;
+  -webkit-background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+
 .head {
   padding: rem(20px);
   display: flex;

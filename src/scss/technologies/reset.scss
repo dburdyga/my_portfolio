@@ -30,6 +30,15 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.wrapper_welcome {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .container{
   flex:1;
 }

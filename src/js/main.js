@@ -38,13 +38,17 @@ window.onscroll = function () {
 }
 
 
-$(document).ready(function(){
-    $(".log-in").click(function(){
-        $(".user").toggleClass("user-login");
-        $(".user").removeClass("user--visible");
 
+
+
+$(document).ready(function(){
+    $(".log-in").click(function(e){
+        e.preventDefault();
+        $(".user").addClass("user--hidden");
+        $(".user-login").toggleClass("user-login--visible");
     });
 });
+
 
 // var editor = CodeMirror.fromTextArea(myTextarea, {
 //     lineNumbers: true

@@ -32,7 +32,7 @@ left: 50%;
   top: 100%;
   left: 0;
   right: 0;
-  background: #363b48;
+  //background: #363b48;
   transform: translateZ(0);
 }
 
@@ -46,4 +46,19 @@ $layers: 10;
 
     transform: translateZ($perspective) scale($scale);
   }
+}
+
+.wrapper-parallax {
+  width: 100%;
+  min-height: 59rem;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }

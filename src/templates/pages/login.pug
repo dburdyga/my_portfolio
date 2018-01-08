@@ -10,17 +10,25 @@ html(lang='ru')
         .wrapper(class=`${flex ? 'wrapper_flex' : ''}`)
             .maincontent
                 block content
-
-        block variables
-            - var title = 'scroll-parallax'
-
-        block content
-            .scroll-parallax
-                .scroll-parallax__container
-                    - for (var i = 1; i < 9; i++)
-                    .scroll-parallax__layer
-                        img(src=`/src/images/layer/layer-0${i}.png`).scroll-parallax__image
-                    .parallax__content
+                    #parallax.parallax
+                        .parallax__layer
+                            img(src=`images/layer/layer-09.png`).parallax__image
+                        .parallax__layer
+                            img(src=`images/layer/layer-08.png`).parallax__image
+                        .parallax__layer
+                            img(src=`images/layer/layer-06.png`).parallax__image
+                        .parallax__layer
+                            img(src=`images/layer/layer-05.png`).parallax__image
+                        .parallax__layer
+                            img(src=`images/layer/layer-04.png`).parallax__image
+                        .parallax__layer
+                            img(src=`images/layer/layer-02.png`).parallax__image
+                        .parallax__layer
+                            img(src=`images/layer/layer-01.png`).parallax__image
+                        .parallax__layer
+                            img(src=`images/layer/layer-07.png`).parallax__image
+                        .parallax__layer
+                            img(src=`images/layer/layer-03.png`).parallax__image
         script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQqo7U8AUECEzmP4BBuDooBysmapLAVPk&amp;callback=initMap", async defer)
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
         script(src='js/bundle.js', defer='')

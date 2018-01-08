@@ -1,5 +1,5 @@
 .scroll-parallax {
-  background: $parallax-bg;
+  background: grey;
   overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
@@ -33,11 +33,11 @@
   top: 100%;
   left: 0;
   right: 0;
-  background: $bottomColor;
+  background: grey;
   transform: translateZ(0);
 }
 
-$layers: 7;
+$layers: 9;
 
 @for $layersNum from $layers through 1 {
   .scroll-parallax__layer:nth-child(#{$layersNum}) {

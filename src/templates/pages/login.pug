@@ -17,9 +17,9 @@ html(lang='ru')
         block content
             .scroll-parallax
                 .scroll-parallax__container
-                    - for (var i = 1; i < 8; i++)
+                    - for (var i = 1; i < 9; i++)
                     .scroll-parallax__layer
-                        img(src=`images/layer/layer 0${i}.png`).scroll-parallax__image
+                        img(src=`/src/images/layer/layer-0${i}.png`).scroll-parallax__image
                     .parallax__content
         script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQqo7U8AUECEzmP4BBuDooBysmapLAVPk&amp;callback=initMap", async defer)
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")

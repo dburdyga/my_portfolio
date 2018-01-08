@@ -6,51 +6,59 @@ html(lang='ru')
         link(rel='shortcut icon', type='image/x-icon', href='images/favicon/favicon.ico')
         link(rel='stylesheet', href='css/style.min.css')
         script(src='js/bundle.js', defer='')
-    extends ../parallax.layout.pug
-
-    block variables
-        - var title = 'scroll-parallax'
-
-    block content
-        .scroll-parallax
-            .scroll-parallax__container
-                - for (var i = 1; i < 8; i++)
-                .scroll-parallax__layer
-                    img(src=`images/layer/layer 0${i}.png`).scroll-parallax__image
-                .parallax__content
     body
-        .wrapper_welcome
-            section.welcome
-                form.user-login(style='transform: translate(-50%, -50%)')
-                    h2.subtitle Авторизуйтесь
-                    .login
-                        .login__svg
-                        input(type="text", placeholder="Логин").login__user
-                    .login
-                        .password__svg
-                        input(type="password", placeholder="Пароль").login__user
-                    .test
-                        label.test__label
-                            input(type="checkbox").test__checkbox
-                            span.checkbox-custom
-                            span.label-custom Я человек
-                        h3.test__question Вы точно не робот?
-                        .test__radio-button
-                            label.test__label
-                                input(type="radio").test__radio
-                                span.radio-custom
-                                span.label-custom Да
-                            label.test__label
-                                input(type="radio").test__radio
-                                span.radio-custom
-                                span.label-custom Не уверен
-                    ul.navigation
-                        li.navigation__item
-                            a.navigation__link(href='about.html') На главную
-                        li.navigation__item
-                            a.navigation__link(href='#') Войти
-                p.dev © Бурдыга Дарья | создано с любовью в LoftSchool | 2017
+        .wrapper(class=`${flex ? 'wrapper_flex' : ''}`)
+            .maincontent
+                block content
 
+        block variables
+            - var title = 'scroll-parallax'
+
+        block content
+            .scroll-parallax
+                .scroll-parallax__container
+                    - for (var i = 1; i < 8; i++)
+                    .scroll-parallax__layer
+                        img(src=`images/layer/layer 0${i}.png`).scroll-parallax__image
+                    .parallax__content
         script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQqo7U8AUECEzmP4BBuDooBysmapLAVPk&amp;callback=initMap", async defer)
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
         script(src='js/bundle.js', defer='')
+
+
+    //body
+    //    .wrapper_welcome
+    //        section.welcome
+    //            form.user-login(style='transform: translate(-50%, -50%)')
+    //                h2.subtitle Авторизуйтесь
+    //                .login
+    //                    .login__svg
+    //                    input(type="text", placeholder="Логин").login__user
+    //                .login
+    //                    .password__svg
+    //                    input(type="password", placeholder="Пароль").login__user
+    //                .test
+    //                    label.test__label
+    //                        input(type="checkbox").test__checkbox
+    //                        span.checkbox-custom
+    //                        span.label-custom Я человек
+    //                    h3.test__question Вы точно не робот?
+    //                    .test__radio-button
+    //                        label.test__label
+    //                            input(type="radio").test__radio
+    //                            span.radio-custom
+    //                            span.label-custom Да
+    //                        label.test__label
+    //                            input(type="radio").test__radio
+    //                            span.radio-custom
+    //                            span.label-custom Не уверен
+    //                ul.navigation
+    //                    li.navigation__item
+    //                        a.navigation__link(href='about.html') На главную
+    //                    li.navigation__item
+    //                        a.navigation__link(href='#') Войти
+    //            p.dev © Бурдыга Дарья | создано с любовью в LoftSchool | 2017
+
+        //script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQqo7U8AUECEzmP4BBuDooBysmapLAVPk&amp;callback=initMap", async defer)
+        //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        //script(src='js/bundle.js', defer='')

@@ -36,7 +36,7 @@
   transform: translateZ(0);
 }
 
-$layers: 9;
+$layers: 10;
 
 @for $layersNum from $layers through 1 {
   .scroll-parallax__layer:nth-child(#{$layersNum}) {

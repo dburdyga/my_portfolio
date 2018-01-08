@@ -46,14 +46,14 @@ $(document).ready(function(){
     });
 });
 
-var editor = CodeMirror.fromTextArea(myTextarea, {
-    lineNumbers: true
-});
+// var editor = CodeMirror.fromTextArea(myTextarea, {
+//     lineNumbers: true
+// });
 
-var myCodeMirror = CodeMirror(document.body, {
-    value: "function myScript(){return 100;}\n",
-    mode:  "javascript"
-});
+// var myCodeMirror = CodeMirror(document.body, {
+//     value: "function myScript(){return 100;}\n",
+//     mode:  "javascript"
+// });
 
 var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('code'), {
     lineNumbers: true,
@@ -61,6 +61,7 @@ var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('code'), {
     mode: 'application/x-httpd-php',
     indentUnit: 4
 });
+
 
 
 var parallaxContainer = document.getElementById('parallax'),
@@ -84,6 +85,7 @@ var moveLayers = function (e) {
     });
 
 };
+
 
 window.addEventListener('mousemove', moveLayers);
 

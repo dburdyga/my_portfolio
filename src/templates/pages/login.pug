@@ -5,33 +5,36 @@ html(lang='ru')
         title Login
         link(rel='shortcut icon', type='image/x-icon', href='images/favicon/favicon.ico')
         link(rel='stylesheet', href='css/style.min.css')
-        script(src='js/bundle.js', defer='')
+        script(src='js/bundle.js' defer)
     body
-        .wrapper(class=`${flex ? 'wrapper_flex' : ''}`)
+        .wrapper
             .maincontent
                 block content
-                    #parallax.parallax
-                        .parallax__layer
-                            img(src=`images/layer/layer-09.png`).parallax__image
-                        .parallax__layer
-                            img(src=`images/layer/layer-08.png`).parallax__image
-                        .parallax__layer
-                            img(src=`images/layer/layer-06.png`).parallax__image
-                        .parallax__layer
-                            img(src=`images/layer/layer-05.png`).parallax__image
-                        .parallax__layer
-                            img(src=`images/layer/layer-04.png`).parallax__image
-                        .parallax__layer
-                            img(src=`images/layer/layer-02.png`).parallax__image
-                        .parallax__layer
-                            img(src=`images/layer/layer-01.png`).parallax__image
-                        .parallax__layer
-                            img(src=`images/layer/layer-07.png`).parallax__image
-                        .parallax__layer
-                            img(src=`images/layer/layer-03.png`).parallax__image
+                    .scroll-parallax
+                        .scroll-parallax__container
+                            .scroll-parallax__layer
+                                        img(src=`images/layer/layer-09.png`).scroll-parallax__image
+                            .scroll-parallax__layer
+                                        img(src=`images/layer/layer-08.png`).scroll-parallax__image
+                            .scroll-parallax__layer
+                                        img(src=`images/layer/layer-06.png`).scroll-parallax__image
+                            .scroll-parallax__layer
+                                        img(src=`images/layer/layer-05.png`).scroll-parallax__image
+                            .scroll-parallax__layer
+                                        img(src=`images/layer/layer-04.png`).scroll-parallax__image
+                            .scroll-parallax__layer
+                                        img(src=`images/layer/layer-02.png`).scroll-parallax__image
+                            .scroll-parallax__layer
+                                        img(src=`images/layer/layer-01.png`).scroll-parallax__image
+                            .scroll-parallax__layer
+                                        img(src=`images/layer/layer-03.png`).scroll-parallax__image
+                            .scroll-parallax__layer
+                                        img(src=`images/layer/layer-07.png`).scroll-parallax__image
+                            .scroll-parallax__layer
+                                        img(src=`images/layer/layer-10.png`).scroll-parallax__image
+                        .parallax__content
         script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQqo7U8AUECEzmP4BBuDooBysmapLAVPk&amp;callback=initMap", async defer)
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-        script(src='js/bundle.js', defer='')
 
 
     //body

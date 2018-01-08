@@ -223,3 +223,10 @@
   top: 78%;
   right: 37.2rem;
 }
+
+.CodeMirror {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+  background: #f5f2f0;
+}

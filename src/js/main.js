@@ -46,8 +46,21 @@ $(document).ready(function(){
     });
 });
 
+var editor = CodeMirror.fromTextArea(myTextarea, {
+    lineNumbers: true
+});
 
+var myCodeMirror = CodeMirror(document.body, {
+    value: "function myScript(){return 100;}\n",
+    mode:  "javascript"
+});
 
+var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('code'), {
+    lineNumbers: true,
+    matchBrackets: true,
+    mode: 'application/x-httpd-php',
+    indentUnit: 4
+});
 
 
 // var parallax = (function () {

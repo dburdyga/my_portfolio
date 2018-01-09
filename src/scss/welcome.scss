@@ -51,8 +51,9 @@
 
 .user {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  //top: 50%;
+  left: 36%;
+  bottom:50%;
   width: rem(380px);
   height: rem(395px);
   border-radius: rem(5px);
@@ -67,14 +68,16 @@
   backface-visibility: hidden;
   &--hidden {
     transform: rotateY(180deg);
-    transition: visibility 4s;
+    transition: visibility 6s;
+    backface-visibility: hidden;
  }
 }
 
 .user-login {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  //top: 50%;
+  bottom:50%;
+  left: 36%;
   width: 23.75rem;
   height: 24.6875rem;
   -webkit-border-radius: .3125rem;
@@ -104,7 +107,7 @@
 
   &--visible {
     visibility: visible;
-    transform: rotateY(-180deg);
+    transform: rotateY(180deg);
     transition: all 3s;
   }
 }

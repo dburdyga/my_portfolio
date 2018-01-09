@@ -37,6 +37,7 @@
 
 .social__icon_footer{
   fill: #aaadaf;
+  transition: .1s;
   &:hover{
     fill:#efeee9;
     transition: .5s;
@@ -52,4 +53,9 @@
   z-index: 5;
   width: 100%;
   opacity: .7;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+  transition: 1s;
 }

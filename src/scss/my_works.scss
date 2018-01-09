@@ -281,21 +281,21 @@
   //position: absolute;
   top: 50%;
   left: 50%;
-  width: 300px;
-  height: 400px;
-  margin-left: -130px;
-  margin-top: -200px;
+  height: rem(400px);
+  margin-left: -28.125rem;
+  margin-top: -13.5rem;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: rem(10px);
   position: relative;
+  min-width: 56.25rem;
 }
 
 .blur__form {
   width: 100%;
   height: 100%;
-  background-size: 900px;
+  background-size: rem(900px);
   background-position: -260px -158px;
-  filter: blur(20px);
+  filter: blur(0.25rem);
   background: url("../images/background/bg_blur.png") center top no-repeat;
 }
 

@@ -127,7 +127,7 @@ window.addEventListener('mousemove', moveLayers);
 
 var map;
 var login = document.getElementById('log-in');
-var front = document.querySelector('.user-front');
+var front = document.querySelector('.user');
 var back = document.querySelector('.user-login');
 var humburger = document.getElementById('navigation__humburger');
 var dropDownMenu = document.querySelector('.menu');

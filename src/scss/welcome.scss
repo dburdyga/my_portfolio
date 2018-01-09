@@ -53,7 +53,6 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: rem(380px);
   height: rem(395px);
   border-radius: rem(5px);
@@ -65,10 +64,51 @@
   align-items: center;
   padding-top: rem(35px);
   border-bottom: none;
-  @--visible {
-    overflow: hidden;
+  backface-visibility: hidden;
+  &--hidden {
+    transform: rotateY(180deg);
+    transition: visibility 4s;
+ }
+}
+
+.user-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 23.75rem;
+  height: 24.6875rem;
+  -webkit-border-radius: .3125rem;
+  border-radius: .3125rem;
+  background-color: #e5e5dd;
+  opacity: .851;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 2.1875rem;
+  border-bottom: none;
+  visibility: hidden;
+
+  &--visible {
+    visibility: visible;
+    transform: rotateY(-180deg);
+    transition: all 3s;
   }
 }
+
 
 .foto {
   overflow: hidden;
@@ -189,42 +229,6 @@
   font-weight: 700;
 }
 
-.user-login {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 23.75rem;
-  height: 24.6875rem;
-  -webkit-border-radius: .3125rem;
-  border-radius: .3125rem;
-  background-color: #e5e5dd;
-  opacity: .851;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 2.1875rem;
-  border-bottom: none;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
-  transform: rotateY(180deg) translate(50%,-50%);
-}
 
 .subtitle {
   font: 2.1875rem bernier_regularregular;

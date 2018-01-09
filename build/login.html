@@ -5,45 +5,96 @@
     <title>Login</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="js/bundle.js" defer=""></script>
+    <script src="js/bundle.js" defer></script>
   </head>
   <body>
-    <div class="wrapper_welcome">
-      <section class="welcome">
-        <form class="user-login" style="transform: translate(-50%, -50%);">
-          <h2 class="subtitle">Авторизуйтесь</h2>
-          <div class="login">
-            <div class="login__svg"></div>
-            <input class="login__user" type="text" placeholder="Логин">
-          </div>
-          <div class="login">
-            <div class="password__svg"></div>
-            <input class="login__user" type="password" placeholder="Пароль">
-          </div>
-          <div class="test">
-            <label class="test__label">
-              <input class="test__checkbox" type="checkbox"><span class="checkbox-custom"></span><span class="label-custom">Я человек</span>
-            </label>
-            <h3 class="test__question">Вы точно не робот?</h3>
-            <div class="test__radio-button">
-              <label class="test__label">
-                <input class="test__radio" type="radio"><span class="radio-custom"></span><span class="label-custom">Да</span>
-              </label>
-              <label class="test__label">
-                <input class="test__radio" type="radio"><span class="radio-custom"></span><span class="label-custom">Не уверен</span>
-              </label>
+    <div class="wrapper-parallax">
+      <div class="maincontent">
+        <div class="scroll-parallax">
+          <div class="scroll-parallax__container">
+            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="images/layer/layer-09.png"></div>
+            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="images/layer/layer-08.png"></div>
+            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="images/layer/layer-06.png"></div>
+            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="images/layer/layer-05.png"></div>
+            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="images/layer/layer-04.png"></div>
+            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="images/layer/layer-02.png"></div>
+            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="images/layer/layer-01.png"></div>
+            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="images/layer/layer-03.png"></div>
+            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="images/layer/layer-07.png"></div>
+            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="images/layer/layer-10.png"></div>
+            <div class="parallax__content">
+              <form class="user-login">
+                <h2 class="subtitle">Авторизуйтесь</h2>
+                <div class="login">
+                  <div class="login__svg"></div>
+                  <input class="login__user" type="text" placeholder="Логин">
+                </div>
+                <div class="login">
+                  <div class="password__svg"></div>
+                  <input class="login__user" type="password" placeholder="Пароль">
+                </div>
+                <div class="test">
+                  <label class="test__label">
+                    <input class="test__checkbox" type="checkbox"><span class="checkbox-custom"></span><span class="label-custom">Я человек</span>
+                  </label>
+                  <h3 class="test__question">Вы точно не робот?</h3>
+                  <div class="test__radio-button">
+                    <label class="test__label">
+                      <input class="test__radio" type="radio"><span class="radio-custom"></span><span class="label-custom">Да</span>
+                    </label>
+                    <label class="test__label">
+                      <input class="test__radio" type="radio"><span class="radio-custom"></span><span class="label-custom">Не уверен</span>
+                    </label>
+                  </div>
+                </div>
+                <ul class="navigation">
+                  <li class="navigation__item"><a class="navigation__link" href="about.html">На главную</a></li>
+                  <li class="navigation__item"><a class="navigation__link" href="#">Войти</a></li>
+                </ul>
+              </form>
+              <p class="dev">© Бурдыга Дарья | создано с любовью в LoftSchool | 2017</p>
             </div>
           </div>
-          <ul class="navigation">
-            <li class="navigation__item"><a class="navigation__link" href="about.html">На главную</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Войти</a></li>
-          </ul>
-        </form>
-        <p class="dev">© Бурдыга Дарья | создано с любовью в LoftSchool | 2017</p>
-      </section>
+        </div>
+      </div>
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQqo7U8AUECEzmP4BBuDooBysmapLAVPk&amp;amp;callback=initMap" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/bundle.js" defer=""></script>
   </body>
+  <!--body-->
+  <!--    .wrapper_welcome-->
+  <!--        section.welcome-->
+  <!--            form.user-login(style='transform: translate(-50%, -50%)')-->
+  <!--                h2.subtitle Авторизуйтесь-->
+  <!--                .login-->
+  <!--                    .login__svg-->
+  <!--                    input(type="text", placeholder="Логин").login__user-->
+  <!--                .login-->
+  <!--                    .password__svg-->
+  <!--                    input(type="password", placeholder="Пароль").login__user-->
+  <!--                .test-->
+  <!--                    label.test__label-->
+  <!--                        input(type="checkbox").test__checkbox-->
+  <!--                        span.checkbox-custom-->
+  <!--                        span.label-custom Я человек-->
+  <!--                    h3.test__question Вы точно не робот?-->
+  <!--                    .test__radio-button-->
+  <!--                        label.test__label-->
+  <!--                            input(type="radio").test__radio-->
+  <!--                            span.radio-custom-->
+  <!--                            span.label-custom Да-->
+  <!--                        label.test__label-->
+  <!--                            input(type="radio").test__radio-->
+  <!--                            span.radio-custom-->
+  <!--                            span.label-custom Не уверен-->
+  <!--                ul.navigation-->
+  <!--                    li.navigation__item-->
+  <!--                        a.navigation__link(href='about.html') На главную-->
+  <!--                    li.navigation__item-->
+  <!--                        a.navigation__link(href='#') Войти-->
+  <!--            p.dev © Бурдыга Дарья | создано с любовью в LoftSchool | 2017
+  //script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQqo7U8AUECEzmP4BBuDooBysmapLAVPk&amp;callback=initMap", async defer)
+  //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+  //script(src='js/bundle.js', defer='')
+  -->
 </html>

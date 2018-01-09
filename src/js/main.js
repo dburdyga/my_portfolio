@@ -44,8 +44,8 @@ window.onscroll = function () {
 $(document).ready(function(){
     $(".log-in").click(function(e){
         e.preventDefault();
-        $(".user").addClass("user--hidden");
         $(".user-login").toggleClass("user-login--visible");
+        $(".user").addClass("user--hidden");
     });
 });
 

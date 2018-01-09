@@ -69,7 +69,6 @@
   &--hidden {
     transform: rotateY(180deg);
     transition: visibility 6s;
-    backface-visibility: hidden;
  }
 }
 
@@ -107,7 +106,7 @@
 
   &--visible {
     visibility: visible;
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
     transition: all 3s;
   }
 }

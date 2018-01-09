@@ -19,11 +19,13 @@
 }
 
 .scroll-parallax__image {
+  width: 100%;
+  //max-height: 100%;
   position: absolute;
   bottom: 0;
-display: block;
-left: 50%;
-        transform: translateX(-50%);
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .parallax__content {

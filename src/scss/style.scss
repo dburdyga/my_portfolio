@@ -9,19 +9,19 @@ $parallax-bg: #fedcc8;
 $bottomColor: #2d112b;
 $sandColor: #eedcbc;
 
-//setup
-@import "technologies/variables";
-@import "technologies/mixins";
+//common
 @import "common/font";
+@import "common/footer";
+@import "common/header";
 //normalize
 @import "technologies/normalize";
 @import "technologies/reset";
+@import "technologies/variables";
+@import "technologies/mixins";
 //section
-@import "common/header";
 @import "welcome";
 @import "blog";
 @import "about";
 @import "my_works";
-@import "common/footer";
 @import "parallax";
 @import "scroll-parallax";

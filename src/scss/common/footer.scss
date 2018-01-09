@@ -14,9 +14,9 @@
     width: 40%;
     &__link{
       font:16px/1.62 'robotomedium';
-      color: $white;
+      color: #efeee9;
       &:hover {
-        color: $aquamarine;
+        color: #00bfa5;
         transition: .5s;
       }
     }
@@ -36,9 +36,9 @@
 }
 .social__icon_footer{
   fill: #aaadaf;
-  transition: .1s;
+  transition: 1s;
   &:hover{
-    fill:$white;
+    fill:#efeee9;
     transition: .5s;
   }
 }

@@ -1,7 +1,7 @@
 .blog{
   @extend .welcome;
   background:url("../images/background/blog_bg.jpg")bottom center/cover no-repeat fixed;;
-
+  max-height: 100%;
 }
 
 .user-blog{

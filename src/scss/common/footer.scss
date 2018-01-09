@@ -34,14 +34,16 @@
     color: #aaadaf;
   }
 }
+
 .social__icon_footer{
   fill: #aaadaf;
-  transition: 1s;
   &:hover{
     fill:#efeee9;
     transition: .5s;
   }
 }
+
+
 
 .footer-map {
   position: absolute;

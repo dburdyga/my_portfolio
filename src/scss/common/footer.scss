@@ -36,12 +36,12 @@
 }
 .social__icon_footer{
   fill: #aaadaf;
+  transition: .1s;
   &:hover{
     fill:$white;
     transition: .5s;
   }
 }
-
 
 .footer-map {
   position: absolute;

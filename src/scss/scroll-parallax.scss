@@ -8,6 +8,7 @@
   right: 0;
   bottom: 0;
   perspective: rem(100px);
+  z-index: -1;
 }
 
 .scroll-parallax__layer {
@@ -30,7 +31,6 @@
 
 .parallax__content {
   height: rem(200px);
-  position: absolute;
   top: 100%;
   left: 0;
   right: 0;

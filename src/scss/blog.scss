@@ -1,6 +1,6 @@
 .blog{
   @extend .welcome;
-  background:url("../images/background/blog_bg.jpg")bottom center/cover no-repeat fixed;;
+  background:url("../images/background/portfolio_bg.png")bottom center/cover no-repeat fixed;;
   max-height: 100%;
 }
 
@@ -34,14 +34,14 @@
   &:after{
     content:'';
     position: absolute;
-    width: 73.125rem;
-    height: 18.5rem;
+    width: 100%;
+    height: 120%;
     background:url("../images/icons/portfolio_header.svg");
     opacity: 0.1;
     top: -13%;
     background-size: 82%;
     background-repeat: no-repeat;
-    right: 1%;
+    right: -11%;
   }
 }
 
@@ -93,10 +93,21 @@
     display: block;
     @include robotoreg;
   }
+  @include phones {
+    display: none;
+  }
 }
+
+
+
 .articles{
   width: 65%;
   padding:3.125rem;
+  @include phones {
+    width: 100%;
+    padding: 2rem;
+  }
+
 }
 .article{
  border-bottom: rem(4px) solid #f1f1f2;

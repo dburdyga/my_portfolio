@@ -341,12 +341,19 @@
     background: #efeee9;
     padding: 0 4.6875rem;
     text-align: center;
+    @include phones {
+      width: 100%;
+      padding: 0 1.6875rem;
+    }
   }
 
   .article__right {
     width: 50%;
     background: #eeebdf;
     padding: 0 .3125rem 0 2.1875rem;
+    @include phones {
+      width: 100%;
+    }
   }
 
   #article_color {

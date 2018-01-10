@@ -261,6 +261,9 @@
   bottom: rem(-18px);
   left: 0;
   right: 0;
+  @include phones {
+    bottom: rem(-8px);
+  }
 }
 
 .contacts__list-text {

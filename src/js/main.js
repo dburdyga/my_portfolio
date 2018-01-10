@@ -46,6 +46,7 @@ $(document).ready(function(){
         e.preventDefault();
         $(".user-login").toggleClass("user-login--visible");
         $(".user").addClass("user--hidden");
+        $(".log-in").addClass('log-in--hidden')
     });
 });
 

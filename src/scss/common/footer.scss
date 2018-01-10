@@ -20,6 +20,10 @@
     justify-content: space-between;
     align-items:center;
     width: 40%;
+    @include phones {
+      width: 100%;
+      margin-bottom: .625rem;
+    }
     &__link{
       font:16px/1.62 'robotomedium';
       color: #efeee9;
@@ -34,13 +38,7 @@
     display: flex;
     justify-content: space-between;
     @include phones{
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      text-align: center;
-      padding: .625rem .125rem;
+      display: none;
     }
   }
   &__description{

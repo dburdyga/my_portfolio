@@ -5,10 +5,66 @@ html(lang='ru')
         title My portfolio
         link(rel='shortcut icon', type='image/x-icon', href='images/favicon/favicon.ico')
         link(rel='stylesheet', href='css/style.min.css')
-        script(src='js/bundle.js', defer='')
     body
         .wrapper-parallax
             .maincontent
+                .parallax__content
+                    header.head
+                        a.log-in(href='#') Авторизоваться
+                    form.user
+                        .foto
+                            img.foto__user(src='images/img/photo.jpg', alt='my photo')
+                        .name
+                            p.name__user Бурдыга Дарья
+                            p.name__description Личный сайт веб разработчика
+                        ul.social
+                            li.social__item
+                                a.social__link(href='#')
+                                    svg.social__icon(viewbox='0 0 50 50', width='35', height='40')
+                                        use(xlink:href='images/icons/sprite.svg#vk')
+                            li.social__item
+                                a.social__link(href='#')
+                                    svg.social__icon(viewbox='0 0 50 50', width='32', height='37')
+                                        use(xlink:href='images/icons/sprite.svg#github')
+                            li.social__item
+                                a.social__link(href='#')
+                                    svg.social__icon(viewbox='0 0 50 50', width='30', height='30')
+                                        use(xlink:href='images/icons/sprite.svg#in')
+                        ul.navigation
+                            li.navigation__item
+                                a.navigation__link(href='my-works.html') Мои работы
+                            li.navigation__item
+                                a.navigation__link(href='about.html') Обо мне
+                            li.navigation__item
+                                a.navigation__link(href='blog.html') Блог
+                    form.user-login
+                        h2.subtitle Авторизуйтесь
+                        .login
+                            .login__svg
+                            input(type="text", placeholder="Логин").login__user
+                        .login
+                            .password__svg
+                            input(type="password", placeholder="Пароль").login__user
+                        .test
+                            label.test__label
+                                input(type="checkbox", name="checkbox-test").test__checkbox
+                                span.checkbox-custom
+                                span.label-custom Я человек
+                            h3.test__question Вы точно не робот?
+                            .test__radio-button
+                                label.test__label
+                                    input(type="radio", name="radio-test").test__radio
+                                    span.radio-custom
+                                    span.label-custom Да
+                                label.test__label
+                                    input(type="radio", name="radio-test").test__radio
+                                    span.radio-custom
+                                    span.label-custom Не уверен
+                        ul.navigation
+                            li.navigation__item
+                                a.navigation__link(href='about.html') На главную
+                            li.navigation__item
+                                a.navigation__link(href='#') Войти
                 .scroll-parallax
                     .scroll-parallax__container
                         .scroll-parallax__layer
@@ -31,67 +87,8 @@ html(lang='ru')
                             img(src=`images/layer/layer-07.png`).scroll-parallax__image
                         .scroll-parallax__layer
                             img(src=`images/layer/layer-10.png`).scroll-parallax__image
-                        .parallax__content
-                            header.head
-                                a.log-in(href='#') Авторизоваться
-                            form.user
-                                .foto
-                                    img.foto__user(src='images/img/photo.jpg', alt='my photo')
-                                .name
-                                    p.name__user Бурдыга Дарья
-                                    p.name__description Личный сайт веб разработчика
-                                ul.social
-                                    li.social__item
-                                        a.social__link(href='#')
-                                            svg.social__icon(viewbox='0 0 50 50', width='35', height='40')
-                                                use(xlink:href='images/icons/sprite.svg#vk')
-                                    li.social__item
-                                        a.social__link(href='#')
-                                            svg.social__icon(viewbox='0 0 50 50', width='32', height='37')
-                                                use(xlink:href='images/icons/sprite.svg#github')
-                                    li.social__item
-                                        a.social__link(href='#')
-                                            svg.social__icon(viewbox='0 0 50 50', width='30', height='30')
-                                                use(xlink:href='images/icons/sprite.svg#in')
-                                ul.navigation
-                                                    li.navigation__item
-                                                        a.navigation__link(href='my-works.html') Мои работы
-                                                    li.navigation__item
-                                                        a.navigation__link(href='about.html') Обо мне
-                                                    li.navigation__item
-                                                        a.navigation__link(href='blog.html') Блог
-                            form.user-login
-                                h2.subtitle Авторизуйтесь
-                                .login
-                                    .login__svg
-                                    input(type="text", placeholder="Логин").login__user
-                                .login
-                                    .password__svg
-                                    input(type="password", placeholder="Пароль").login__user
-                                .test
-                                    label.test__label
-                                        input(type="checkbox", name="checkbox-test").test__checkbox
-                                        span.checkbox-custom
-                                        span.label-custom Я человек
-                                    h3.test__question Вы точно не робот?
-                                    .test__radio-button
-                                        label.test__label
-                                            input(type="radio", name="radio-test").test__radio
-                                            span.radio-custom
-                                            span.label-custom Да
-                                        label.test__label
-                                            input(type="radio", name="radio-test").test__radio
-                                            span.radio-custom
-                                            span.label-custom Не уверен
-                                ul.navigation
-                                    li.navigation__item
-                                        a.navigation__link(href='my-works.html') Мои работы
-                                    li.navigation__item
-                                        a.navigation__link(href='about.html') Обо мне
-                                    li.navigation__item
-                                        a.navigation__link(href='blog.html') Блог
-                            .down-text
-                                p.dev © Бурдыга Дарья | создано с любовью в LoftSchool | 2017
+                .down-text
+                    p.dev © Бурдыга Дарья | создано с любовью в LoftSchool | 2017
             script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQqo7U8AUECEzmP4BBuDooBysmapLAVPk&amp;callback=initMap", async defer)
             script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-
+            script(src='js/bundle.js')

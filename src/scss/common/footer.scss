@@ -6,6 +6,14 @@
     align-items:center;
     padding: rem(20px) 3.125rem;
     border-bottom:4px solid #666c6e;
+    @include phones {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: .625rem 1.125rem;
+    }
   }
   &-nav{
     display: flex;
@@ -25,6 +33,15 @@
     padding: rem(20px) 3.125rem;
     display: flex;
     justify-content: space-between;
+    @include phones{
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+      padding: .625rem .125rem;
+    }
   }
   &__description{
     width: 40%;
@@ -44,8 +61,6 @@
   }
 }
 
-
-
 .footer-map {
   position: absolute;
   bottom: 0;
@@ -55,7 +70,3 @@
   opacity: .7;
 }
 
-svg:not(:root) {
-  overflow: hidden;
-  transition: 1s;
-}

@@ -93,10 +93,21 @@
     display: block;
     @include robotoreg;
   }
+  @include phones {
+    display: none;
+  }
 }
+
+
+
 .articles{
   width: 65%;
   padding:3.125rem;
+  @include phones {
+    width: 100%;
+    padding: 2rem;
+  }
+
 }
 .article{
  border-bottom: rem(4px) solid #f1f1f2;

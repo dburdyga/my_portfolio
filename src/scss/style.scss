@@ -1,28 +1,37 @@
-$white: #efeee9;
-$beige: #eeebdf;
-$green: #10c1a8;
-$gray: #455a64;
-$light-beige: #f9f8f0;
-$font-color: #455a64;
-$titles-color: $gray;
-$parallax-bg: #fedcc8;
-$bottomColor: #2d112b;
-$sandColor: #eedcbc;
-$aquamarine: #08af9c;
-
-//common
+@import "technologies/variables";
+@import "technologies/mixins";
 @import "common/font";
 @import "common/footer";
 @import "common/header";
-//normalize
+
+
 @import "technologies/normalize";
 @import "technologies/reset";
-@import "technologies/variables";
-@import "technologies/mixins";
-//section
+
 @import "welcome";
 @import "blog";
 @import "about";
 @import "my_works";
 @import "parallax";
 @import "scroll-parallax";
+
+
+
+
+//
+////common
+//@import "common/font";
+//@import "common/footer";
+//@import "common/header";
+////normalize
+//@import "technologies/normalize";
+//@import "technologies/reset";
+//@import "technologies/variables";
+//@import "technologies/mixins";
+////section
+//@import "welcome";
+//@import "blog";
+//@import "about";
+//@import "my_works";
+//@import "parallax";
+//@import "scroll-parallax";

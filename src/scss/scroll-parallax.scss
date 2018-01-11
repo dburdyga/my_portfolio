@@ -9,12 +9,6 @@
   bottom: 0;
   perspective: rem(100px);
   z-index: -1;
-  @include phones {
-    height: 100%;
-  }
-  @include tablets {
-    height: 100%;
-  }
 }
 
 .scroll-parallax__layer {
@@ -72,4 +66,10 @@ $layers: 10;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  @include phones {
+    height: 100%;
+  }
+  @include tablets {
+    height: 100%;
+  }
 }

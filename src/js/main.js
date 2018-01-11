@@ -370,8 +370,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(".navigation__humburger").click(function(){
-        $(".navigation__humburger").toggleClass("navigation__humburger_active");
-        $(".drop-left").toggleClass("drop-left_active");
-        $(".drop-right").toggleClass("drop-right_active");
+        $(".navigation__humburger").addClass("navigation__humburger_active");
+        $(".drop-left").addClass("drop-left_active");
+        $(".drop-right").addClass("drop-right_active");
     });
 });

@@ -9,6 +9,12 @@
   bottom: 0;
   perspective: rem(100px);
   z-index: -1;
+  @include phones {
+    height: 100%;
+  }
+  @include tablets {
+    height: 100%;
+  }
 }
 
 .scroll-parallax__layer {
@@ -36,6 +42,9 @@
   right: 0;
   //background: #363b48;
   transform: translateZ(0);
+  @include phones {
+    height: 64.5rem;
+  }
 }
 
 $layers: 10;

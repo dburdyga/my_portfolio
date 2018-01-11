@@ -35,20 +35,7 @@ window.onscroll = function () {
     var wScroll = window.pageYOffset;
 
     parallax.init(wScroll);
-}
-
-
-
-
-
-$(document).ready(function(){
-    $(".log-in").click(function(e){
-        e.preventDefault();
-        $(".user-login").toggleClass("user-login--visible");
-        $(".user").addClass("user--hidden");
-        $(".log-in").addClass('log-in--hidden')
-    });
-});
+};
 
 
 // var editor = CodeMirror.fromTextArea(myTextarea, {
@@ -60,12 +47,12 @@ $(document).ready(function(){
 //     mode:  "javascript"
 // });
 
-var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('code'), {
-    lineNumbers: true,
-    matchBrackets: true,
-    mode: 'application/x-httpd-php',
-    indentUnit: 4
-});
+// var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('code'), {
+//     lineNumbers: true,
+//     matchBrackets: true,
+//     mode: 'application/x-httpd-php',
+//     indentUnit: 4
+// });
 
 
 
@@ -176,7 +163,7 @@ if(login) {
             dropDownMenuRight.classList.add('drop-right_active');
         }
     });
-}
+};
 
 
 function initMap() {
@@ -365,32 +352,17 @@ function initMap() {
         icon: '../images/icons/map_marker.svg'
     });
 
-}
-
-
-
-//Parallax
-var parallaxContainer = document.getElementById('parallax');
-var layers = parallaxContainer.children;
-
-var moveLayers = function (e) {
-    var initialX = (window.innerWidth / 2) - e.pageX;
-    var initialY = (window.innerHeight / 2) - e.pageY;
-
-    [].slice.call(layers).forEach(function(layer, index) {
-        var
-            divider = index / 40,
-            positionX = initialX * divider,
-            positionY = initialY * divider,
-            bottomPosition = (window.innerHeight / 2) * divider,
-            transformString = 'translate(' + positionX + 'px,' + positionY + 'px)',
-            image = layer.firstElementChild;
-
-        layer.style.transform = transformString;
-        image.style.bottom = '-' + bottomPosition + 'px';
-
-    });
-
 };
 
-window.addEventListener('mousemove', moveLayers);
+
+
+
+
+$(document).ready(function(){
+    $(".log-in").click(function(e){
+        e.preventDefault();
+        $(".user-login").toggleClass("user-login--visible");
+        $(".user").addClass("user--hidden");
+        $(".log-in").addClass('log-in--hidden')
+    });
+});

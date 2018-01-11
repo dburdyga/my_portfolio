@@ -124,46 +124,46 @@ var dropDownMenuRight = document.querySelector('.drop-right');
 var $window = $(window);
 
 
-var $item = document.getElementsByClassName('saidbar__item'),
-    activeItem = 'saidbar__item-active';
-
-for (var i = 0; i < $item.length; i++) {
-    $item[i].addEventListener('click', function() {
-        if(!(this.classList.contains(activeItem))) {
-            for (var j = 0; j < $item.length; j++) {
-                $item[j].classList.remove(activeItem);
-                this.classList.add(activeItem);
-            }
-        } else {
-            this.classList.remove(activeItem);
-        }
-    })
-};
-
-if(login) {
-    login.addEventListener('click', function () {
-
-        front.style.cssText = 'transform: rotateY(180deg) translate(50%,-50%); \
-        backface-visibility: hidden; \
-        transition: 1s; ';
-        back.style.cssText = 'transform: translate(-50%, -50%);  ';
-        login.style.display = 'none';
-    });
-}else {
-    humburger.addEventListener('click', () => {
-        if (humburger.classList.contains('navigation__humburger_active')) {
-            humburger.classList.remove('navigation__humburger_active');
-            dropDownMenu.classList.remove('menu_active');
-            dropDownMenuLeft.classList.remove('drop-left_active');
-            dropDownMenuRight.classList.remove('drop-right_active');
-        } else {
-            humburger.classList.add('navigation__humburger_active');
-            dropDownMenu.classList.add('menu_active');
-            dropDownMenuLeft.classList.add('drop-left_active');
-            dropDownMenuRight.classList.add('drop-right_active');
-        }
-    });
-};
+// var $item = document.getElementsByClassName('saidbar__item'),
+//     activeItem = 'saidbar__item-active';
+//
+// for (var i = 0; i < $item.length; i++) {
+//     $item[i].addEventListener('click', function() {
+//         if(!(this.classList.contains(activeItem))) {
+//             for (var j = 0; j < $item.length; j++) {
+//                 $item[j].classList.remove(activeItem);
+//                 this.classList.add(activeItem);
+//             }
+//         } else {
+//             this.classList.remove(activeItem);
+//         }
+//     })
+// };
+//
+// if(login) {
+//     login.addEventListener('click', function () {
+//
+//         front.style.cssText = 'transform: rotateY(180deg) translate(50%,-50%); \
+//         backface-visibility: hidden; \
+//         transition: 1s; ';
+//         back.style.cssText = 'transform: translate(-50%, -50%);  ';
+//         login.style.display = 'none';
+//     });
+// }else {
+//     humburger.addEventListener('click', () => {
+//         if (humburger.classList.contains('navigation__humburger_active')) {
+//             humburger.classList.remove('navigation__humburger_active');
+//             dropDownMenu.classList.remove('menu_active');
+//             dropDownMenuLeft.classList.remove('drop-left_active');
+//             dropDownMenuRight.classList.remove('drop-right_active');
+//         } else {
+//             humburger.classList.add('navigation__humburger_active');
+//             dropDownMenu.classList.add('menu_active');
+//             dropDownMenuLeft.classList.add('drop-left_active');
+//             dropDownMenuRight.classList.add('drop-right_active');
+//         }
+//     });
+// };
 
 
 function initMap() {
@@ -364,5 +364,14 @@ $(document).ready(function(){
         $(".user-login").toggleClass("user-login--visible");
         $(".user").addClass("user--hidden");
         $(".log-in").addClass('log-in--hidden')
+    });
+});
+
+
+$(document).ready(function(){
+    $(".navigation__humburger").click(function(){
+        $(".navigation__humburger").toggleClass("navigation__humburger_active");
+        $(".drop-left").toggleClass("drop-left_active");
+        $(".drop-right").toggleClass("drop-right_active");
     });
 });

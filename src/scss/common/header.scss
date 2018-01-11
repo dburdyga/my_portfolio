@@ -125,6 +125,18 @@
     }
   }
 }
+
+.menu__item {
+  margin-bottom: 2.5rem;
+}
+
+.menu__link {
+  font-size: 3.9375rem;
+  font-family: bernier_regularregular;
+  color: white;
+  position: relative;
+}
+
 .drop-left {
   position: fixed;
   top: 0;

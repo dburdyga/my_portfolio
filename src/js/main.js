@@ -35,20 +35,7 @@ window.onscroll = function () {
     var wScroll = window.pageYOffset;
 
     parallax.init(wScroll);
-}
-
-
-
-
-
-$(document).ready(function(){
-    $(".log-in").click(function(e){
-        e.preventDefault();
-        $(".user-login").toggleClass("user-login--visible");
-        $(".user").addClass("user--hidden");
-        $(".log-in").addClass('log-in--hidden')
-    });
-});
+};
 
 
 // var editor = CodeMirror.fromTextArea(myTextarea, {
@@ -60,12 +47,12 @@ $(document).ready(function(){
 //     mode:  "javascript"
 // });
 
-var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('code'), {
-    lineNumbers: true,
-    matchBrackets: true,
-    mode: 'application/x-httpd-php',
-    indentUnit: 4
-});
+// var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('code'), {
+//     lineNumbers: true,
+//     matchBrackets: true,
+//     mode: 'application/x-httpd-php',
+//     indentUnit: 4
+// });
 
 
 
@@ -137,46 +124,46 @@ var dropDownMenuRight = document.querySelector('.drop-right');
 var $window = $(window);
 
 
-var $item = document.getElementsByClassName('saidbar__item'),
-    activeItem = 'saidbar__item-active';
-
-for (var i = 0; i < $item.length; i++) {
-    $item[i].addEventListener('click', function() {
-        if(!(this.classList.contains(activeItem))) {
-            for (var j = 0; j < $item.length; j++) {
-                $item[j].classList.remove(activeItem);
-                this.classList.add(activeItem);
-            }
-        } else {
-            this.classList.remove(activeItem);
-        }
-    })
-};
-
-if(login) {
-    login.addEventListener('click', function () {
-
-        front.style.cssText = 'transform: rotateY(180deg) translate(50%,-50%); \
-        backface-visibility: hidden; \
-        transition: 1s; ';
-        back.style.cssText = 'transform: translate(-50%, -50%);  ';
-        login.style.display = 'none';
-    });
-}else {
-    humburger.addEventListener('click', () => {
-        if (humburger.classList.contains('navigation__humburger_active')) {
-            humburger.classList.remove('navigation__humburger_active');
-            dropDownMenu.classList.remove('menu_active');
-            dropDownMenuLeft.classList.remove('drop-left_active');
-            dropDownMenuRight.classList.remove('drop-right_active');
-        } else {
-            humburger.classList.add('navigation__humburger_active');
-            dropDownMenu.classList.add('menu_active');
-            dropDownMenuLeft.classList.add('drop-left_active');
-            dropDownMenuRight.classList.add('drop-right_active');
-        }
-    });
-}
+// var $item = document.getElementsByClassName('saidbar__item'),
+//     activeItem = 'saidbar__item-active';
+//
+// for (var i = 0; i < $item.length; i++) {
+//     $item[i].addEventListener('click', function() {
+//         if(!(this.classList.contains(activeItem))) {
+//             for (var j = 0; j < $item.length; j++) {
+//                 $item[j].classList.remove(activeItem);
+//                 this.classList.add(activeItem);
+//             }
+//         } else {
+//             this.classList.remove(activeItem);
+//         }
+//     })
+// };
+//
+// if(login) {
+//     login.addEventListener('click', function () {
+//
+//         front.style.cssText = 'transform: rotateY(180deg) translate(50%,-50%); \
+//         backface-visibility: hidden; \
+//         transition: 1s; ';
+//         back.style.cssText = 'transform: translate(-50%, -50%);  ';
+//         login.style.display = 'none';
+//     });
+// }else {
+//     humburger.addEventListener('click', () => {
+//         if (humburger.classList.contains('navigation__humburger_active')) {
+//             humburger.classList.remove('navigation__humburger_active');
+//             dropDownMenu.classList.remove('menu_active');
+//             dropDownMenuLeft.classList.remove('drop-left_active');
+//             dropDownMenuRight.classList.remove('drop-right_active');
+//         } else {
+//             humburger.classList.add('navigation__humburger_active');
+//             dropDownMenu.classList.add('menu_active');
+//             dropDownMenuLeft.classList.add('drop-left_active');
+//             dropDownMenuRight.classList.add('drop-right_active');
+//         }
+//     });
+// };
 
 
 function initMap() {
@@ -365,32 +352,26 @@ function initMap() {
         icon: '../images/icons/map_marker.svg'
     });
 
-}
-
-
-
-//Parallax
-var parallaxContainer = document.getElementById('parallax');
-var layers = parallaxContainer.children;
-
-var moveLayers = function (e) {
-    var initialX = (window.innerWidth / 2) - e.pageX;
-    var initialY = (window.innerHeight / 2) - e.pageY;
-
-    [].slice.call(layers).forEach(function(layer, index) {
-        var
-            divider = index / 40,
-            positionX = initialX * divider,
-            positionY = initialY * divider,
-            bottomPosition = (window.innerHeight / 2) * divider,
-            transformString = 'translate(' + positionX + 'px,' + positionY + 'px)',
-            image = layer.firstElementChild;
-
-        layer.style.transform = transformString;
-        image.style.bottom = '-' + bottomPosition + 'px';
-
-    });
-
 };
 
-window.addEventListener('mousemove', moveLayers);
+
+
+
+
+$(document).ready(function(){
+    $(".log-in").click(function(e){
+        e.preventDefault();
+        $(".user-login").toggleClass("user-login--visible");
+        $(".user").addClass("user--hidden");
+        $(".log-in").addClass('log-in--hidden')
+    });
+});
+
+
+$(document).ready(function(){
+    $(".navigation__humburger").click(function(){
+        $(".navigation__humburger").addClass("navigation__humburger_active");
+        $(".drop-left").addClass("drop-left_active");
+        $(".drop-right").addClass("drop-right_active");
+    });
+});

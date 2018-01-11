@@ -36,6 +36,9 @@
   right: 0;
   //background: #363b48;
   transform: translateZ(0);
+  @include phones {
+    height: 64.5rem;
+  }
 }
 
 $layers: 10;
@@ -63,4 +66,10 @@ $layers: 10;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  @include phones {
+    height: 100%;
+  }
+  @include tablets {
+    height: 100%;
+  }
 }

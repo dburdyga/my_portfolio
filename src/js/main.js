@@ -375,12 +375,10 @@ $(document).ready(function(){
         $(".drop-right").addClass("drop-right_active");
         $(".menu").addClass("menu_active");
     });
-});
 
-$(document).ready(function(){
     $(".navigation__humburger").click(function(faa){
         console.log('ok')
-        $(".navigation__humburger").removeClass("menu_active");
+        $(".menu_active").addClass("menu_hidden");
 
     });
 });

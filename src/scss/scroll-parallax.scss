@@ -66,10 +66,10 @@ $layers: 10;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  @include phones {
+  @include phones{
     height: 100%;
   }
-  @include tablets {
+  @include tablets{
     height: 100%;
   }
 }

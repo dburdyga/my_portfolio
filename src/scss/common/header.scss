@@ -97,6 +97,9 @@
     top: 20%;
     left: 50%;
   }
+  &_hidden {
+    visibility: hidden;
+  }
   &__list{
     text-align: center;
   }

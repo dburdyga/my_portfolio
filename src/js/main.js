@@ -369,10 +369,18 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $(".navigation__humburger").click(function(){
+    $(".navigation__humburger").click(function(fcc){
         $(".navigation__humburger").addClass("navigation__humburger_active");
         $(".drop-left").addClass("drop-left_active");
         $(".drop-right").addClass("drop-right_active");
         $(".menu").addClass("menu_active");
+    });
+});
+
+$(document).ready(function(){
+    $(".navigation__humburger").click(function(faa){
+        console.log('ok')
+        $(".navigation__humburger").removeClass("menu_active");
+
     });
 });

@@ -56,30 +56,30 @@ window.onscroll = function () {
 
 
 
-var parallaxContainer = document.getElementById('parallax'),
-    layers = parallaxContainer.children;
-
-var moveLayers = function (e) {
-    var initialX = (window.innerWidth / 2) - e.pageX;
-    var initialY = (window.innerHeight / 2) - e.pageY;
-
-    [].slice.call(layers).forEach(function(layer, index) {
-        var
-            divider = index / 100,
-            positionX = initialX * divider,
-            positionY = initialY * divider,
-            bottomPosition = (window.innerHeight / 2) * divider,
-            transformString = 'translate(' + positionX + 'px,' + positionY + 'px)',
-            image = layer.firstElementChild;
-
-        layer.style.transform = transformString;
-        image.style.bottom = '-' + bottomPosition + 'px';
-    });
-
-};
-
-
-window.addEventListener('mousemove', moveLayers);
+// var parallaxContainer = document.getElementById('parallax'),
+//     layers = parallaxContainer.children;
+//
+// var moveLayers = function (e) {
+//     var initialX = (window.innerWidth / 2) - e.pageX;
+//     var initialY = (window.innerHeight / 2) - e.pageY;
+//
+//     [].slice.call(layers).forEach(function(layer, index) {
+//         var
+//             divider = index / 100,
+//             positionX = initialX * divider,
+//             positionY = initialY * divider,
+//             bottomPosition = (window.innerHeight / 2) * divider,
+//             transformString = 'translate(' + positionX + 'px,' + positionY + 'px)',
+//             image = layer.firstElementChild;
+//
+//         layer.style.transform = transformString;
+//         image.style.bottom = '-' + bottomPosition + 'px';
+//     });
+//
+// };
+//
+//
+// window.addEventListener('mousemove', moveLayers);
 
 
 // var parallax = (function () {
@@ -348,7 +348,7 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: {lat: 51.697354, lng: 39.269249},
         map: map,
-        title: 'Евгений',
+        title: 'Дарья',
         icon: '../images/icons/map_marker.svg'
     });
 
@@ -369,9 +369,16 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $(".navigation__humburger").click(function(){
+    $(".navigation__humburger").click(function(fcc){
         $(".navigation__humburger").addClass("navigation__humburger_active");
         $(".drop-left").addClass("drop-left_active");
         $(".drop-right").addClass("drop-right_active");
+        $(".menu").addClass("menu_active");
+    });
+
+    $(".navigation__humburger").click(function(faa){
+        console.log('ok')
+        $(".menu_active").addClass("menu_hidden");
+
     });
 });

@@ -26,7 +26,8 @@ body {
 
 .wrapper {
   width: 100%;
-  min-height: rem(2000px);
+  //min-height: rem(2000px);
+  min-height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;

@@ -7,9 +7,6 @@
 
 }
 
-.blog {
-  min-height: 40.625rem;
-}
 
 .welcome_welcome {
   height: 100vh;
@@ -69,6 +66,12 @@
   padding-top: rem(35px);
   border-bottom: none;
   backface-visibility: hidden;
+  @include phones {
+     left:16%;
+   }
+  @include tablets {
+    left:16%;
+  }
   &--hidden {
     transform: rotateY(180deg);
     transition: visibility 6s;
@@ -105,6 +108,12 @@
   padding-top: 2.1875rem;
   border-bottom: none;
   visibility: hidden;
+  @include phones {
+    left:16%;
+  }
+  @include tablets {
+    left:16%;
+  }
 
   &--visible {
     visibility: visible;

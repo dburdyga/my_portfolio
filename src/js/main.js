@@ -373,5 +373,6 @@ $(document).ready(function(){
         $(".navigation__humburger").addClass("navigation__humburger_active");
         $(".drop-left").addClass("drop-left_active");
         $(".drop-right").addClass("drop-right_active");
+        $(".menu").addClass("menu_active");
     });
 });

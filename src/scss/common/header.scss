@@ -85,6 +85,8 @@
   opacity: 0;
   visibility: hidden;
   position: fixed;
+  top: 20%;
+  left: 50%;
   &_active{
     position: fixed;
     //@include center;
@@ -92,6 +94,8 @@
     visibility: visible;
     transition: 1.6s;
     z-index: 10;
+    top: 20%;
+    left: 50%;
   }
   &__list{
     text-align: center;

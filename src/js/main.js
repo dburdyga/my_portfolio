@@ -392,3 +392,19 @@ $(document).ready(function(){
 //     // modalNav.classList.toggle('menu_active');
 //     // html.classList.toggle('fixed-window');
 // })
+
+var $item = document.getElementsByClassName('saidbar__item'),
+    activeItem = 'saidbar__item-active';
+
+for (var i = 0; i < $item.length; i++) {
+    $item[i].addEventListener('click', function() {
+        if(!(this.classList.contains(activeItem))) {
+            for (var j = 0; j < $item.length; j++) {
+                $item[j].classList.remove(activeItem);
+                this.classList.add(activeItem);
+            }
+        } else {
+            this.classList.remove(activeItem);
+        }
+    })
+};

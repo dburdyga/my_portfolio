@@ -20,6 +20,9 @@
     right: -159%;
     background-repeat: no-repeat;
     background-size: 50%;
+    @include phones {
+      right: -72%;
+    }
   }
 }
 

@@ -27,7 +27,10 @@ html(lang='ru')
                             h4.subtitle Сайт школы онлайн образования
                             p.article__text_works
                                 | HTML, CSS, JAVASCRIPT
-                            button.works Посмотреть сайт
+                            button.works
+                                svg.works-pic(viewbox='0 0 19.125 19.125', width='100%', height='100%')
+                                    use(xlink:href="images/icons/sprite.svg#link")
+                                works-text Посмотреть сайт
                         article.article__right#article_color
                             .article__right_main
                             img.works_img_big(src='images/img/works.png', alt='works')

@@ -347,6 +347,8 @@
     }
   }
 
+
+
   .article__right {
     width: 50%;
     background: #eeebdf;
@@ -378,4 +380,14 @@
   background-color: rgba(255,255,255,.5);
   top: 46%;
   right: -2.375rem;
+}
+
+.works-pic {
+  //position: absolute;
+  left: rem(15px);
+  bottom: rem(14px);
+  fill: white;
+  width: rem(20px);
+  height: rem(19px);
+  margin-right: rem(7px);
 }

@@ -207,9 +207,10 @@
   font-family: robotomedium;
   font-size: rem(16px);
   color: white;
+  &:hover {
+    background: #009688;
+   transition: .5s; }
 }
-
-
 
 
 .article__right_slides {
@@ -291,6 +292,10 @@
   border-right: .0625rem solid #fff;
   -webkit-border-bottom-left-radius: .3125rem;
   border-bottom-left-radius: .3125rem;
+  &:hover {
+    background: #009688;
+    transition: .5s;
+  }
 }
 
 
@@ -307,6 +312,10 @@
   border: .0625rem solid transparent;
   -webkit-border-bottom-right-radius: .3125rem;
   border-bottom-right-radius: .3125rem;
+  &:hover {
+    background: #009688;
+    transition: .5s;
+  }
 }
 
 .arrow-scroll_up {

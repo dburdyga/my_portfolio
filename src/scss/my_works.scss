@@ -196,16 +196,14 @@
   left: 25%;
   transform: translateX(-50%);
   margin-top: rem(30px);
-
 }
-
 
 .works {
   width: rem(199px);
   height: rem(46px);
   border: none;
   background: #20b5a1;
-  border-radius: 3px;
+  border-radius: rem(4px);
   font-family: robotomedium;
   font-size: rem(16px);
   color: white;

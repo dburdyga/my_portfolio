@@ -408,20 +408,28 @@
 }
 
 .checkbox-custom {
+  background: none;
+  //&--visible{
+  //  background: #00bfa5;
+  //}
+}
+
+.checkbox-custom:checked {
   background: #00bfa5;
 }
+
+
 .test__checkbox:checked+.checkbox-custom::before {
   content: "";
   display: block;
   position: absolute;
-  top: .3125rem;
-  right: .3125rem;
-  bottom: .3125rem;
-  left: .3125rem;
-  background: url("../images/icons/check.svg") center center no-repeat;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/icons/check.svg) center center no-repeat #00bfa5;
   -webkit-border-radius: .125rem;
   border-radius: .125rem;
-  background-size: rem(8px);
 }
 
 

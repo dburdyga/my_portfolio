@@ -381,3 +381,14 @@ $(document).ready(function(){
 
     });
 });
+
+//
+// let hamburger = document.querySelector('.navigation__humburger');
+// let modalNav = document.querySelector('.menu');
+// let html = document.querySelector('html');
+//
+// hamburger.addEventListener('click', function () {
+//     this.classList.toggle('menu_active');
+//     // modalNav.classList.toggle('menu_active');
+//     // html.classList.toggle('fixed-window');
+// })

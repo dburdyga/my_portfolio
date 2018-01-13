@@ -29,22 +29,23 @@ html(lang='ru')
                             polygon.about__triangle_left(fill="#efeee9", points="0,0 0,86 500.8,86 500.8,75.5")
                             polygon.about__triangle_right(fill="#efeee9" points="1000,0 1000,86 500,86 500,75.5")
                 main.main-blog
-                    aside.saidbar
-                        ul.saidbar__list
-                            li.saidbar__item.saidbar__item-active
-                                a.saidbar__link(href='#')
-                                    | Самое важное в
-                                    | SASS
-                            li.saidbar__item
-                                a.saidbar__link(href='#')
-                                    | Приёмы в вёрстке, без которых не
-                                    | обходится ни один сайт
-                            li.saidbar__item
-                                a.saidbar__link(href='#')
-                                    | Самый необходимый набор Gulp
-                                    | плагинов
-                            li.saidbar__item
-                                a.saidbar__link(href='#') Почему я выбрал Jade
+                    .saidbar-div
+                        aside.saidbar
+                            ul.saidbar__list
+                                li.saidbar__item.saidbar__item-active
+                                    a.saidbar__link(href='#')
+                                        | Самое важное в
+                                        | SASS
+                                li.saidbar__item
+                                    a.saidbar__link(href='#')
+                                        | Приёмы в вёрстке, без которых не
+                                        | обходится ни один сайт
+                                li.saidbar__item
+                                    a.saidbar__link(href='#')
+                                        | Самый необходимый набор Gulp
+                                        | плагинов
+                                li.saidbar__item
+                                    a.saidbar__link(href='#') Почему я выбрал Jade
                     .articles
                         article.article
                             h2.subtitle Самое важное в SASS
@@ -84,6 +85,16 @@ html(lang='ru')
                                 | постоянный количественный рост и сфера нашей активности способствует подготовки и реализации
                                 | модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс
                                 | внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                        article.article
+                            h2.subtitle Почему я выбрад Jade
+                            p.article__data
+                                time.data__time 11.12.2017
+                            p.article__text
+                                | Таким образом начало повседневной работы п о формированию позиции позволяет
+                                | выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и
+                                | богатый опыт новая модель организационной деятельности играет важную роль в формировании новых
+                                | предложений. Товарищи! новая модель организационной деятельности играет важную роль в
+                                | формировании систем массового участия.
             include ../common/footer
         script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQqo7U8AUECEzmP4BBuDooBysmapLAVPk&amp;callback=initMap", async defer)
         script(src="codemirror/lib/codemirror.js")

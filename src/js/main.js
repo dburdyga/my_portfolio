@@ -378,7 +378,6 @@ $(document).ready(function(){
 
     $(".navigation__humburger").click(function(faa){
         console.log('ok')
-        $(".menu_active").addClass("menu_hidden");
 
     });
 });

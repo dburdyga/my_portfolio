@@ -27,7 +27,7 @@
   font: 2.1875rem bernier_regularregular;
   color: #455a64;
   text-align: center;
-  font-size:rem(63px);
+  font-size: rem(63px);
   position: relative;
   height: 25%;
   display: -webkit-box;
@@ -42,19 +42,40 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  &:after{
-    content:'';
+  &:after {
+    content: '';
     position: absolute;
     width: 31.125rem;
     height: 11.5rem;
-    background:url("../images/icons/about_header.svg");
+    background: url("../images/icons/about_header.svg");
     opacity: 0.1;
     top: -51%;
     right: 29%;
     background-size: 83%;
     background-repeat: no-repeat;
+    @include phones {
+      top: -1%;
+      right: -30%;
+    }
+    @include tablets {
+      top: -1%;
+      right: -30%;
+    }
   }
 }
+
+  .subtitle__comments {
+    @include phones {
+      text-align: center;
+      padding: 0 5.25rem;
+    }
+    @include tablets {
+      text-align: center;
+      padding: 0 5.25rem;
+    }
+  }
+
+
 .subtitle_works {
   font: 2.1875rem bernier_regularregular;
   color: #455a64;
@@ -73,6 +94,11 @@
   right: 29%;
   background-size: 80%;
   background-repeat: no-repeat;
+  @include phones {
+    top: 23%;
+    right: -36%;
+
+  }
 }
 }
 
@@ -95,11 +121,23 @@
   display: flex;
   padding: 5.5625rem;
   justify-content: center;
+  @include phones {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 1.5625rem;
+  }
 }
 
 .comments__description_left, .comments__description_right {
   width:33%;
   margin: rem(10px);
+  @include phones {
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .comments__description_content {
@@ -310,6 +348,12 @@
     -webkit-border-top-right-radius: .3125rem;
     border-top-right-radius: .3125rem;
     position: relative;
+    @include phones{
+       width: 21rem;
+     }
+    @include tablets{
+      width: 21rem;
+    }
   }
   .subtitle-form {
     z-index: 2000;
@@ -378,16 +422,15 @@
   width: 1.25rem;
   height: .3125rem;
   background-color: rgba(255,255,255,.5);
-  top: 46%;
-  right: -2.375rem;
+top: 46%;
+       right: -2.375rem;
 }
 
 .works-pic {
-  //position: absolute;
   left: rem(15px);
   bottom: rem(14px);
   fill: white;
   width: rem(20px);
-  height: rem(19px);
   margin-right: rem(7px);
+  height: rem(19px);
 }

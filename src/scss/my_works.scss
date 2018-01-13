@@ -171,7 +171,34 @@
   font-size: rem(16px);
   color: #20b5a1;
   margin-bottom: rem(20px);
+  margin-bottom: rem(33px);
 }
+
+.article__text_works:before {
+  content: '';
+  width: 25%;
+  height: rem(1px);
+  background-color: #00bfa5;
+  border-radius: rem(2px);
+  position: absolute;
+  margin-top: -1rem;
+  left: 25%;
+  transform: translateX(-50%);
+
+}
+
+.article__text_works:after{
+  content: '';
+  width: 25%;
+  height: rem(1px);
+  background-color: #00bfa5;
+  position: absolute;
+  left: 25%;
+  transform: translateX(-50%);
+  margin-top: rem(30px);
+
+}
+
 
 .works {
   width: rem(199px);
@@ -183,6 +210,9 @@
   font-size: rem(16px);
   color: white;
 }
+
+
+
 
 .article__right_slides {
   display: flex;

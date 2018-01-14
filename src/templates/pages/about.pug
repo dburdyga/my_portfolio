@@ -12,6 +12,11 @@ html(lang='ru')
         title About
     body
         .wrapper
+            .preloader#page-preloader
+                .preloader__load
+                    img(src='images/img/preloader_round.png', alt="прелоадер").preloader__svg
+                    //svg.preloader__svg(viewbox='0 0 26 16', width='26', height='16')
+                    //    //use(xlink:href='images/icons/sprite.svg#preloader_round')
             .container
                 section.blog
                     include ../common/header
@@ -154,6 +159,5 @@ html(lang='ru')
         script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTra4xCaEnsFJbNKtLikYUvJZ39GZ9nyo&callback=initMap")
         script(src="codemirror/lib/codemirror.js")
         script(src="codemirror/mode/javascript/javascript.js")
-        script(src="https://code.jquery.com/jquery-3.2.1.min.js", integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=", crossorigin="anonymous")
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
         script(src='js/bundle.js')

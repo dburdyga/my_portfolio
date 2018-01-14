@@ -424,3 +424,72 @@
 .skills-row__item:hover .circle-100 {
   stroke-dasharray: 282.6 282.6;
 }
+
+
+
+//#preloader {
+//  position: fixed;
+//  left: 0;
+//  top: 0;
+//  z-index: 999;
+//  width: 100%;
+//  height: 100%;
+//  overflow: visible;
+//  background: #333 url('//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif') no-repeat center center;
+//}
+
+.preloader--hidden {
+  visibility: hidden;
+}
+
+.preloader--done {
+  -webkit-animation: preload-top 1.2s ease-in-out;
+  animation: preload-top 1.2s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.preloader {
+  background:$aquamarine;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  -webkit-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.preloader__load {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 2rem;
+  font-weight: 300;
+  width: rem(100px);
+  height: rem(100px);
+}
+.preloader__svg {
+  fill: #fff;
+  width: rem(100px);
+  height: rem(100px);
+}
+
+
+
+
+
+

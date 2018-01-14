@@ -192,9 +192,20 @@ function initMap() {
 };
 
 
+// jQuery(document).ready(function($) {
+//     console.log()
+//     $(window).load(function() {
+//         setTimeout(function() {
+//             $('.preloader').fadeOut('slow', function() {});
+//         }, 2000);
+//
+//     });
+// });
+
 $(document).ready(function(){
     var firstClick=true;
     console.log(firstClick)
+    $('.preloader').fadeOut(2000, function() {});
     $(".navigation__humburger").click(function(){
         if(firstClick){
             $(".navigation__humburger").addClass("navigation__humburger_active");

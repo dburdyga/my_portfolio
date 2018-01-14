@@ -21,23 +21,32 @@ html(lang='ru')
                             polygon.about__triangle_right(fill="#faf8f0" points="1000,0 1000,86 500,86 500,75.5")
                 section.works_title
                     h2.subtitle_works Мои работы
-                section.main-works
-                    .articles_works
-                        article.article__left#article_left
-                            h4.subtitle Сайт школы онлайн образования
-                            .article__text_works HTML, CSS, JAVASCRIPT
-                            button.works
-                                svg.works-pic(viewbox='0 0 19.125 19.125', width='100%', height='100%')
-                                    use(xlink:href="images/icons/sprite.svg#link")
-                                a.works-text(href='https://loftschool.com/') Посмотреть сайт
-                        article.article__right#article_color
-                            .article__right_main
-                            img.works_img_big(src='images/img/works.png', alt='works')
-                            .article__right_slides
-                                .article__right_slides_left
-                                    img.works_img(src='images/img/works_1.png', alt='works_1')
-                                .article__right_slides_right
-                                    img.works_img(src='images/img/works_2.png', alt='works_2')
+                .block-slider
+                    .slider
+                        .slider__description
+                            .slider__description--info
+                                .block-subtitle.slider__title Сайт школы онлайн образования
+                                .slider__text html, css, javascript
+                                .slider__link-block
+                                    a(href="https://loftschool.com/").slider__link Посмотреть cайт
+                                        .slider__link--pic
+                                            svg.link-svg
+                                                use(xlink:href='images/icons/sprite.svg#link')
+                        .slider__main-pic
+                            .slider__main-pic--block
+                                img(src='images/img/works.png', alt="скриншот сайта №1").slider__main-pic--img
+                        .slider__menu
+                            .slider__btn-block
+                                .slider__menu--prev-img
+                                    img(src='images/img/works_1.png', alt="скриншот сайта №4").slider__prev-pic--img
+                                    .slider__menu--prev
+                                        svg.arrow-down
+                                            use(xlink:href='images/icons/sprite.svg#arrow_down')
+                                .slider__menu--next-img
+                                    img(src='images/img/works_2.png', alt="скриншот сайта №2").slider__next-pic--img
+                                    .slider__menu--prev
+                                        svg.arrow-up
+                                            use(xlink:href='images/icons/sprite.svg#arrow_down')
                 section.comments
                     .comments__content
                         .comments__content_title

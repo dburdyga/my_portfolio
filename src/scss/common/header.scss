@@ -96,6 +96,10 @@
     z-index: 10;
     top: 10%;
     left: 38%;
+    @include phones {
+      top: 13%;
+      left: 12%;
+    }
   }
   &_hidden {
     visibility: hidden;

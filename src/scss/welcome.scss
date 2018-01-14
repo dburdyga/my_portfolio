@@ -67,10 +67,12 @@
   border-bottom: none;
   backface-visibility: hidden;
   @include phones {
-     left:16%;
+    top: 169%;
+    left: 31%;
    }
   @include tablets {
-    left:16%;
+    top: 169%;
+    left: 31%;
   }
   &--hidden {
     transform: rotateY(180deg);
@@ -109,10 +111,12 @@
   border-bottom: none;
   visibility: hidden;
   @include phones {
-    left:16%;
+    top: 169%;
+    left: 31%;
   }
   @include tablets {
-    left:16%;
+    top: 169%;
+    left: 31%;
   }
 
   &--visible {

@@ -2,6 +2,27 @@ let name = 'User Name';
 let place = 'London';
 
 console.log( `Hello ${name}, ready for ${place}?` );
+$(document).ready(function(){
+    var firstClick=true;
+    console.log(firstClick)
+    $(".navigation__humburger").click(function(){
+        if(firstClick){
+            $(".navigation__humburger").addClass("navigation__humburger_active");
+            $(".drop-left").addClass("drop-left_active");
+            $(".drop-right").addClass("drop-right_active");
+            $(".menu").addClass("menu_active");
+            firstClick=false;
+            console.log(firstClick)
+        }else{
+            $('.menu').removeClass('menu_active');
+            $('.navigation__humburger').removeClass("navigation__humburger_active");
+            $(".drop-left").removeClass("drop-left_active");
+            $(".drop-right").removeClass("drop-right_active");
+            firstClick=true;
+            console.log(firstClick)
+        }
+    });
+});
 
 var parallax = (function () {
   var bg = document.querySelector('.blog');
@@ -113,246 +134,246 @@ window.onscroll = function () {
     parallax.init(wScroll);
 }
 
-var map;
-var login = document.getElementById('log-in');
-var front = document.querySelector('.user');
-var back = document.querySelector('.user-login');
-var humburger = document.getElementById('navigation__humburger');
-var dropDownMenu = document.querySelector('.menu');
-var dropDownMenuLeft = document.querySelector('.drop-left');
-var dropDownMenuRight = document.querySelector('.drop-right');
-var $window = $(window);
+// var map;
+// var login = document.getElementById('log-in');
+// var front = document.querySelector('.user');
+// var back = document.querySelector('.user-login');
+// var humburger = document.getElementById('navigation__humburger');
+// var dropDownMenu = document.querySelector('.menu');
+// var dropDownMenuLeft = document.querySelector('.drop-left');
+// var dropDownMenuRight = document.querySelector('.drop-right');
+// var $window = $(window);
 
 
-// var $item = document.getElementsByClassName('saidbar__item'),
-//     activeItem = 'saidbar__item-active';
-//
-// for (var i = 0; i < $item.length; i++) {
-//     $item[i].addEventListener('click', function() {
-//         if(!(this.classList.contains(activeItem))) {
-//             for (var j = 0; j < $item.length; j++) {
-//                 $item[j].classList.remove(activeItem);
-//                 this.classList.add(activeItem);
-//             }
-//         } else {
-//             this.classList.remove(activeItem);
-//         }
-//     })
-// };
-//
-// if(login) {
-//     login.addEventListener('click', function () {
-//
-//         front.style.cssText = 'transform: rotateY(180deg) translate(50%,-50%); \
-//         backface-visibility: hidden; \
-//         transition: 1s; ';
-//         back.style.cssText = 'transform: translate(-50%, -50%);  ';
-//         login.style.display = 'none';
-//     });
-// }else {
-//     humburger.addEventListener('click', () => {
-//         if (humburger.classList.contains('navigation__humburger_active')) {
-//             humburger.classList.remove('navigation__humburger_active');
-//             dropDownMenu.classList.remove('menu_active');
-//             dropDownMenuLeft.classList.remove('drop-left_active');
-//             dropDownMenuRight.classList.remove('drop-right_active');
-//         } else {
-//             humburger.classList.add('navigation__humburger_active');
-//             dropDownMenu.classList.add('menu_active');
-//             dropDownMenuLeft.classList.add('drop-left_active');
-//             dropDownMenuRight.classList.add('drop-right_active');
-//         }
-//     });
-// };
+var $item = document.getElementsByClassName('saidbar__item'),
+    activeItem = 'saidbar__item-active';
+
+for (var i = 0; i < $item.length; i++) {
+    $item[i].addEventListener('click', function() {
+        if(!(this.classList.contains(activeItem))) {
+            for (var j = 0; j < $item.length; j++) {
+                $item[j].classList.remove(activeItem);
+                this.classList.add(activeItem);
+            }
+        } else {
+            this.classList.remove(activeItem);
+        }
+    })
+};
+
+if(login) {
+    login.addEventListener('click', function () {
+
+        front.style.cssText = 'transform: rotateY(180deg) translate(50%,-50%); \
+        backface-visibility: hidden; \
+        transition: 1s; ';
+        back.style.cssText = 'transform: translate(-50%, -50%);  ';
+        login.style.display = 'none';
+    });
+}else {
+    humburger.addEventListener('click', () => {
+        if (humburger.classList.contains('navigation__humburger_active')) {
+            humburger.classList.remove('navigation__humburger_active');
+            dropDownMenu.classList.remove('menu_active');
+            dropDownMenuLeft.classList.remove('drop-left_active');
+            dropDownMenuRight.classList.remove('drop-right_active');
+        } else {
+            humburger.classList.add('navigation__humburger_active');
+            dropDownMenu.classList.add('menu_active');
+            dropDownMenuLeft.classList.add('drop-left_active');
+            dropDownMenuRight.classList.add('drop-right_active');
+        }
+    });
+};
 
 
-// function initMap() {
-//     map = new google.maps.Map(document.getElementById('map'), {
-//         center: {lat: 51.690372, lng: 39.252002},
-//         zoom: 14,
-//         styles:[
-//             {
-//                 "featureType": "administrative.country",
-//                 "elementType": "labels.text",
-//                 "stylers": [
-//                     {
-//                         "color": "#737373"
-//                     },
-//                     {
-//                         "weight": "0.01"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "landscape",
-//                 "elementType": "all",
-//                 "stylers": [
-//                     {
-//                         "saturation": "97"
-//                     },
-//                     {
-//                         "color": "#ffffff"
-//                     },
-//                     {
-//                         "visibility": "simplified"
-//                     },
-//                     {
-//                         "lightness": "81"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "landscape.natural.landcover",
-//                 "elementType": "all",
-//                 "stylers": [
-//                     {
-//                         "saturation": "100"
-//                     },
-//                     {
-//                         "lightness": "100"
-//                     },
-//                     {
-//                         "gamma": "10.00"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "poi",
-//                 "elementType": "all",
-//                 "stylers": [
-//                     {
-//                         "saturation": "100"
-//                     },
-//                     {
-//                         "lightness": "100"
-//                     },
-//                     {
-//                         "gamma": "10.00"
-//                     },
-//                     {
-//                         "weight": "0.01"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "poi.attraction",
-//                 "elementType": "labels.text.fill",
-//                 "stylers": [
-//                     {
-//                         "color": "#565656"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "poi.business",
-//                 "elementType": "labels.text.fill",
-//                 "stylers": [
-//                     {
-//                         "color": "#565656"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "poi.government",
-//                 "elementType": "labels.text.fill",
-//                 "stylers": [
-//                     {
-//                         "color": "#565656"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "poi.medical",
-//                 "elementType": "labels.text.fill",
-//                 "stylers": [
-//                     {
-//                         "color": "#565656"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "poi.park",
-//                 "elementType": "all",
-//                 "stylers": [
-//                     {
-//                         "saturation": "100"
-//                     },
-//                     {
-//                         "lightness": "100"
-//                     },
-//                     {
-//                         "gamma": "10.00"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "poi.park",
-//                 "elementType": "labels.text.fill",
-//                 "stylers": [
-//                     {
-//                         "color": "#565656"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "poi.place_of_worship",
-//                 "elementType": "labels.text.fill",
-//                 "stylers": [
-//                     {
-//                         "color": "#565656"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "poi.school",
-//                 "elementType": "labels.text.fill",
-//                 "stylers": [
-//                     {
-//                         "color": "#565656"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "poi.sports_complex",
-//                 "elementType": "labels.text.fill",
-//                 "stylers": [
-//                     {
-//                         "color": "#565656"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "road",
-//                 "elementType": "all",
-//                 "stylers": [
-//                     {
-//                         "saturation": "-70"
-//                     },
-//                     {
-//                         "lightness": "43"
-//                     }
-//                 ]
-//             },
-//             {
-//                 "featureType": "water",
-//                 "elementType": "all",
-//                 "stylers": [
-//                     {
-//                         "color": "#39d2ca"
-//                     }
-//                 ]
-//             }
-//         ]
-//     });
-//
-//     var marker = new google.maps.Marker({
-//         position: {lat: 51.697354, lng: 39.269249},
-//         map: map,
-//         title: 'Дарья',
-//         icon: '../images/icons/map_marker.svg'
-//     });
-//
-// };
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 51.690372, lng: 39.252002},
+        zoom: 14,
+        styles:[
+            {
+                "featureType": "administrative.country",
+                "elementType": "labels.text",
+                "stylers": [
+                    {
+                        "color": "#737373"
+                    },
+                    {
+                        "weight": "0.01"
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "saturation": "97"
+                    },
+                    {
+                        "color": "#ffffff"
+                    },
+                    {
+                        "visibility": "simplified"
+                    },
+                    {
+                        "lightness": "81"
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape.natural.landcover",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "saturation": "100"
+                    },
+                    {
+                        "lightness": "100"
+                    },
+                    {
+                        "gamma": "10.00"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "saturation": "100"
+                    },
+                    {
+                        "lightness": "100"
+                    },
+                    {
+                        "gamma": "10.00"
+                    },
+                    {
+                        "weight": "0.01"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.attraction",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#565656"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.business",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#565656"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.government",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#565656"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.medical",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#565656"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "saturation": "100"
+                    },
+                    {
+                        "lightness": "100"
+                    },
+                    {
+                        "gamma": "10.00"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#565656"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.place_of_worship",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#565656"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.school",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#565656"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.sports_complex",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#565656"
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "saturation": "-70"
+                    },
+                    {
+                        "lightness": "43"
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "color": "#39d2ca"
+                    }
+                ]
+            }
+        ]
+    });
+
+    var marker = new google.maps.Marker({
+        position: {lat: 51.697354, lng: 39.269249},
+        map: map,
+        title: 'Дарья',
+        icon: '../images/icons/map_marker.svg'
+    });
+
+};
 
 
 
@@ -368,27 +389,7 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
-    var firstClick=true;
 
-    $(".navigation__humburger").click(function(){
-        if(firstClick){
-            $(".navigation__humburger").addClass("navigation__humburger_active");
-            $(".drop-left").addClass("drop-left_active");
-            $(".drop-right").addClass("drop-right_active");
-            $(".menu").addClass("menu_active");
-            firstClick=false;
-            console.log(firstClick)
-        }else{
-            $('.menu').removeClass('menu_active');
-            $('.navigation__humburger').removeClass("navigation__humburger_active");
-            $(".drop-left").removeClass("drop-left_active");
-            $(".drop-right").removeClass("drop-right_active");
-            firstClick=true;
-            console.log(firstClick)
-        }
-    });
-});
 
 
 
@@ -409,36 +410,6 @@ for (var i = 0; i < $item.length; i++) {
     })
 };
 
-//
-// $(function() {
-//     const parallaxContainer = document.getElementById('parallax');
-//     const layers = parallaxContainer.children;
-//
-//     const moveLayers = e => {
-//         const initialX = (window.innerWidth / 2) - e.pageX;
-//         const initialY = (window.innerHeight / 2) - e.pageY;
-//
-//         let i = 0;
-//         for (let layer of layers) {
-//             const divider = i / 100;
-//             const positionX = initialX * divider;
-//             const positionY = initialY * divider;
-//             const bottomPosition = (window.innerHeight / 2) * divider;
-//             const image = layer.firstElementChild;
-//
-//             layer.style.transform = `translate(${positionX}px, ${positionY}px)`;
-//             image.style.bottom = `-${bottomPosition}px`;
-//             i++;
-//         }
-//     };
-//
-//     window.addEventListener('mousemove', moveLayers);
-// });
-//
-// //parallax scroll
-// $(function() {
-//
-// });
 
 var parallaxContainer = document.getElementById('parallax');
 var layers = parallaxContainer.children;
@@ -465,83 +436,3 @@ var moveLayers = function (e) {
 window.addEventListener('mousemove', moveLayers);
 
 
-//google map
-function initMap() {
-    var center = {lat:  59.9450154, lng: 30.3085512};
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
-        center: center,
-        scrollwheel: false,
-        styles: [
-            {
-                "featureType": "landscape",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "color": "#f2f2f2"
-                    }
-                ]
-            },
-            {
-                "featureType": "poi",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "road",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "saturation": -100
-                    },
-                    {
-                        "lightness": 45
-                    }
-                ]
-            },
-            {
-                "featureType": "road.highway",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "visibility": "simplified"
-                    }
-                ]
-            },
-            {
-                "featureType": "road.arterial",
-                "elementType": "labels.icon",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "transit",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "water",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "color": "#00BFA5"
-                    },
-                    {
-                        "visibility": "on"
-                    }
-                ]
-            }
-        ]
-    });
-};

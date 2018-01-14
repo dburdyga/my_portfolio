@@ -369,16 +369,24 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $(".navigation__humburger").click(function(fcc){
-        $(".navigation__humburger").addClass("navigation__humburger_active");
-        $(".drop-left").addClass("drop-left_active");
-        $(".drop-right").addClass("drop-right_active");
-        $(".menu").addClass("menu_active");
-    });
+    var firstClick=true;
 
-    $(".navigation__humburger").click(function(faa){
-        console.log('ok')
-
+    $(".navigation__humburger").click(function(){
+        if(firstClick){
+            $(".navigation__humburger").addClass("navigation__humburger_active");
+            $(".drop-left").addClass("drop-left_active");
+            $(".drop-right").addClass("drop-right_active");
+            $(".menu").addClass("menu_active");
+            firstClick=false;
+            console.log(firstClick)
+        }else{
+            $('.menu').removeClass('menu_active');
+            $('.navigation__humburger').removeClass("navigation__humburger_active");
+            $(".drop-left").removeClass("drop-left_active");
+            $(".drop-right").removeClass("drop-right_active");
+            firstClick=true;
+            console.log(firstClick)
+        }
     });
 });
 
@@ -408,3 +416,6 @@ for (var i = 0; i < $item.length; i++) {
         }
     })
 };
+
+
+

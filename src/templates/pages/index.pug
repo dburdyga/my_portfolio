@@ -7,6 +7,12 @@ html(lang='ru')
         link(rel='stylesheet', href='css/style.min.css')
     body
         .container-welcome.welcome
+            .preloader#page-preloader
+                .preloader__load
+                    img(src='images/img/preloader_round.png', alt="прелоадер").preloader__svg
+                    .preloader__perc(transform="matrix(1 0 0 1 19.9785 20.5957)") 100%
+                    //svg.preloader__svg(viewbox='0 0 26 16', width='26', height='16')
+                    //    //use(xlink:href='images/icons/sprite.svg#preloader_round')
             .parallax#parallax
                 .parallax__layer
                     img.parallax__img(src=`images/parallax/layer_01.png`, alt="фоновое изображение")

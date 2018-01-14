@@ -50,6 +50,30 @@
 
 }
 
+
+.user {
+  @include phones {
+    top: 169%;
+    left: 31%;
+  }
+  @include tablets {
+    top: 169%;
+    left: 31%;
+  }
+}
+
+
+.user-login {
+  @include phones {
+    top: 169%;
+    left: 31%;
+  }
+  @include tablets {
+    top: 169%;
+    left: 31%;
+  }
+}
+
 .user {
   position: absolute;
   top: 50%;
@@ -66,12 +90,6 @@
   padding-top: rem(35px);
   border-bottom: none;
   backface-visibility: hidden;
-  @include phones {
-     left:16%;
-   }
-  @include tablets {
-    left:16%;
-  }
   &--hidden {
     transform: rotateY(180deg);
     transition: visibility 6s;
@@ -108,12 +126,7 @@
   padding-top: 2.1875rem;
   border-bottom: none;
   visibility: hidden;
-  @include phones {
-    left:16%;
-  }
-  @include tablets {
-    left:16%;
-  }
+
 
   &--visible {
     visibility: visible;

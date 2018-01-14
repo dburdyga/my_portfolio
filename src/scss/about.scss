@@ -457,10 +457,9 @@
   width: 100%;
   height: 100%;
   z-index: 10;
-  -webkit-transition: 1s all;
-  -o-transition: 1s all;
-  transition: 1s all;
-  opacity: 1;
+  -webkit-transition: 2s all;
+  -o-transition: 2s all;
+  transition: 2s all;
   visibility: visible;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -489,7 +488,14 @@
 }
 
 
-
+.preloader__perc {
+  fill: #fff;
+  font-family: robotomedium;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: rem(24px);
+  margin-left: rem(27px);
+}
 
 
 

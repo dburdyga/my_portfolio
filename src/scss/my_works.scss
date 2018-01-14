@@ -562,7 +562,7 @@
   }
 
   &__link {
-    padding: rem(17px 21px 17px 41px);
+    padding: rem(17px) rem(21px) rem(17px) rem(41px);
     position: relative;
     background-color: $light;
     color: #fff;
@@ -574,7 +574,7 @@
 
     @include phones {
       font-size: rem(14px);
-      padding: rem(12px 20px 12px 52px);
+      padding: rem(12px) rem(20px) rem(12px) rem(52px);
     }
   }
 

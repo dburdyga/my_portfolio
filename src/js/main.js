@@ -16,11 +16,11 @@ var parallax = (function () {
           var transformString = 'translate3d(0,'+ strafe +',0)';
 
           var style = block.style;
-          
+
           style.transform= transformString;
           style.webkitTransform = transformString;
       },
-      
+
       init: function (wScroll) {
           this.move(bg, wScroll, 45);
           this.move(user, wScroll, 20);
@@ -28,7 +28,7 @@ var parallax = (function () {
       }
 
   }
-  
+
 }());
 
 window.onscroll = function () {
@@ -56,62 +56,62 @@ window.onscroll = function () {
 
 
 
-// var parallaxContainer = document.getElementById('parallax'),
-//     layers = parallaxContainer.children;
-//
-// var moveLayers = function (e) {
-//     var initialX = (window.innerWidth / 2) - e.pageX;
-//     var initialY = (window.innerHeight / 2) - e.pageY;
-//
-//     [].slice.call(layers).forEach(function(layer, index) {
-//         var
-//             divider = index / 100,
-//             positionX = initialX * divider,
-//             positionY = initialY * divider,
-//             bottomPosition = (window.innerHeight / 2) * divider,
-//             transformString = 'translate(' + positionX + 'px,' + positionY + 'px)',
-//             image = layer.firstElementChild;
-//
-//         layer.style.transform = transformString;
-//         image.style.bottom = '-' + bottomPosition + 'px';
-//     });
-//
-// };
-//
-//
-// window.addEventListener('mousemove', moveLayers);
+var parallaxContainer = document.getElementById('parallax'),
+    layers = parallaxContainer.children;
+
+var moveLayers = function (e) {
+    var initialX = (window.innerWidth / 2) - e.pageX;
+    var initialY = (window.innerHeight / 2) - e.pageY;
+
+    [].slice.call(layers).forEach(function(layer, index) {
+        var
+            divider = index / 100,
+            positionX = initialX * divider,
+            positionY = initialY * divider,
+            bottomPosition = (window.innerHeight / 2) * divider,
+            transformString = 'translate(' + positionX + 'px,' + positionY + 'px)',
+            image = layer.firstElementChild;
+
+        layer.style.transform = transformString;
+        image.style.bottom = '-' + bottomPosition + 'px';
+    });
+
+};
 
 
-// var parallax = (function () {
-//     var bg = document.querySelector('.welcome_welcome');
-//     var user = document.querySelector('.user');
-//
-//
-//     return {
-//         move: function (block, windowScroll, strafeAmount){
-//             var strafe = windowScroll / -strafeAmount + '%';
-//             var transformString = 'translate3d(0,'+ strafe +',0)';
-//
-//             var style = block.style;
-//
-//             style.transform= transformString;
-//             style.webkitTransform = transformString;
-//         },
-//
-//         init: function (wScroll) {
-//             this.move(bg, wScroll, 45);
-//             this.move(user, wScroll, 20);
-//
-//         }
-//     }
-//
-// }());
-//
-// window.onscroll = function () {
-//     var wScroll = window.pageYOffset;
-//
-//     parallax.init(wScroll);
-// }
+window.addEventListener('mousemove', moveLayers);
+
+
+var parallax = (function () {
+    var bg = document.querySelector('.welcome_welcome');
+    var user = document.querySelector('.user');
+
+
+    return {
+        move: function (block, windowScroll, strafeAmount){
+            var strafe = windowScroll / -strafeAmount + '%';
+            var transformString = 'translate3d(0,'+ strafe +',0)';
+
+            var style = block.style;
+
+            style.transform= transformString;
+            style.webkitTransform = transformString;
+        },
+
+        init: function (wScroll) {
+            this.move(bg, wScroll, 45);
+            this.move(user, wScroll, 20);
+
+        }
+    }
+
+}());
+
+window.onscroll = function () {
+    var wScroll = window.pageYOffset;
+
+    parallax.init(wScroll);
+}
 
 var map;
 var login = document.getElementById('log-in');
@@ -369,32 +369,32 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $(".navigation__humburger").click(function(fcc){
-        $(".navigation__humburger").addClass("navigation__humburger_active");
-        $(".drop-left").addClass("drop-left_active");
-        $(".drop-right").addClass("drop-right_active");
-        $(".menu").addClass("menu_active");
-    });
+    var firstClick=true;
 
-    $(".navigation__humburger").click(function(faa){
-        console.log('ok')
-
+    $(".navigation__humburger").click(function(){
+        if(firstClick){
+            $(".navigation__humburger").addClass("navigation__humburger_active");
+            $(".drop-left").addClass("drop-left_active");
+            $(".drop-right").addClass("drop-right_active");
+            $(".menu").addClass("menu_active");
+            firstClick=false;
+            console.log(firstClick)
+        }else{
+            $('.menu').removeClass('menu_active');
+            $('.navigation__humburger').removeClass("navigation__humburger_active");
+            $(".drop-left").removeClass("drop-left_active");
+            $(".drop-right").removeClass("drop-right_active");
+            firstClick=true;
+            console.log(firstClick)
+        }
     });
 });
 
-//
-// let hamburger = document.querySelector('.navigation__humburger');
-// let modalNav = document.querySelector('.menu');
-// let html = document.querySelector('html');
-//
-// hamburger.addEventListener('click', function () {
-//     this.classList.toggle('menu_active');
-//     // modalNav.classList.toggle('menu_active');
-//     // html.classList.toggle('fixed-window');
-// })
+
 
 var $item = document.getElementsByClassName('saidbar__item'),
     activeItem = 'saidbar__item-active';
+
 
 for (var i = 0; i < $item.length; i++) {
     $item[i].addEventListener('click', function() {
@@ -408,3 +408,58 @@ for (var i = 0; i < $item.length; i++) {
         }
     })
 };
+
+//
+// $(function() {
+//     const parallaxContainer = document.getElementById('parallax');
+//     const layers = parallaxContainer.children;
+//
+//     const moveLayers = e => {
+//         const initialX = (window.innerWidth / 2) - e.pageX;
+//         const initialY = (window.innerHeight / 2) - e.pageY;
+//
+//         let i = 0;
+//         for (let layer of layers) {
+//             const divider = i / 100;
+//             const positionX = initialX * divider;
+//             const positionY = initialY * divider;
+//             const bottomPosition = (window.innerHeight / 2) * divider;
+//             const image = layer.firstElementChild;
+//
+//             layer.style.transform = `translate(${positionX}px, ${positionY}px)`;
+//             image.style.bottom = `-${bottomPosition}px`;
+//             i++;
+//         }
+//     };
+//
+//     window.addEventListener('mousemove', moveLayers);
+// });
+//
+// //parallax scroll
+// $(function() {
+//
+// });
+
+var parallaxContainer = document.getElementById('parallax');
+var layers = parallaxContainer.children;
+
+var moveLayers = function (e) {
+    var initialX = (window.innerWidth / 2) - e.pageX;
+    var initialY = (window.innerHeight / 2) - e.pageY;
+
+    [].slice.call(layers).forEach(function(layer, index) {
+        var
+            divider = index / 40,
+            positionX = initialX * divider,
+            positionY = initialY * divider,
+            bottomPosition = (window.innerHeight / 2) * divider,
+            transformString = 'translate(' + positionX + 'px,' + positionY + 'px)',
+            image = layer.firstElementChild;
+        console.log('ok')
+
+        layer.style.transform = transformString;
+        image.style.bottom = '-' + bottomPosition + 'px';
+
+    });
+};
+window.addEventListener('mousemove', moveLayers);

@@ -3,6 +3,114 @@ let place = 'London';
 
 console.log( `Hello ${name}, ready for ${place}?` );
 
+(function($) {
+    "use strict";
+    var slider = {
+        init: function() {
+            $(".slider__menu--prev").on("click", this.prevSlide);
+            $(".slider__menu--next").on("click", this.nextSlide);
+        },
+        prevSlide: function(event) {
+            event.preventDefault();
+
+            var thumbIndex = $(this)
+                    .parent()
+                    .find("img.slider__thumb--visible")
+                    .data("slide-thumb"),
+                $targetSlide = $(".slider").find('[data-slide="' + thumbIndex + '"]'),
+                prevIndex =
+                    thumbIndex - 1 <= 0
+                        ? $(this)
+                            .parent()
+                            .find("img").length
+                        : thumbIndex - 1,
+                $targetThumb = $(this)
+                    .parent()
+                    .find('img[data-slide-thumb="' + prevIndex + '"]');
+
+            $(this)
+                .parent()
+                .find("img.slider__thumb--visible")
+                .removeClass("slider__thumb--visible");
+
+            $(".slider__slide--active").removeClass("slider__slide--active");
+
+            $targetThumb.addClass("slider__thumb--visible");
+
+            $targetSlide.addClass("slider__slide--active");
+
+            $(".slider__menu--next")
+                .parent()
+                .find("img.slider__thumb--visible")
+                .removeClass("slider__thumb--visible");
+
+            var nextIndex =
+                thumbIndex + 1 >
+                $(this)
+                    .parent()
+                    .find("img").length
+                    ? 1
+                    : thumbIndex + 1;
+
+            $(".slider__menu--next")
+                .parent()
+                .find('img[data-slide-thumb="' + nextIndex + '"]')
+                .addClass("slider__thumb--visible");
+        },
+        nextSlide: function(event) {
+            event.preventDefault();
+
+            var thumbIndex = $(this)
+                    .parent()
+                    .find("img.slider__thumb--visible")
+                    .data("slide-thumb"),
+                $targetSlide = $(".slider").find('[data-slide="' + thumbIndex + '"]'),
+                nextIndex =
+                    thumbIndex + 1 >
+                    $(this)
+                        .parent()
+                        .find("img").length
+                        ? 1
+                        : thumbIndex + 1,
+                $targetThumb = $(this)
+                    .parent()
+                    .find('img[data-slide-thumb="' + nextIndex + '"]');
+
+            $(this)
+                .parent()
+                .find("img.slider__thumb--visible")
+                .removeClass("slider__thumb--visible");
+
+            $(".slider__slide--active").removeClass("slider__slide--active");
+
+            $targetThumb.addClass("slider__thumb--visible");
+
+            $targetSlide.addClass("slider__slide--active");
+
+            $(".slider__menu--prev")
+                .parent()
+                .find("img.slider__thumb--visible")
+                .removeClass("slider__thumb--visible");
+
+            var prevIndex =
+                thumbIndex - 1 <= 0
+                    ? $(this)
+                        .parent()
+                        .find("img").length
+                    : thumbIndex - 1;
+
+            $(".slider__menu--prev")
+                .parent()
+                .find('img[data-slide-thumb="' + prevIndex + '"]')
+                .addClass("slider__thumb--visible");
+        }
+    };
+
+    $(document).ready(function() {
+        slider.init();
+    });
+})(jQuery);
+
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 51.690372, lng: 39.252002},

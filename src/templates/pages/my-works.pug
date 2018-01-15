@@ -3,12 +3,14 @@ html(lang='ru')
     include ../common/head
     body
         .wrapper
-            .preloader#page-preloader
-                .preloader__load
-                    img(src='images/img/preloader_round.png', alt="прелоадер").preloader__svg
-                    .preloader__perc(transform="matrix(1 0 0 1 19.9785 20.5957)") 100%
-                    //svg.preloader__svg(viewbox='0 0 26 16', width='26', height='16')
-                    //    //use(xlink:href='images/icons/sprite.svg#preloader_round')
+            .preloader#preloader
+                .preloader__svg-cont
+                    svg.preloader__svg(version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="144px" height="144px" viewBox="0 0 144 144" enable-background="new 0 0 144 144" xml:space="preserve")
+                        circle.circle_1(opacity="0.4" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" enable-background="new" cx="72" cy="71.999" r="70")
+                        circle.circle_2(opacity="0.7" fill="none" stroke="#FFFFFF" stroke-width="3.8938" stroke-miterlimit="10" enable-background="new" cx="72" cy="72" r="55")
+                        circle.circle_3(fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" cx="72" cy="72" r="40")
+                        text.preloader__text#preloader__text(transform="matrix(1 0 0 1 51.5391 79.0127)" fill="#FFFFFF" font-family="'ArialMT'" font-size="24") 0%
             .container.work-container
                 section.blog
                     include ../common/header

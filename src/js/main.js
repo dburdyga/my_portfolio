@@ -202,10 +202,43 @@ function initMap() {
 //     });
 // });
 
+var preloader = document.getElementById("preloader"),
+    preloaderText = document.getElementById("preloader__text"),
+    preloaderProgress = 0,
+    preloaderInterval = setInterval(function() {
+        preloaderText.textContent =
+            (preloaderProgress <= 9 ? "0" : "") + (preloaderProgress++) + "%";
+
+        if (preloaderProgress === 100) {
+            setTimeout(function() {
+                preloader.setAttribute("style", "display: none;");
+
+                $('body').children().removeClass('visually-hidden');
+
+                $(window).on("scroll", showSkills);
+            }, 0);
+
+            clearInterval(preloaderInterval);
+        }
+    }, 100 / 240);
+
+window.onload = function() {
+    clearInterval(preloaderInterval);
+
+    $('body').children().removeClass('visually-hidden');
+
+    preloaderText.textContent = "100%";
+
+    setTimeout(function() {
+        preloader.setAttribute("style", "display: none;");
+        $(window).on("scroll", showSkills);
+    }, 100);
+};
+
 $(document).ready(function(){
     var firstClick=true;
     console.log(firstClick)
-    $('.preloader').fadeOut(2000, function() {});
+    // $('.preloader').fadeOut(2000, function() {});
     $(".navigation__humburger").click(function(){
         if(firstClick){
             $(".navigation__humburger").addClass("navigation__humburger_active");

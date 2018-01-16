@@ -55,7 +55,7 @@
     background-repeat: no-repeat;
     @include phones {
       top: -1%;
-      right: -30%;
+      right: -17%;
     }
     @include tablets {
       top: -1%;
@@ -733,13 +733,16 @@
 
 
 
-//-----------------------section CAROUSEL----------------
-.works{
+
+  .works{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   width: 100%;
   position: relative;
+    @include phones {
+      flex-direction: row;
+    }
   //
   //&:before{
   //  content: "";
@@ -775,6 +778,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   height: 100vh;
+  @include phones {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 
   @include netbook{
     height: auto;
@@ -787,15 +795,15 @@
   height: 100%;
 
   @include netbook{
-    height: 400px;
+    height: rem(400px);
     width: 100%;
-    padding:20px 10px 60px;
+    padding:rem(20px) rem(10px) rem(60px);
   }
 }
 .text-link{
   @include roboto;
   font-family:'robotomedium';
-  margin-left:10px;
+  margin-left:rem(10px);
 }
 .slider-info__list{
   position: relative;
@@ -822,16 +830,16 @@
 
 .slider__skills{
   margin-bottom: 40px;
-  padding: 20px 0;
+  padding: rem(20px) rem(0px);
   border-top:1px solid rgba($dark-green,.3);
   border-bottom:1px solid rgba($dark-green,.3);
 }
 
 .slider__button{
   display: block;
-  padding:15px 20px;
+  padding:rem(15px) rem(20px);
   background-color:#00bfa5;
-  border-radius: 5px;
+  border-radius: rem(5px);
   transition: all .5s;
 
   &:hover{
@@ -862,14 +870,14 @@
   @include netbook{
     height: auto;
     width: 100%;
-    padding:45px 0;
+    padding: rem(45px) rem(0px);
     order: -10;
   }
 }
 
 .slider-screen{
-  width: 600px;
-  height: 400px;
+  width: rem(600px);
+  height: rem(400px);
 }
 
 .carousel-main{
@@ -899,7 +907,7 @@
   background-color: #efebe0;
 
   @include netbook{
-    height: 200px;
+    height: rem(200px);
     width: 100%;
   }
 }
@@ -988,9 +996,9 @@
     position: absolute;
     top: 50%;
     display: block;
-    width: 30px;
-    height: 20px;
-    background:url("../images/icons/sprite.svg#arrow_up") no-repeat;
+    width: 1.99rem;
+    height: rem(20px);
+    background:url("../images/img/arrow-up.png") no-repeat;
     background-size: cover;
     left: 50%;
     transform:translate(-50%,-50%);
@@ -1010,9 +1018,9 @@
     content: '';
     position: absolute;
     display: block;
-    width: 30px;
-    height: 20px;
-    background:url("../images/icons/sprite.svg#arrow_down") no-repeat;
+    width: 1.99rem;;
+    height: rem(20px);
+    background:url("../images/img/arrow-down.png") no-repeat;
     background-size: cover;
     left: 50%;
     transform:translate(-50%,-50%);

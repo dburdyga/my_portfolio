@@ -29,74 +29,86 @@ html(lang='ru')
                             polygon.about__triangle_right(fill="#faf8f0" points="1000,0 1000,86 500,86 500,75.5")
                 section.works_title
                     h2.subtitle_works Мои работы
-                .block-slider
-                    .slider
-                        .slider__description(data-slide='1').slider__slide--active
-                            .slider__description--info
-                                .block-subtitle.slider__title Сайт школы онлайн образования
-                                .slider__text html, css, javascript
-                                .slider__link-block
-                                    a(href="#").slider__link Посмотреть Сайт
-                                        .slider__link--pic
-                                            svg.link-svg
-                                                use(xlink:href='images/icons/sprite.svg#link')
-                        .slider__main-pic(data-slide='1').slider__slide--active
-                            .slider__main-pic--block
-                                img(src='images/img/works_1.png', alt="скриншот сайта №1").slider__main-pic--img
-                        .slider__description(data-slide='2')
-                            .slider__description--info
-                                .block-subtitle.slider__title Сайт школы онлайн образования-2
-                                .slider__text html, css, javascript
-                                .slider__link-block
-                                    a(href="#").slider__link Посмотреть Сайт
-                                        .slider__link--pic
-                                            svg.link-svg
-                                                use(xlink:href='images/icons/sprite.svg#link')
-                        .slider__main-pic(data-slide='2')
-                            .slider__main-pic--block
-                                img(src='http://fakeimg.pl/643x416/?text=2&font=lobster', alt="скриншот сайта №2").slider__main-pic--img
-                        .slider__description(data-slide='3')
-                            .slider__description--info
-                                .block-subtitle.slider__title Сайт школы онлайн образования-3
-                                .slider__text html, css, javascript
-                                .slider__link-block
-                                    a(href="#").slider__link Посмотреть Сайт
-                                        .slider__link--pic
-                                            svg.link-svg
-                                                use(xlink:href='images/icons/sprite.svg#link')
-                        .slider__main-pic(data-slide='3')
-                            .slider__main-pic--block
-                                img(src='http://fakeimg.pl/643x416/?text=3&font=lobster', alt="скриншот сайта №3").slider__main-pic--img
-                        .slider__description(data-slide='4')
-                            .slider__description--info
-                                .block-subtitle.slider__title Сайт школы онлайн образования-4
-                                .slider__text html, css, javascript
-                                .slider__link-block
-                                    a(href="#").slider__link Посмотреть Сайт
-                                        .slider__link--pic
-                                            svg.link-svg
-                                                use(xlink:href='images/icons/sprite.svg#link')
-                        .slider__main-pic(data-slide='4')
-                            .slider__main-pic--block
-                                img(src='http://fakeimg.pl/643x416/?text=4&font=lobster', alt="скриншот сайта №4").slider__main-pic--img
-                        .slider__menu
-                            .slider__btn-block
-                                .slider__menu--prev-img
-                                    img(src='assets/images/work-1.png', alt="скриншот сайта №1", data-slide-thumb="1").slider__prev-pic--img
-                                    img(src='http://fakeimg.pl/643x416/?text=2&font=lobster', alt="скриншот сайта №2" data-slide-thumb="2").slider__prev-pic--img
-                                    img(src='http://fakeimg.pl/643x416/?text=3&font=lobster', alt="скриншот сайта №3" data-slide-thumb="3").slider__prev-pic--img
-                                    img(src='http://fakeimg.pl/643x416/?text=4&font=lobster', alt="скриншот сайта №4" data-slide-thumb="4").slider__prev-pic--img.slider__thumb--visible
-                                    .slider__menu--prev
-                                        svg.arrow-down
-                                            use(xlink:href='images/icons/sprite.svg#arrow_down')
-                                .slider__menu--next-img
-                                    img(src='images/img/works_1.png', alt="скриншот сайта №1" data-slide-thumb="1").slider__next-pic--img
-                                    img(src='http://fakeimg.pl/643x416/?text=2&font=lobster', alt="скриншот сайта №2" data-slide-thumb="2").slider__next-pic--img.slider__thumb--visible
-                                    img(src='http://fakeimg.pl/643x416/?text=3&font=lobster', alt="скриншот сайта №3" data-slide-thumb="3").slider__next-pic--img
-                                    img(src='http://fakeimg.pl/643x416/?text=4&font=lobster', alt="скриншот сайта №4" data-slide-thumb="4").slider__next-pic--img
-                                    .slider__menu--next
-                                        svg.arrow-up
-                                            use(xlink:href='images/icons/sprite.svg#arrow_down')
+                section.works
+                    .works__slider
+                        .slider__info
+                            ul.slider-info__list
+                                li.slider-info__item.active
+                                    .slider__title
+                                        h3.subtitle Сайт 1
+                                    .slider__skills
+                                        .slider__skills-text HTML, CSS, JAVASCRIPT
+                                    .slider__link-wrap
+                                        a.slider__button(href="#")
+                                            .slider__button-svg
+                                                svg.slider__button-svg-white(viewbox='0 0 50 50', width='25', height='25')
+                                                    use(xlink:href='images/icons/sprite.svg#link')
+                                                span.text-link Посмотреть сайт
+                                li.slider-info__item
+                                    .slider__title
+                                        h3.subtitle Сайт 2
+                                    .slider__skills
+                                        .slider__skills-text PUG, SASS
+                                    .slider__link-wrap
+                                        a.slider__button(href="#")
+                                            .slider__button-svg
+                                                svg.slider__button-svg-white(viewbox='0 0 50 50', width='25', height='25')
+                                                    use(xlink:href='images/icons/sprite.svg#link')
+                                                span.text-link Посмотреть сайт
+                                li.slider-info__item
+                                    .slider__title
+                                        h3.subtitle Сайт 3
+                                    .slider__skills
+                                        .slider__skills-text JADE, SCSS, NODE JS
+                                    .slider__link-wrap
+                                        a.slider__button(href="#")
+                                            .slider__button-svg
+                                                svg.slider__button-svg-white(viewbox='0 0 50 50', width='25', height='25')
+                                                    use(xlink:href='images/icons/sprite.svg#link')
+                                                span.text-link Посмотреть сайт
+                                li.slider-info__item
+                                    .slider__title
+                                        h3.subtitle Сайт 4
+                                    .slider__skills
+                                        .slider__skills-text PHP, POST CSS
+                                    .slider__link-wrap
+                                        a.slider__button(href="#")
+                                            .slider__button-svg
+                                                svg.slider__button-svg-white(viewbox='0 0 50 50', width='25', height='25')
+                                                    use(xlink:href='images/icons/sprite.svg#link')
+                                                span.text-link Посмотреть сайт
+                        .slider__right-top
+                            .slider-screen
+                                ul.carousel-main
+                                    li.carousel-main__slide.active
+                                        img.slider-screen__img(src="images/img/slide.png")
+                                    li.carousel-main__slide
+                                        img.slider-screen__img(src="images/img/slide-1.png")
+                                    li.carousel-main__slide
+                                        img.slider-screen__img(src="images/img/work1.png")
+                                    li.carousel-main__slide
+                                        img.slider-screen__img(src="images/img/work2.png")
+                        .slider__btns
+                            button.previous-slide.slider__link#previous
+                                ul.carousel-slides
+                                    li.carousel-slides__slide.carousel-slides__slide-previous.old-active
+                                        img.slider__img(src="images/img/slide.png")
+                                    li.carousel-slides__slide.carousel-slides__slide-previous
+                                        img.slider__img(src="images/img/slide-1.png")
+                                    li.carousel-slides__slide.carousel-slides__slide-previous.next-active
+                                        img.slider__img(src="images/img/work1.png")
+                                    li.carousel-slides__slide.carousel-slides__slide-previous.active
+                                        img.slider__img(src="images/img/work2.png")
+                            button.next-slide.slider__link#next
+                                ul.carousel-slides
+                                    li.carousel-slides__slide.carousel-slides__slide-next.old-active
+                                        img.slider__img(src="images/img/slide.png")
+                                    li.carousel-slides__slide.carousel-slides__slide-next.active
+                                        img.slider__img(src="images/img/slide-1.png")
+                                    li.carousel-slides__slide.carousel-slides__slide-next.next-active
+                                        img.slider__img(src="images/img/work1.png")
+                                    li.carousel-slides__slide.carousel-slides__slide-next
+                                        img.slider__img(src="images/img/work2.png")
                 //.block-slider
                 //    .slider
                 //        .slider__description

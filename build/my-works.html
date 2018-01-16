@@ -73,43 +73,124 @@
         <section class="works_title">
           <h2 class="subtitle_works">Мои работы</h2>
         </section>
-        <div class="block-slider">
-          <div class="slider">
-            <div class="slider__description">
-              <div class="slider__description--info">
-                <div class="block-subtitle slider__title">Сайт школы онлайн образования</div>
-                <div class="slider__text">html, css, javascript</div>
-                <div class="slider__link-block"><a class="slider__link" href="https://loftschool.com/">Посмотреть cайт
-                    <div class="slider__link--pic">
-                      <svg class="link-svg">
-                        <use xlink:href="images/icons/sprite.svg#link"></use>
-                      </svg>
-                    </div></a></div>
+        <section class="works">
+          <div class="works__slider">
+            <div class="slider__info">
+              <ul class="slider-info__list">
+                <li class="slider-info__item active">
+                  <div class="slider__title">
+                    <h3 class="subtitle">Сайт 1</h3>
+                  </div>
+                  <div class="slider__skills">
+                    <div class="slider__skills-text">HTML, CSS, JAVASCRIPT</div>
+                  </div>
+                  <div class="slider__link-wrap"><a class="slider__button" href="#">
+                      <div class="slider__button-svg">
+                        <svg class="slider__button-svg-white" viewbox="0 0 50 50" width="25" height="25">
+                          <use xlink:href="images/icons/sprite.svg#link"></use>
+                        </svg><span class="text-link">Посмотреть сайт</span>
+                      </div></a></div>
+                </li>
+                <li class="slider-info__item">
+                  <div class="slider__title">
+                    <h3 class="subtitle">Сайт 2</h3>
+                  </div>
+                  <div class="slider__skills">
+                    <div class="slider__skills-text">PUG, SASS</div>
+                  </div>
+                  <div class="slider__link-wrap"><a class="slider__button" href="#">
+                      <div class="slider__button-svg">
+                        <svg class="slider__button-svg-white" viewbox="0 0 50 50" width="25" height="25">
+                          <use xlink:href="images/icons/sprite.svg#link"></use>
+                        </svg><span class="text-link">Посмотреть сайт</span>
+                      </div></a></div>
+                </li>
+                <li class="slider-info__item">
+                  <div class="slider__title">
+                    <h3 class="subtitle">Сайт 3</h3>
+                  </div>
+                  <div class="slider__skills">
+                    <div class="slider__skills-text">JADE, SCSS, NODE JS</div>
+                  </div>
+                  <div class="slider__link-wrap"><a class="slider__button" href="#">
+                      <div class="slider__button-svg">
+                        <svg class="slider__button-svg-white" viewbox="0 0 50 50" width="25" height="25">
+                          <use xlink:href="images/icons/sprite.svg#link"></use>
+                        </svg><span class="text-link">Посмотреть сайт</span>
+                      </div></a></div>
+                </li>
+                <li class="slider-info__item">
+                  <div class="slider__title">
+                    <h3 class="subtitle">Сайт 4</h3>
+                  </div>
+                  <div class="slider__skills">
+                    <div class="slider__skills-text">PHP, POST CSS</div>
+                  </div>
+                  <div class="slider__link-wrap"><a class="slider__button" href="#">
+                      <div class="slider__button-svg">
+                        <svg class="slider__button-svg-white" viewbox="0 0 50 50" width="25" height="25">
+                          <use xlink:href="images/icons/sprite.svg#link"></use>
+                        </svg><span class="text-link">Посмотреть сайт</span>
+                      </div></a></div>
+                </li>
+              </ul>
+            </div>
+            <div class="slider__right-top">
+              <div class="slider-screen">
+                <ul class="carousel-main">
+                  <li class="carousel-main__slide active"><img class="slider-screen__img" src="images/img/slide.png"></li>
+                  <li class="carousel-main__slide"><img class="slider-screen__img" src="images/img/slide-1.png"></li>
+                  <li class="carousel-main__slide"><img class="slider-screen__img" src="images/img/work1.png"></li>
+                  <li class="carousel-main__slide"><img class="slider-screen__img" src="images/img/work2.png"></li>
+                </ul>
               </div>
             </div>
-            <div class="slider__main-pic">
-              <div class="slider__main-pic--block"><img class="slider__main-pic--img" src="images/img/works.png" alt="скриншот сайта №1"></div>
-            </div>
-            <div class="slider__menu">
-              <div class="slider__btn-block">
-                <div class="slider__menu--prev-img"><img class="slider__prev-pic--img" src="images/img/works_1.png" alt="скриншот сайта №4">
-                  <div class="slider__menu--prev">
-                    <svg class="arrow-down">
-                      <use xlink:href="images/icons/sprite.svg#arrow_down"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="slider__menu--next-img"><img class="slider__next-pic--img" src="images/img/works_2.png" alt="скриншот сайта №2">
-                  <div class="slider__menu--prev">
-                    <svg class="arrow-up">
-                      <use xlink:href="images/icons/sprite.svg#arrow_down"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
+            <div class="slider__btns">
+              <button class="previous-slide slider__link" id="previous">
+                <ul class="carousel-slides">
+                  <li class="carousel-slides__slide carousel-slides__slide-previous old-active"><img class="slider__img" src="images/img/slide.png"></li>
+                  <li class="carousel-slides__slide carousel-slides__slide-previous"><img class="slider__img" src="images/img/slide-1.png"></li>
+                  <li class="carousel-slides__slide carousel-slides__slide-previous next-active"><img class="slider__img" src="images/img/work1.png"></li>
+                  <li class="carousel-slides__slide carousel-slides__slide-previous active"><img class="slider__img" src="images/img/work2.png"></li>
+                </ul>
+              </button>
+              <button class="next-slide slider__link" id="next">
+                <ul class="carousel-slides">
+                  <li class="carousel-slides__slide carousel-slides__slide-next old-active"><img class="slider__img" src="images/img/slide.png"></li>
+                  <li class="carousel-slides__slide carousel-slides__slide-next active"><img class="slider__img" src="images/img/slide-1.png"></li>
+                  <li class="carousel-slides__slide carousel-slides__slide-next next-active"><img class="slider__img" src="images/img/work1.png"></li>
+                  <li class="carousel-slides__slide carousel-slides__slide-next"><img class="slider__img" src="images/img/work2.png"></li>
+                </ul>
+              </button>
             </div>
           </div>
-        </div>
+        </section>
+        <!--.block-slider-->
+        <!--    .slider-->
+        <!--        .slider__description-->
+        <!--            .slider__description--info-->
+        <!--                .block-subtitle.slider__title Сайт школы онлайн образования-->
+        <!--                .slider__text html, css, javascript-->
+        <!--                .slider__link-block-->
+        <!--                    a(href="https://loftschool.com/").slider__link Посмотреть cайт-->
+        <!--                        .slider__link--pic-->
+        <!--                            svg.link-svg-->
+        <!--                                use(xlink:href='images/icons/sprite.svg#link')-->
+        <!--        .slider__main-pic-->
+        <!--            .slider__main-pic--block-->
+        <!--                img(src='images/img/works.png', alt="скриншот сайта №1").slider__main-pic--img-->
+        <!--        .slider__menu-->
+        <!--            .slider__btn-block-->
+        <!--                .slider__menu--prev-img-->
+        <!--                    img(src='images/img/works_1.png', alt="скриншот сайта №4").slider__prev-pic--img-->
+        <!--                    .slider__menu--prev-->
+        <!--                        svg.arrow-down-->
+        <!--                            use(xlink:href='images/icons/sprite.svg#arrow_down')-->
+        <!--                .slider__menu--next-img-->
+        <!--                    img(src='images/img/works_2.png', alt="скриншот сайта №2").slider__next-pic--img-->
+        <!--                    .slider__menu--prev-->
+        <!--                        svg.arrow-up-->
+        <!--                            use(xlink:href='images/icons/sprite.svg#arrow_down')-->
         <section class="comments">
           <div class="comments__content">
             <div class="comments__content_title">

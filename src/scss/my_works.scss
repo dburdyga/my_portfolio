@@ -515,6 +515,12 @@
 
   &__title {
     margin-bottom: rem(39px);
+    @include phones {
+      text-align: center;
+    }
+    @include tablets {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -742,6 +748,7 @@
   position: relative;
     @include phones {
       flex-direction: row;
+      height: 100%;
     }
   //
   //&:before{
@@ -793,6 +800,7 @@
   background-color: #f0efe9;
   width: 50%;
   height: 100%;
+
 
   @include netbook{
     height: rem(400px);

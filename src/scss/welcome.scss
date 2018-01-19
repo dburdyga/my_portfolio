@@ -51,28 +51,7 @@
 }
 
 
-.user {
-  @include phones {
-    top: 169%;
-    left: 31%;
-  }
-  @include tablets {
-    top: 169%;
-    left: 31%;
-  }
-}
 
-
-.user-login {
-  @include phones {
-    top: 169%;
-    left: 31%;
-  }
-  @include tablets {
-    top: 169%;
-    left: 31%;
-  }
-}
 
 .user {
   position: absolute;

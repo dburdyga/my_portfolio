@@ -75,6 +75,19 @@
  }
 }
 
+.user{
+  @include phones{
+    left: 6%;
+    top:0;
+  }
+}
+.user-login{
+  @include phones{
+    left: 6%;
+    top:0;
+  }
+}
+
 .user-login {
   position: absolute;
   top: 50%;

@@ -18,8 +18,8 @@ html(lang='ru')
                         .foto
                             img.foto__user(src='images/img/photo.jpg', alt='my photo')
                         .user-name
-                            h1.title Бурдыга Дарья
-                            p.user__text Личный сайт веб разработчика
+                            h1.title Burdyga Daria
+                            p.user__text My personal website
                     a.arrow-scroll(href='#')
                         svg.icon__scroll(viewbox='0 0 26 16', width='26', height='16')
                             use(xlink:href='images/icons/sprite.svg#arrow_down')
@@ -32,24 +32,21 @@ html(lang='ru')
                         article.article__left
                             .article__left-content
                                 .article__left-content_title
-                                    h1.article__left_title Обо мне
+                                    h1.article__left_title About me
                                 .article__left-content_text
                                     .foto_me
                                         img.foto__me_main(src='images/img/daria.jpg', alt='main photo')
-                                    h2.subtitle_blog Кто я
+                                    h2.subtitle_blog Who I am
                                     p.article__text
-                                        | Я веб разработчик из Санкт-Петербурга. Мне 28 лет.
-                                        | Я занимаюсь разработкой современных сайтов
-                                        | и приложений. Мне нравится делать интересные
-                                        | и современные проекты.
-                                    p.article__text
-                                        | Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,
-                                        | как тут всё классно и красиво!
+                                        | I am a web the developer from St. Petersburg. I am 29 years old.
+                                        | I am engaged in development of the modern websites
+                                        | and applications. I like to do interesting
+                                        | and modern projects.
                         article.article__right
-                            h2.subtitle Чем я могу быть вам полезна
+                            h2.subtitle How can I help you?
                             p.article__text
-                                | Больше всего меня привлекет Frontend разработка, но я также знакома и могу решать не сложные задачи
-                                | на Backend. Но давайте по порядку.
+                                | Most of all I attract for Frontend development and can solve not completed tasks on Backend. 
+                                | I also can do manual testing and automation.
                             .about__right-content
                                 ul.skills-list
                                     each item in ['Frontend']
@@ -103,7 +100,7 @@ html(lang='ru')
                     .map__contacts
                         .contacts
                             .contacts__title
-                                .block-subtitle.contacts-subtitle Контакты
+                                .block-subtitle.contacts-subtitle Contacts
                             ul.contacts__list
                                 li.contacts__list-item
                                     svg.icon__scroll_block(viewbox='0 0 26 16', width='26', height='16')
@@ -120,18 +117,18 @@ html(lang='ru')
                                 li.contacts__list-item
                                     svg.icon__scroll_block(viewbox='0 0 26 16', width='26', height='16')
                                         use(xlink:href='images/icons/sprite.svg#map_marker')
-                                    a.contacts__list-text(href='Санкт-Петербург') Санкт-Петербург
+                                    a.contacts__list-text(href='Санкт-Петербург') Saint-Petersburg
             footer.footer.footer-map
                 .footer__up
                     ul.footer-nav
                         li.footer-nav__item
-                            a.footer-nav__link(href='my-works.html') Мои работы
+                            a.footer-nav__link(href='my-works.html') My works
                         li.footer-nav__item
-                            a.footer-nav__link(href='about.html') Обо мне
+                            a.footer-nav__link(href='about.html') About me
                         li.footer-nav__item
-                            a.footer-nav__link(href='blog.html') Блог
+                            a.footer-nav__link(href='blog.html') Blog
                         li.footer-nav__item
-                            a.footer-nav__link(href='index.html') Авторизация
+                            a.footer-nav__link(href='index.html') Authorization
                     ul.social
                         li.social__item
                             a.social__link(href='#')
@@ -146,10 +143,9 @@ html(lang='ru')
                                 svg.social__icon_footer(viewbox='0 0 50 50', width='32', height='37', transition='.3s')
                                     use(xlink:href='images/icons/sprite.svg#in_round')
                 .footer__down
-                    p.footer__description
-                        | Я веб-разработчик из Санкт-Петербурга, и этот сайт я сделала в рамках обучения в Школе онлайн образования
-                        | LoftSchool.
-                    p.footer__dev © Бурдыга Дарья | создано с любовью в LoftSchool | 2018
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8")
+                    p.footer__dev © Burdyga Daria | 2018
+        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTra4xCaEnsFJbNKtLikYUvJZ39GZ9nyo")
+        //script(src="codemirror/lib/codemirror.js")
+        //script(src="codemirror/mode/javascript/javascript.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
         script(src='js/bundle.js')
-        //script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTra4xCaEnsFJbNKtLikYUvJZ39GZ9nyo")

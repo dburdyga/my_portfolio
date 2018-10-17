@@ -1,8 +1,8 @@
 {
-  "name": "evg-koch",
+  "name": "dburdyga",
   "version": "1.0.0",
   "description": "Демо автоматизации с gulp 4",
-  "author": "Evgeniy Kochetov",
+  "author": "Daria Burdyga",
   "license": "ISC",
   "scripts": {
     "start": "gulp"

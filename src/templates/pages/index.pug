@@ -1,10 +1,6 @@
 doctype html
 html(lang='ru')
-    head
-        meta(charset='UTF-8')
-        title My portfolio
-        link(rel='shortcut icon', type='image/x-icon', href='images/favicon/favicon.ico')
-        link(rel='stylesheet', href='css/style.min.css')
+    include ../common/head
     body
         .container-welcome.welcome
             .preloader#preloader
@@ -94,5 +90,5 @@ html(lang='ru')
                                     li.navigation__item
                                         a.navigation__link(href='#') Access
 
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8")
         script(src='js/bundle.js')

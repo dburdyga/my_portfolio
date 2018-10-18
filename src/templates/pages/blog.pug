@@ -40,8 +40,6 @@ html(lang='ru')
                                 li.saidbar__item
                                     a.saidbar__link(href='#')
                                         | BMW OSM
-                                li.saidbar__item
-                                    a.saidbar__link(href='#') 1
                     .articles
                         article.article
                             h2.subtitle BMW CASA
@@ -52,13 +50,14 @@ html(lang='ru')
                                 | is a management system to handle data about ConnectedDrive contracts.
                             p.article__text
                                 | Tasks:  
-                                |  experience of manual testing, of testing Web services (REST, SOAP) and in automation
-                                |  experience in Oracle SQL Developer, JIRA, Confluence, HP ALM
-                                |  experience of writing of test cases, test plans, bug reports
-                                |  Upper-Intermediate English, fluent German
-                                |  business trips to Munich (knowledge transfer)
-                            .CodeMirror
-                                textarea(id="code", cols="60", rows="7")
+                                ul.article__text
+                                    li  experience of manual testing, of testing Web services (REST, SOAP) and in automation
+                                    li  experience in Oracle SQL Developer, JIRA, Confluence, HP ALM
+                                    li  experience of writing of test cases, test plans, bug reports
+                                    li  Upper-Intermediate English, fluent German
+                                    li  business trips to Munich (knowledge transfer)
+                            //- .CodeMirror
+                            //-     textarea(id="code", cols="60", rows="7")
                         article.article
                             h2.subtitle DIH
                             p.article__data
@@ -67,9 +66,10 @@ html(lang='ru')
                                 | Project description: Data Intelligence Hub
                                 | (Single source for all data analytics matters and secure data exchange with business partners)
                             p.article__text
-                                | Tasks:     
-                                |• Automate E2E testing using Cucumber tool on Gherkin language in Nightwatchjs in Visual Studio Code
-                                |• Experience in Git, CSS, HTML, SASS
+                                | Tasks:
+                                ul    
+                                    li Automate E2E testing using Cucumber tool on Gherkin language in Nightwatchjs in Visual Studio Code
+                                    li Experience in Git, CSS, HTML, SASS
                         article.article
                             h2.subtitle BMW OSM
                             p.article__data
@@ -79,11 +79,12 @@ html(lang='ru')
                                 | for BMW Group production-series cars as a new distribution channel. This new channel combines – in a multi-channel approach – web-based online processes, 
                                 | Customer Interaction Centre processes and stationary retail processes that can be conducted online with the retailer.
                             p.article__text
-                                | Tasks:     
-                                | • Functional testing of web application: manual testing, test-case and checklist creation and adaptation
-                                | • Defect management: defects analyzing, description and tracking using JIRA and HP ALM
-                                | • Cooperation with development and business teams: clarification meetings, specification gaps finding
-                                | • Cooperation with Customer's test management team: planning of test activities, integration of Customer's test results into regular workflow
+                                | Tasks: 
+                                ul
+                                    li Functional testing of web application: manual testing, test-case and checklist creation and adaptation
+                                    li Defect management: defects analyzing, description and tracking using JIRA and HP ALM
+                                    li Cooperation with development and business teams: clarification meetings, specification gaps finding
+                                    li Cooperation with Customer's test management team: planning of test activities, integration of Customer's test results into regular workflow
 
             include ../common/footer
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8")

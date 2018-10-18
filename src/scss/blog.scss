@@ -17,7 +17,7 @@
     position: absolute;
     width: rem(290px);
     height: rem(200px);
-    background:url("../images/icons/blog_header.svg");
+    // background:url("../images/icons/blog_header.svg");
     opacity: 0.1;
     top: 50%;
   }
@@ -40,7 +40,7 @@
     position: absolute;
     width: 73%;
     height: 119%;
-    background: url(../images/icons/portfolio_header.svg) 0 0/82% no-repeat;
+    // background: url(../images/icons/portfolio_header.svg) 0 0/82% no-repeat;
     opacity: .1;
     top: -15%;
     @include phones {

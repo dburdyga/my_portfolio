@@ -2,7 +2,7 @@
 
 </p>
 
-<h1 align="center">Portfolio<b>Loftschool </b> Burdyga Daria </h1>
+<h1 align="center">Portfolio<b> by </b> Burdyga Daria </h1>
 
 <b>Build systems</b>
 - [Gulp 4.0](https://gulpjs.com/)
